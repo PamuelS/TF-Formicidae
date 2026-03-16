@@ -1,0 +1,176 @@
+Species name	Subfamily	Clade	NCBI Accession number 	GAGA accession number 	Abbreviation	Number of queens	Castes	Pasassitism	Type of parassitism	Queen wings	Larval hemolymph feeding	Cocoon
+Acromyrmex ameliae	Myrmicinae	Formicoids	GCA_048543475.1	GAGA-0001	Acrame	Poliginica	Polimorfiche	Presente	Inquilinismo	Alata	Assente	Assente
+Acromyrmex subterraneus	Myrmicinae	Formicoids	GCA_048542405.1	GAGA-0002	Acrsub	Poliginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Acromyrmex lobicornis	Myrmicinae	Formicoids	GCA_048181725.1	GAGA-0003	Acrlob	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Messor barbarus	Myrmicinae	Formicoids	GCA_048181735.1	GAGA-0004	Mesbar	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Acromyrmex echinatior	Myrmicinae	Formicoids	GCA_024713525.2	GAGA-0014	Acrech	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Lasius flavus s1	Formicinae	Formicoids	GCA_048181785.1	GAGA-0020	Lasifl	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Lasius flavus s2	Formicinae	Formicoids	GCA_048543215.1	GAGA-0024	Lasfla	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Megaponera analis	Ponerinae	Poneroids	GCA_048543795.1 	GAGA-0025	Megana	Monoginica	Polimorfiche	Assente	Nessuno	Ergatoide	Assente	Presente
+Myrmecocystus cf. mendax	Formicinae	Formicoids	GCA_048544835.1	GAGA-0026	Myrmen	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Myrmica rubra	Myrmicinae	Formicoids	GCA_048181765.1	GAGA-0028	Myrrub	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Gigantiops destructor	Formicinae	Formicoids	GCA_048543115.1 	GAGA-0055	Gigdes	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Neoponera goeldii	Ponerinae	Poneroids	GCA_048543535.1 	GAGA-0063	Neogoe	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Odontomachus hastatus	Ponerinae	Poneroids	GCA_048544115.1	GAGA-0074	Odohas	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Pheidole pallidula	Myrmicinae	Formicoids	GCA_048543635.1	GAGA-0080	Phepal	Poliginica	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pristomyrmex punctatus	Myrmicinae	Formicoids	GCA_048543395.1	GAGA-0082	Pripun	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Diacamma cf. indicum	Ponerinae	Poneroids	GCA_048542865.1	GAGA-0083	Diaind	Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Aphaenogaster subterranea	Myrmicinae	Formicoids	GCA_048181805.1	GAGA-0084	Aphsub	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Tetramorium caespitum	Myrmicinae	Formicoids	GCA_048542475.1 	GAGA-0085	Tetcae	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmica scabrinodis	Myrmicinae	Formicoids	GCA_048544725.1 	GAGA-0087	Myrsca	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Platythyrea punctata	Ponerinae	Poneroids	GCA_048181825.1 	GAGA-0090	Plapun	Monoginica/Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Harpagoxenus sublaevis	Myrmicinae	Formicoids	GCA_048544055.1	GAGA-0098	Harsub	Monoginica	Monomorfiche	Presente	Dulosi	Ergatoide	Assente	Assente
+Leptothorax acervorum	Myrmicinae	Formicoids	GCA_048544085.1	GAGA-0099	Lepace	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmecina graminicola	Myrmicinae	Formicoids	GCA_048542825.1 	GAGA-0103	Myrgra	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Stenamma debile	Myrmicinae	Formicoids	GCA_048544525.1 	GAGA-0109	Stedeb	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Manica rubida	Myrmicinae	Formicoids	GCA_048181895.1 	GAGA-0114	Manrub	Poliginica	Monomorfiche	Assente	Nessuno	Brachiptera	Assente	Assente
+Eutetramorium mocquerysi	Myrmicinae	Formicoids	GCA_048542615.1	GAGA-0165	Eutmoc	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Assente	Assente
+Lasius niger	Formicinae	Formicoids	GCA_041902855.1	GAGA-0177	Lasnig	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Plagiolepis pygmaea	Formicinae	Formicoids	GCA_048181815.1 	GAGA-0187	Plapyg	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Paratrechina longicornis	Formicinae	Formicoids	GCA_048543675.1	GAGA-0198	Parlon	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Anoplolepis gracilipes	Formicinae	Formicoids	GCA_048542685.1	GAGA-0199	Anogra	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Camponotus japonicus	Formicinae	Formicoids	GCA_048543815.1	GAGA-0200	Camjap	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Acromyrmex octospinosus	Myrmicinae	Formicoids	GCA_048542105.1	GAGA-0220	Acroct	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Camponotus fellah	Formicinae	Formicoids	GCA_048181845.1	GAGA-0221	Camfel	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Temnothorax rugatulus	Myrmicinae	Formicoids	GCA_048541785.1 	GAGA-0222	Temrug	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Temnothorax longispinosus	Myrmicinae	Formicoids	 GCA_048541765.1 	GAGA-0223	Temlon	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Temnothorax americanus	Myrmicinae	Formicoids	 GCA_048541705.1	GAGA-0224	Temame	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Assente
+Cephalotes minutus	Myrmicinae	Formicoids	GCA_048544035.1	GAGA-0229	Cepmin	Monoginica	???	Assente	Nessuno	Alata	Assente	Assente
+Typhlomyrmex rogenhoferi	Ectatomminae	Formicoids	GCA_048542435.1	GAGA-0234	Typrog	Poliginica	Monomorfiche	Assente	Nessuno	Ergatoide	Assente	Presente
+Monomorium pharaonis	Myrmicinae	Formicoids	GCF_013373865.1	GAGA-0245	Monpha	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pseudoneoponera rufipes	Ponerinae	Poneroids	GCA_048543015.1 	GAGA-0246	Pseruf	Poliginica/Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Acanthomyrmex ferox	Myrmicinae	Formicoids	GCA_048543515.1	GAGA-0256	Acafer	Monoginica	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Ectomomyrmex cf. javanus	Ponerinae	Poneroids	GCA_048543875.1	GAGA-0266	Ectoja	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Euprenolepis procera	Formicinae	Formicoids	GCA_048542765.1 	GAGA-0275	Euppro	Poliginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Temnothorax unifasciatus	Myrmicinae	Formicoids	GCA_048541725.1	GAGA-0288	Temuni	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Ectomomyrmex javanus	Ponerinae	Poneroids	GCA_048543995.1	GAGA-0300	Ectjav	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Anochetus risii	Ponerinae	Poneroids	GCA_048544625.1	GAGA-0301	Anoris	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Ochetellus glaber	Dolichoderinae	Formicoids	GCA_048543655.1	GAGA-0302	Ochgla	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Harpegnathos venator	Ponerinae	Poneroids	GCA_048543315.1	GAGA-0303	Harven	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Proformica cf. mongolica	Formicinae	Formicoids	GCA_048543615.1 	GAGA-0304	Promon	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Stictoponera bicolor	Ectatomminae	Formicoids	GCA_048543955.1 	GAGA-0306	Stibic	Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Hypoponera opacior	Ponerinae	Poneroids	GCA_048543595.1	GAGA-0307	Hypopa	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Carebara diversa	Myrmicinae	Formicoids	GCA_048542245.1 	GAGA-0328	Cardiv	Poliginica	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Crematogaster cf. rogenhoferi	Myrmicinae	Formicoids	GCA_048544605.1 	GAGA-0330	Crerog	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Carebara sp. s2	Myrmicinae	Formicoids	GCA_048542275.1	GAGA-0331	Caresp	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Pseudolasius sp.	Formicinae	Formicoids	GCA_048543075.1 	GAGA-0332	Pseusp	???	Dimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Tetramorium bicarinatum	Myrmicinae	Formicoids	GCA_048542625.1	GAGA-0333	Tetbic	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Rossomyrmex quandratinodus	Formicinae	Formicoids	GCA_048543375.1 	GAGA-0334	Rosqua	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Presente
+Meranoplus bicolor	Myrmicinae	Formicoids	GCA_048542705.1	GAGA-0335	Merbic	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Oecophylla smaragdina	Formicinae	Formicoids	GCA_048542515.1 	GAGA-0336	Oecsma	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Tapinoma melanocephalum	Dolichoderinae	Formicoids	GCA_048542345.1 	GAGA-0337	Tapmel	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Lepisiota rothneyi	Formicinae	Formicoids	GCA_048544645.1	GAGA-0338	Leprot	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Tapinoma cf. melanocephalum	Dolichoderinae	Formicoids	GCA_048543175.1 	GAGA-0340	Tapime	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Nylanderia fulva	Formicinae	Formicoids	GCA_048542155.1 	GAGA-0341	Nylful	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pseudomyrmex spinicola	Pseudomyrmecinae	Formicoids	GCA_048543035.1 	GAGA-0343	Psespi	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Megalomyrmex milenae	Myrmicinae	Formicoids	GCA_048543095.1	GAGA-0346	Megmil	Monoginica	Monomorfiche	Presente	Lestobiosi	Ergatoide	Assente	Assente
+Formica cf. japonica	Formicinae	Formicoids	GCA_048543915.1 	GAGA-0350	Formja	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Diacamma rugosum	Ponerinae	Poneroids	GCA_048542605.1	GAGA-0351	Diarug	Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Leptogenys diminuta	Ponerinae	Poneroids	GCA_048543355.1	GAGA-0352	Lepdim	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Assente	Presente
+Odontomachus cf. monticola	Ponerinae	Poneroids	GCA_048544815.1	GAGA-0353	Odomon	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Cataglyphis aenescens	Formicinae	Formicoids	GCA_048542665.1	GAGA-0354	Cataen	Poliginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Aphaenogaster exasperata	Myrmicinae	Formicoids	GCA_048543975.1	GAGA-0356	Aphexa	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pheidole nodus	Myrmicinae	Formicoids	GCA_048543135.1	GAGA-0358	Phenod	Poliginica	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Formica japonica	Formicinae	Formicoids	GCA_048543455.1 	GAGA-0359	Forjap	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Colobopsis sp.	Formicinae	Formicoids	GCA_048181915.1 	GAGA-0360	Colosp	???	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Camponotus fedtschenkoi	Formicinae	Formicoids	GCA_048543275.1	GAGA-0361	Camfed	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Camponotus sp.	Formicinae	Formicoids	GCA_048543885.1	GAGA-0362	Campsp	???	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Iridomyrmex anceps	Dolichoderinae	Formicoids	GCA_048542785.1	GAGA-0363	Irianc	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Lasius cf. spathepus	Formicinae	Formicoids	GCA_048542905.1 	GAGA-0364	Lasspa	Poliginica	Monomorfiche	Presente	Temporaneo	Alata	Assente	Assente
+Tetraponera rufonigra	Pseudomyrmecinae	Formicoids	GCA_048542885.1 	GAGA-0364	Tetruf	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Lasius neglectus	Formicinae	Formicoids	GCA_048542085.1	GAGA-0366	Lasneg	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Polyrhachis illaudata	Formicinae	Formicoids	GCA_048543055.1 	GAGA-0374	Polill	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Pheidole capellinii	Myrmicinae	Formicoids	GCA_048542745.1	GAGA-0376	Phecap	Monoginica	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Carebara altinodus	Myrmicinae	Formicoids	GCA_048542325.1	GAGA-0378	Caralt	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Cerapachys sulcinodis	Dorylinae	Formicoids	GCA_048543755.1	GAGA-0379	Cersul	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Leptogenys kitteli	Ponerinae	Poneroids	GCA_048543925.1	GAGA-0380	Lepkit	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Carebara trechideros	Myrmicinae	Formicoids	GCA_048542525.1	GAGA-0382	Cartre	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Pheidole selathorax	Myrmicinae	Formicoids	GCA_048542935.1	GAGA-0384	Phesel	???	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Euponera pilosior	Ponerinae	Poneroids	GCA_048542205.1	GAGA-0386	Euppil	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Leptogenys cf. binghamii	Ponerinae	Poneroids	GCA_048542005.1 	GAGA-0387	Lepbin	Poliginica	Monomorfiche	Assente	Nessuno	Ergatoide	Assente	Presente
+Proceratium itoi	Proceratiinae	Poneroids	GCA_048542385.1 	GAGA-0389	Proito	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Presente	Assente
+Stigmatomma sp.	Amblyoponinae	Poneroids	GCA_048542845.1 	GAGA-0391	Stigsp	???	Monomorfiche	Assente	Nessuno	Alata	Presente	Presente
+Leptanilla sp.	Leptanillinae	M + L	GCA_048541985.1 	GAGA-0392	Leptsp	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Presente	Assente
+Crematogaster cf. osakensis	Myrmicinae	Formicoids	GCA_048543775.1	GAGA-0393	Cremos	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Crematogaster osakensis	Myrmicinae	Formicoids	GCA_048543295.1 	GAGA-0395	Creosa	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Camponotus singularis	Formicinae	Formicoids	GCA_048543695.1 	GAGA-0396	Camsin	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Myrmica angulata	Myrmicinae	Formicoids	GCA_048544665.1	GAGA-0401	Myrang	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Mystrium camillae	Amblyoponinae	Poneroids	GCA_048543715.1	GAGA-0404	Myscam	Monoginica/Gamergate	Polimorfiche	Assente	Nessuno	Alata	Presente	Presente
+Tetramorium polymorphum	Myrmicinae	Formicoids	GCA_048543235.1 	GAGA-0405	Tetpol	Poliginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmoteras binghamii	Formicinae	Formicoids	GCA_048542305.1 	GAGA-0406	Myrbin	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Kartidris nyos	Myrmicinae	Formicoids	GCA_048542725.1	GAGA-0407	Karnyo	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Buniapone amblyops	Ponerinae	Poneroids	GCA_048542025.1	GAGA-0408	Bunamb	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Messor capitatus	Myrmicinae	Formicoids	GCA_048543335.1	GAGA-0413	Mescap	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Solenopsis fugax	Myrmicinae	Formicoids	GCA_048544555.1 	GAGA-0454	Solfug	Poliginica	Monomorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Formicoxenus nitidulus	Myrmicinae	Formicoids	GCA_048543855.1	GAGA-0463	Fornit	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Assente	Assente
+Formica sanguinea	Formicinae	Formicoids	GCA_048542805.1	GAGA-0485	Forsan	Poliginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Presente
+Lasius fuliginosus s2	Formicinae	Formicoids	GCA_048543435.1 	GAGA-0491	Lasful	Poliginica	Monomorfiche	Presente	Temporaneo	Alata	Assente	Presente
+Rossomyrmex minuchae	Formicinae	Formicoids	GCA_048542375.1	GAGA-0494	Rosmin	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Presente
+Formica fusca	Formicinae	Formicoids	GCA_048541905.1	GAGA-0495	Forfus	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Iberoformica subrufa	Formicinae	Formicoids	GCA_048542575.1	GAGA-0502	Ibesub	Monoginica	Monomorfiche	Assente	Nessuno	Brachiptera	Assente	Presente
+Oxyopomyrmex cf. saulcyi	Myrmicinae	Formicoids	GCA_048543195.1	GAGA-0503	Oxysau	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Goniomma hispanicum	Myrmicinae	Formicoids	GCA_048542265.1	GAGA-0505	Gonhis	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Temnothorax nylanderi	Myrmicinae	Formicoids	GCA_048541665.1 	GAGA-0510	Temnyl	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Temnothorax ravouxi	Myrmicinae	Formicoids	GCA_048541685.1	GAGA-0511	Temrav	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Assente
+Temnothorax pilagens	Myrmicinae	Formicoids	GCA_048544075.1	GAGA-0512	Tempil	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Assente
+Temnothorax ambiguus	Myrmicinae	Formicoids	GCA_048543255.1	GAGA-0513	Temamb	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Cardiocondyla obscurior	Myrmicinae	Formicoids	GCA_048542225.1	GAGA-0515	Carobs	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmecia pilosula	Myrmeciinae	Formicoids	GCA_048542125.1	GAGA-0517	Myrpil	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Melissotarsus emeryi	Myrmicinae	Formicoids	GCA_048543575.1	GAGA-0520	Meleme	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmecia croslandi 2n=2	Myrmeciinae	Formicoids	GCA_048542065.1 	GAGA-0521	Myrmcr	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Myrmecia croslandi 2n=4	Myrmeciinae	Formicoids	GCA_048542145.1	GAGA-0522	Myrcro	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Lasius fuliginosus s1	Formicinae	Formicoids	GCA_048543495.1	GAGA-0524	Lasifu	Poliginica	Monomorfiche	Presente	Temporaneo	Alata	Assente	Presente
+Tetramorium atratulum	Myrmicinae	Formicoids	GCA_048181885.1 	GAGA-0527	Tetatr	???	Monomorfiche	Presente	Inquilinismo	Alata	Assente	Assente
+Liometopum microcephalum	Dolichoderinae	Formicoids	GCA_048542565.1	GAGA-0528	Liomic	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pheidole yeensis	Myrmicinae	Formicoids	GCA_048543735.1 	GAGA-0530	Pheyee	Poliginica	Dimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Aphaenogaster smythiesii	Myrmicinae	Formicoids	GCA_048544585.1	GAGA-0531	Aphsmy	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Lasius cf. alienus	Formicinae	Formicoids	GCA_048544005.1	GAGA-0532	Lasali	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Carebara sp. s1	Myrmicinae	Formicoids	GCA_048542465.1 	GAGA-0533	Carspp	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Dorylus orientalis	Dorylinae	Formicoids	GCA_048542365.1	GAGA-0534	Dorori	Monoginica	Polimorfiche	Assente	Nessuno	Ergatoide	Assente	Assente
+Discothyrea kamiteta	Proceratiinae	Poneroids	GCA_048542045.1	GAGA-0535	Diskam	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Prionopelta kraepelini	Amblyoponinae	Poneroids	GCA_048541945.1 	GAGA-0536	Prikra	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Presente	Presente
+Proceratium cf. bruelheidei	Proceratiinae	Poneroids	GCA_048542185.1	GAGA-0537	Probru	Monoginica	Monomorfiche	Assente	Nessuno	Ergatoide	Presente	Assente
+Sericomyrmex mayri	Myrmicinae	Formicoids	GCA_048543835.1	GAGA-0538	Sermay	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Mycetophylax morschi	Myrmicinae	Formicoids	GCA_048543555.1	GAGA-0539	Mycmor	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Myrmicocrypta squamosa uncinata	Myrmicinae	Formicoids	GCA_048544685.1 	GAGA-0540	Myrsqu	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Mycetosoritis hartmanni	Myrmicinae	Formicoids	GCA_048543415.1 	GAGA-0541	Mychar	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Kalathomyrmex emeryi	Myrmicinae	Formicoids	GCA_048543155.1	GAGA-0543	Kaleme	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Xerolitor explicatus	Myrmicinae	Formicoids	GCA_048544745.1	GAGA-0550	Xerexp	???	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Paraponera clavata	Paraponerinae	Poneroids	GCA_048542505.1 	GAGA-0552	Parcla	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Tetramorium cf. nipponense	Myrmicinae	Formicoids	GCA_048541875.1 	GAGA-0553	Tetnip	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Strumigenys mutica	Myrmicinae	Formicoids	GCA_048541855.1 	GAGA-0554	Strmut	Monoginica	Monomorfiche	Presente	Temporaneo	Alata	Assente	Assente
+Parasyscia sp.	Dorylinae	Formicoids	GCA_048541925.1	GAGA-0577	Parasp	???	Monomorfiche	Assente	Nessuno	???	Assente	Sconosciuto
+Carebara cf. capreola	Myrmicinae	Formicoids	GCA_048542995.1	GAGA-0578	Carcap	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Carebara melasolena	Myrmicinae	Formicoids	GCA_048542975.1 	GAGA-0579	Carmel	???	Dimorfiche	Presente	Lestobiosi	Alata	Assente	Assente
+Probolomyrmex sp.	Proceratiinae	Poneroids	GCA_048541965.1 	GAGA-0580	Probsp	???	Monomorfiche	Assente	Nessuno	???	Assente	Assente
+Acromyrmex charruanus	Myrmicinae	Formicoids	GCA_017607545.1	N/A	Acrcha	Monoginica	Polimorfiche	Presente	Inquilinismo	Alata	Assente	Assente
+Acromyrmex heyeri	Myrmicinae	Formicoids	GCA_017607565.1	N/A	Acrhey	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Acromyrmex insinuator	Myrmicinae	Formicoids	GCA_017607455.1	N/A	Acrins	Poliginica	Polimorfiche	Presente	Inquilinismo	Alata	Assente	Assente
+Atta cephalotes	Myrmicinae	Formicoids	GCF_000143395.1	N/A	Attcep	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Atta colombica	Myrmicinae	Formicoids	GCA_001594045.1	N/A	Attcol	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Camponotus floridanus	Formicinae	Formicoids	GCF_003227725.1	N/A	Camflo	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Cataglyphis hispanica	Formicinae	Formicoids	GCF_021464435.1	N/A	Cathis	???	Polimorfiche	Assente	Nessuno	Brachiptera	Assente	Presente
+Cataglyphis nigra	Formicinae	Formicoids	GCA_050437125.1	N/A	Catnig	Poliginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Presente
+Cyphomyrmex costatus	Myrmicinae	Formicoids	GCF_001594065.1	N/A	Cypcos	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Dinoponera quadriceps	Ponerinae	Poneroids	GCF_001313825.1	N/A	Dinqua	Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Eciton burchellii	Dorylinae	Formicoids	GCA_020341155.1	N/A	Ecibur	Monoginica	Polimorfiche	Assente	Nessuno	Ergatoide	Assente	Presente
+Formica cinerea	Formicinae	Formicoids	GCA_048541745.1 	N/A	Forcin	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Formica exsecta	Formicinae	Formicoids	GCF_003651465.1	N/A	Forexs	Poliginica	Monomorfiche	Presente	Temporaneo	Alata	Assente	Presente
+Formica selysi	Formicinae	Formicoids	GCA_009859135.1	N/A	Forsel	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Harpegnathos saltator	Ponerinae	Poneroids	GCF_003227715.1	N/A	Harsal	Monoginica/Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Lasius platythorax	Formicinae	Formicoids	GCA_964030505.2	N/A	Laspla	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Linepithema humile	Dolichoderinae	Formicoids	GCF_000217595.1	N/A	Linhum	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Mycetomoellerius zeteki	Myrmicinae	Formicoids	GCA_001594055.1	N/A	Myczet	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Odontomachus brunneus	Ponerinae	Poneroids	GCF_010583005.1	N/A	Odobru	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Presente
+Ooceraea biroi	Dorylinae	Formicoids	GCF_003672135.1	N/A	Oocbir	Gamergate	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Paratrachymyrmex cornetzi	Myrmicinae	Formicoids	GCF_001594075.1	N/A	Tracor	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pogonomyrmex barbatus	Myrmicinae	Formicoids	GCF_000187915.1	N/A	Pogbar	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Pogonomyrmex californicus	Myrmicinae	Formicoids	GCA_050084945.1	N/A	Pogcal	Monoginica	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Polyergus mexicanus	Formicinae	Formicoids	GCF_030449975.1	N/A	Polmex	Monoginica	Monomorfiche	Presente	Dulosi	Alata	Assente	Presente
+Pseudoatta argentina	Myrmicinae	Formicoids	GCA_017607525.1	N/A	Psearg	Monoginica	Inesistente	Presente	Inquilinismo	Alata	Assente	Assente
+Pseudomyrmex gracilis	Pseudomyrmecinae	Formicoids	GCF_002006095.1	N/A	Psegra	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Solenopsis invicta	Myrmicinae	Formicoids	GCA_010367695.1	N/A	Solinv	Facoltativa	Polimorfiche	Assente	Nessuno	Alata	Assente	Assente
+Temnothorax curvispinosus	Myrmicinae	Formicoids	GCF_003070985.1	N/A	Temcur	Facoltativa	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Trachymyrmex septentrionalis	Myrmicinae	Formicoids	GCF_001594115.1	N/A	Trasep	Monoginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
+Vollenhovia emeryi	Myrmicinae	Formicoids	GCF_000949405.1	N/A	Voleme	Poliginica	Monomorfiche	Assente	Nessuno	Brachiptera	Assente	Assente
+Wasmannia auropunctata	Myrmicinae	Formicoids	GCF_000956235.1	N/A	Wasaur	Poliginica	Monomorfiche	Assente	Nessuno	Alata	Assente	Assente
