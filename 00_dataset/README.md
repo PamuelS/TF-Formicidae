@@ -1,5 +1,5 @@
 # Creazione del dataset
-In questa cartella sono presenti tutti i genomi e lel loro relative annotazioni delle spèecie contenute all'interno del dataset. Sono state create due distinte categorie basate sulla presenza o assenza delle specie all'interno del dataset di GAGA (che fa riferimento a questo articolo: Adaptive radiation and social evolution of ants).
+In questa cartella sono presenti tutti i genomi e lel loro relative annotazioni delle spèecie contenute all'interno del [dataset](./dataset.tsv). Sono state create due distinte categorie basate sulla presenza o assenza delle specie all'interno del dataset di GAGA (che fa riferimento a questo articolo: Adaptive radiation and social evolution of ants).
 
 Le specie appartenenti alla categoria "GAGA" sono già presenti nel dataset GAGA e sono state semplicemente scaricate da [qui](https://sid.erda.dk/cgi-sid/ls.py?share_id=fU0yBp3NH5&current_dir=01_Genome_and_annotations&flags=f). Per quanto riguarda le specie non presenti in tale papaer, esse sono state scaricate direttamente da NCBI, tramite l'uso di uno script apposito (download_dataset.sh).
 
