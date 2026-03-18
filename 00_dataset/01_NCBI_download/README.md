@@ -1,5 +1,5 @@
 # Specie NCBI
-Per le specie che non erano già presenti all'interno del dataset di GAGA, si è eseguito un approccio differente mediante l'utilizzo di uno (script)[./download_dataset.sh] che ha consentito di scaricare sia i genomi (.fna) che le corrispettive annotazioni funzionali (.gff), estratte direttamente dalla banca dati NCBI.
+Per le specie che non erano già presenti all'interno del dataset di GAGA, si è eseguito un approccio differente mediante l'utilizzo di uno (script)[./NCBI_download/download_dataset.sh] che ha consentito di scaricare sia i genomi (.fna) che le corrispettive annotazioni funzionali (.gff), estratte direttamente dalla banca dati NCBI.
 A ciascun individuo nel (dataset)[../dataset.tsv], le cui informazioni sono state reperite diettamente da NCBI, ci si riferisce ad essi come "specie NCBI".
 
 ## Download delle specie
