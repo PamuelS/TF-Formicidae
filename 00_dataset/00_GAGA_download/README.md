@@ -2,8 +2,16 @@
 Vengono definite come "specie GAGA" tutti quegli individui presenti nel mio [dataset](../dataset.tsv) che sono stati inseriti anche nel dataset di GAGA.
 
 
+## Download genomi 
+sono stati scaricati i genomi dal [sito](https://sid.erda.dk/cgi-sid/ls.py?share_id=fU0yBp3NH5&current_dir=01_Genome_and_annotations&flags=f). Su questo sito sono state messe a disposizione tutti i dati relativi alle specie utilizzate nel dataset GAGA.
 
-
+```bash
+curl -L -o output ""https://sid.erda.dk/share_redirect/fU0yBp3NH5/01_Genome_and_annotations/01_Genome_and_annotations_allfiles.tar.gz
+```
+successivamente i file sono stati unzippati
+```bash
+tar -xzvf *tar.gz
+```
 
 
 ## Modifica dei file 
