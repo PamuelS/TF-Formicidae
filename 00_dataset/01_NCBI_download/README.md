@@ -11,4 +11,8 @@ bash download_dataset.sh species_list_absent_in_GAGA.tsv
 ## Isoforma e cds
 Dopo il download dei vari file, si è proceduto con il mantenimento dell'isoforma più lunga per ciascun gene identificato dall'annotazione e si è proceduto con l'estrazione delle cds.
 
-Il tutto è stato eseguito mediante uno (script di snakemake)
+Il tutto è stato eseguito mediante uno (script di snakemake)[./longest.sh] in cui sono stati lanciati consecutivamente vari programmi di agat.
+
+```bash
+snakemake -s longest.sh --cores 12 --use-conda
+```
