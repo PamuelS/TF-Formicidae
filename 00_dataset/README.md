@@ -8,7 +8,7 @@ La determinazione dell'abbreviativo associato a ciascuna specie è stato scelto 
 Le specie appartenenti alla categoria "GAGA" sono già presenti nel dataset GAGA e sono state semplicemente scaricate da [qui](https://sid.erda.dk/cgi-sid/ls.py?share_id=fU0yBp3NH5&current_dir=01_Genome_and_annotations&flags=f). Per quanto riguarda le specie non presenti in tale papaer, esse sono state scaricate direttamente da NCBI, tramite l'uso di uno script apposito (download_dataset.sh).
 
 ```bash
-bash download_dataset.sh .
+bash download_dataset.sh species_list_absent_in_GAGA.tsv
 ```
 
 ## Modifica dei file 
