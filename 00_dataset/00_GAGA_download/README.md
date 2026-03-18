@@ -5,6 +5,7 @@ Vengono definite come "specie GAGA" tutti quegli individui presenti nel mio [dat
 
 
 
+
 ## Modifica dei file 
 una volta scaricati tutti i file relativi ad ogni specie nel dataset, si è proceduto con la modifica del nome della cartella associata alla specie e ad ognuno file di nostro interesse, che sono riassunti qui sotto:
 - GAGA-0256_final_annotation_repfilt_addreannot_noparpse_representative.pep.fasta		(diventa: .faa)
