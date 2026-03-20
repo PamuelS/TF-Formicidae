@@ -16,3 +16,8 @@ Il tutto è stato eseguito mediante uno [script di snakemake](./longest.sh) in c
 ```bash
 snakemake -s longest.sh --cores 12 --use-conda
 ```
+## Modifica deglie header
+anche per le specie NCBI è stato modificato ogni singolo header appartenente alle singole isoforme per ciascun gene.
+```bash
+for f in *.faa; do ID=$(basename -s .faa "$f"); sed -i -E "/^>/ s/>(.[^ ]+) gene=gene-(.[^ ]+) .+/>${ID}\|\2/" "$f"; done
+```
