@@ -11,6 +11,7 @@ I fenotipi investigari sono:
 5) Nutrimento di emolinfa larvale (Si/No)
 6) Bozzolo (Si/No)
 
+Il dataset di questo lavoro è caratterizzato da 175 esemplari, tutti appartenenti alla famiglia di imenotteri Formicidae, con una distribuzione delle varie specie in ben 12 sottofamiglie differenziate. All'interno del dataset, per faciliotare il lavoro computazionale, è stato eseguito un raggruppamento degli individui basato prettamente sulla provenienza dei relativi dati genomici: specie GAGA (dati estratti dai lavori resi disponibili da GAGA) e specie NCBI (dati estratti direttamente dal database NCBI).
 
 ## Workflow
 1) Creazione del dataset e [download dei genomi e dei file .gff](./00_dataset)
