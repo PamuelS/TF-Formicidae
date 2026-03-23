@@ -32,8 +32,16 @@ for i in *; do cd "$i"; while read -r ncbi id; do mv "$ncbi"*_representative.pep
 ```
 
 ## Modifica degli header
-sono stati modificati anche glie header delle isoforme più lunghe di ogni gene, per ciascuna delle specie GAGA.
-Si è prima proceduti con la standardizzazione degli header ritrovati nei vari file .faa. Questa standardizzazione consisteva nel posizionare l'abbreviativo utilizzato da GAGA all'inizio dell'header in modo tale che fosse più semplice identificarlo.
+Sono stati modificati anche gli header delle isoforme più lunghe di ogni gene, per ciascuna delle specie GAGA.
+Si è quindi proceduto con la standardizzazione degli header ritrovati nei vari file .faa. 
+Per riuscire ad associare l'abbreviativo GAGA al nostro abbreviativo personale, sono stati uniti due file mediante una colonna in comune
+```bash
+join <(cut -f1,4 list_species_GAGA.tsv) <(cut -f5,6 ../dataset.tsv | sort) > join_dataset.tsv
+```
+
+Questa standardizzazione consisteva nel posizionare l'abbreviativo utilizzato da GAGA all'inizio dell'header in modo tale che fosse più semplice identificarlo.
+
+
 ```bash
 while read -r gaga abb; do [ -d "$abb" ] && { echo "Processing $abb..."; sed -i -E "/^>${gaga}/! s/^>(.*)_${gaga}_(.*)$/>${gaga}_\1_\2/" "$abb/$abb.faa"; } || echo "Errore: $abb non trovata"; done < <(cut -f2,3 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv | tr -d '\r')
 ```
