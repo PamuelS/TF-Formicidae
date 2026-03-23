@@ -10,3 +10,9 @@ I fenotipi investigari sono:
 4) Tipologia di ali della regina (Alata, Ergatoide e Brachiptera)
 5) Nutrimento di emolinfa larvale (Si/No)
 6) Bozzolo (Si/No)
+
+
+## Workflow
+1) Creazione del dataset e [download dei genomi e dei file .gff](./00_dataset)
+2) Esecuzione del'[analisi BUSCO](./01_BUSCO)
+3) Inferenza di [ortologia](./02_orthology)
