@@ -5,6 +5,6 @@ La determinazione dell'abbreviativo associato a ciascuna specie è stato scelto 
 
 
 Cartelle secondarie, dove vengono eseguite operazioni differenti per standardizzare entrambi i dati provenienti da fonti differenti:
-- [Specie GAGA](./00_GAGA_downloads)
-- [Specie NCBI](./01_NCBI_downloads)
+- [Specie GAGA](./00_GAGA_download)
+- [Specie NCBI](./01_NCBI_download)
 
