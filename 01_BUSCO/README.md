@@ -6,3 +6,5 @@ BUSCO è stato lanciato tramite uno script snakemake per ottimizzare al meglio l
 ```bash
 snakemake -s ../snakemake_busco.smk --cores 12 --use-conda 
 ```
+
+I risultati dell'analisi di BUSCO sono osservabili in questo [file](./00_busco_NCBI/all_busco_NCBI_species)
