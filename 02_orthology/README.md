@@ -3,5 +3,5 @@ In questa cartella sono riportate tuttee le informazioni e i dati realtivi all'a
 
 Per prima cosa è stato lanciato il programma Orthofinder su tutti i proteomi delle formiche (sia GAGA che NCBI)
 ```bash
-orthofinder -f . -t 25
+orthofinder -f ./whole_proteome -t 25
 ```
