@@ -22,7 +22,7 @@ snakemake -s longest.sh --cores 12 --use-conda
 
 
 ## Eliminazione degli pseudogeni
-Tremite uno [script](./pseudogene_finde_eliminate.sh) si è proceduto con l'individuazione e l'eminiazione di tutte quelle sequenze identificabili come pseudogeni
+Tremite uno [script](./pseudogene_find_eliminate.sh) si è proceduto con l'individuazione e l'eminiazione di tutte quelle sequenze identificabili come pseudogeni
 ```bash
 bash ../01_NCBI_downloads/pseudogene_finde_eliminate.sh 
 ```
