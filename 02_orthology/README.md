@@ -9,3 +9,7 @@ a causa dell'interruzione improvvisa dell'analisi, terminata dopo l'esecuzione d
 ```bash
 orthofinder -b whole_proteome/OrthoFinder/Reults_Mar25/ -t 25
 ```
+> a causa di una mancata modifica degli header associati ad una singola specie, è stata eseguita una modifica ulteriore e successiva degli header in tutti i file prodoti dall'analisi di orthofinder, mediante il comando
+```bash
+grep -rl "Aame" . --exclude-dir=WorkingDirectory | xargs sed -i -E 's/Aame_?/Acrame|/g'
+```
