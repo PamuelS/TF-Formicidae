@@ -9,7 +9,9 @@ a causa dell'interruzione improvvisa dell'analisi, terminata dopo l'esecuzione d
 ```bash
 orthofinder -b whole_proteome/OrthoFinder/Reults_Mar25/ -t 25
 ```
-> a causa di una mancata modifica degli header associati ad alune delle specie presenti nel dataset, è stata eseguita una modifica ulteriore e successiva degli header in tutti i file prodoti dall'analisi di orthofinder, mediante il comando
+
+## Ulteriore modifica degli header
+A causa di una mancata modifica degli header associati ad alune delle specie presenti nel dataset, è stata eseguita una modifica ulteriore e successiva degli header in tutti i file prodotti dall'analisi di orthofinder, mediante il seguente comando
 ```bash
 while read -r gaga abb; do grep -rl "$gaga" . --exclude-dir=WorkingDirectory | xargs sed -i -E "s/${gaga}_?/${abb}\|/g"; done < <(cut -f 2,3 ../../../../00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv | tail -n+2)
 ```
