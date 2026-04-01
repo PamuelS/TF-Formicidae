@@ -15,3 +15,11 @@ A causa di una mancata modifica degli header associati ad alune delle specie pre
 ```bash
 while read -r gaga abb; do grep -rl "$gaga" . --exclude-dir=WorkingDirectory | xargs sed -i -E "s/${gaga}_?/${abb}\|/g"; done < <(cut -f 2,3 ../../../../00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv | tail -n+2)
 ```
+è stato eseguito un comando per verificare che non fossero state apportate modifiche persino alle sequenze amminoacidiche.
+```bash
+for i  in *; do grep -l "|" <(grep -v ">" "$i"); done
+```
+ed inoltre si è verificato che il quantitativo di ">" corrsipondesse al quantitativo di "|" mediante un ulteriore comando
+```bash
+for i in *; do pipe=$(grep -c "|" "$i"); great=$(grep -c ">" "$i"); if  [ "$pipe" -ne "$great" ]; then echo "$i"; fi; done
+```
