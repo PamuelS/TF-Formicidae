@@ -14,3 +14,8 @@ find . -size 0 -print > empty_disco.txt
 
 find . -size 0 -delete
 ```
+
+Sono stati salvati anche gli ortogruppi che al termine dell'operazione di DISCO presentano tutte le specie presenti nel dataset.
+```bash
+for i in *.nwk; do [[ $(grep -oE '\b[A-Z][a-z]{5}\b' "$i" | wc -l) -eq 175 ]] && echo "$i"; done > every_species
+```
