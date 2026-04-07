@@ -7,3 +7,10 @@ A questo pèunto si può procedere con il lancio del programma DISCO, che elimin
 ```bash
 while IFS='|' read -r OG tree; do python3 ../../../../01_DISCO/disco.py -i <(echo "$tree") -o ../../../01_DISCO/${OG/:/}.nwk -d "|" -m 90 --remove_in_paralogs --keep-labels --verbose >> ../../../01_DISCO/disco.log; done < Resolved_Gene_Trees.txt
 ```
+
+In seguito all'operazione svolta dal programma DISCO, si è proceduto con il controllo dati eliminando per prima cosa i file risultanti come vuoti e spostandoli in una cartella specifica.
+```bash
+find . -size 0 -print > empty_disco.txt
+
+find . -size 0 -delete
+```
