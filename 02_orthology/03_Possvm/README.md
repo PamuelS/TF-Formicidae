@@ -14,10 +14,15 @@ In fine quello che è stato fatto è di spezzettare in molteplici pezzi (circa 2
 ```bash
 split -l 1 -d -a 5 Possvm_resolved_gene_tree.nwk singoli_alberi/tree_
 
-for f in tree_*; do mv "$f" "$f.nwk"; done
+for f in tree_*; do mv "$f" "$f".nwk; done
 ```
 
-Una volta temrinate queste due operazioni, si posseggono tutti i file necessari per avviare l'analisi di Possvm, che è stata eseguita utilizzando il seguente codice:
+Una volta temrinate queste due operazioni, si posseggono tutti i file necessari per avviare l'analisi di Possvm, che è stata eseguita utilizzando il seguente codice. Il problema è stato aggirato spezzettando in tante righe il file "Possvm_resolved_gene_tree.nwk" originario, eseguendo così l'analisi su ogni segmento del file.
 ```bash
-find batch_data/batch_* -name "*.nwk" | xargs -I {} -P 10 python3 possvm.py -i {} -spstree ../00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Species_Tree/SpeciesTree_rooted.txt -r all_references.tsv -o possvm_results/ -p orthology_ -split "|" -inflation 1.5
+ulimit -s unlimited; find singoli_alberi/ -name "*.nwk" | xargs -I {} -P 20 python3 possvm.py -i {} -spstree ../00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Species_Tree/SpeciesTree_rooted.txt -o possvm_results/ -p orthology_ -split "|" -inflation 1.5
+```
+
+I risulatati ottenuti per questa analisi, sono successivamente stati congiunti e accorpati, dal moemnto che il file originario "Possvm_resolved_gene_tree.nwk" era di dimensioni spropositate da riempiere immediatamente la memoria del computer
+```bash
+awk 'FNR==1 && NR!=1{next;}{print}' possvm_results/*.csv > RISULTATO_FINALE_ORTOLOGHI.csv
 ```
