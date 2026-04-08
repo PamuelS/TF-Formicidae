@@ -23,7 +23,11 @@ Una volta temrinate queste due operazioni, si posseggono tutti i file necessari 
 ulimit -s unlimited; find singoli_alberi/ -name "*.nwk" | xargs -I {} -P 20 sh -c 'prefisso=$(basename {} .nwk); python3 possvm.py -i {} -spstree ../00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Species_Tree/SpeciesTree_rooted.txt -o possvm_results/ -p "${prefisso}_" -split "|" -inflation 1.5'
 ```
 
-I risulatati ottenuti per questa analisi, sono successivamente stati congiunti e accorpati, dal moemnto che il file originario `Possvm_resolved_gene_tree.nwk` era di dimensioni spropositate da riempiere immediatamente la memoria del computer
+I risulatati ottenuti per questa analisi, sono successivamente stati congiunti e accorpati, dal momento che il file originario `Possvm_resolved_gene_tree.nwk` era di dimensioni spropositate a tal punto da riempiere immediatamente la memoria del pc.
 ```bash
-awk 'FNR==1 && NR!=1{next;}{print}' possvm_results/*.csv > RISULTATO_FINALE_ORTOLOGHI.csv
+find possvm_results/ -name "*_orthologs.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > ANALYSIS_FINAL_orthologs.csv
+
+find possvm_results/ -name "*_orthogroups.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > ANALYSIS_FINAL_orthogroups.csv
+
+find possvm_results/ -name "*.nwk" -exec cat {} + > ANALYSIS_FINAL_trees_reconciled.nwk
 ```
