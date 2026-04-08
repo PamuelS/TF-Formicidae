@@ -19,3 +19,8 @@ Sono stati salvati anche gli ortogruppi che al termine dell'operazione di DISCO 
 ```bash
 for i in *.nwk; do [[ $(grep -oE '\b[A-Z][a-z]{5}\b' "$i" | wc -l) -eq 175 ]] && echo "$i"; done > every_species
 ```
+
+Per verificare il quantitativo di alberi presenti dentro la cartella si esegue il successivo comando:
+```bash
+ref=$(cut -f6 ../../00_dataset/dataset.tsv | tail -n+2 | sort -u); target=$(echo "$ref" | wc -l); ok=0; for f in *.nwk; do [ $(grep -Fow "$ref" "$f" | sort -u | wc -l) -eq $target ] && ((ok++)); done; echo "File che hanno esattamente $target individui unici: $ok"
+```
