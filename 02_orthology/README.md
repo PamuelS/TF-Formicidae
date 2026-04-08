@@ -29,12 +29,10 @@ ed inoltre si è verificato che il quantitativo di ">" corrsipondesse al quantit
 ```bash
 for i in *; do pipe=$(grep -c "|" "$i"); great=$(grep -c ">" "$i"); if  [ "$pipe" -ne "$great" ]; then echo "$i"; fi; done
 ```
-Una volta individuati qui file che possedevano ancora un header non standardizzato secondo i criteri scelti per questo studio, si è proceduto con la modifica a mano degli header
+Una volta individuati quali fossero i file che non possedevano ancora un header standardizzato secondo i criteri scelti per questo studio, si è proceduto con la modifica a mano degli header
 ```bash
-# per vedere quale header non possedeva l'annotazione corretta
 diff -y <(grep ">" OG0000579.fa | sort | sed 's/>//') <(grep "|" OG0000579.fa | sort | sed 's/>//') | egrep "<|>"
 
-# per associare l'header corretto alla specie di appartenenza
 grep "XM_070293761" *.faa
 ```
 
