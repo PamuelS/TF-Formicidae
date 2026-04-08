@@ -40,7 +40,7 @@ for tree in *_*.nwk; do
             keep = (seq in wanted)
         }
         keep { print }
-    ' "$OG_folder/$OG.faa" >> "$output"
+    ' "$OG_folder/$OG.fa" >> "$output"
 done
 
 # Clean up temporary file
