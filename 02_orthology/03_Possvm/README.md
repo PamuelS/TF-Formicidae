@@ -25,9 +25,9 @@ ulimit -s unlimited; find singoli_alberi/ -name "*.nwk" | xargs -I {} -P 20 sh -
 
 I risulatati ottenuti per questa analisi, sono successivamente stati congiunti e accorpati, dal momento che il file originario `Possvm_resolved_gene_tree.nwk` era di dimensioni spropositate a tal punto da riempiere immediatamente la memoria del pc.
 ```bash
-find possvm_results/ -name "*_orthologs.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > ANALYSIS_FINAL_orthologs.csv
+find possvm_results/ -name "*_orthologs.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > final_analysis_orthologs.csv
 
-find possvm_results/ -name "*_orthogroups.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > ANALYSIS_FINAL_orthogroups.csv
+find possvm_results/ -name "*_orthogroups.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > final_analysis_orthogroups.csv
 
-find possvm_results/ -name "*.nwk" -exec cat {} + > ANALYSIS_FINAL_trees_reconciled.nwk
+find possvm_results/ -name "*.nwk" -exec cat {} + > final_analysis_trees_reconciled.nwk
 ```
