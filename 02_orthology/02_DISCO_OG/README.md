@@ -1,5 +1,5 @@
 # Split DISCO
-Partendo dai risultati ottenuti dal lancio di DISCO, si procede con l'esecuzione dello [script](./alternative_split_disco_output).
+Partendo dai risultati ottenuti dal lancio di DISCO, si procede con l'esecuzione dello [script](./alternative_split_disco_output.sh).
 
 ```bash
 bash ../02_DISCO_OG/alternative_split_disco_output.sh /DATASMALL/samuel.pederzini/TF-Formicidae/02_orthology/00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Orthogroup_Sequences
