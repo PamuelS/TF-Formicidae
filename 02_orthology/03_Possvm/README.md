@@ -6,10 +6,11 @@ Per prima cosa si è proceduto con la modifica del file di `Resolved_gene_tree.t
 sed -E 's/OG[0-9]+: //' Possvm_resolved_gene_tree.txt > Possvm_resolved_gene_tree.nwk
 ```
 
-In seccondo luogo, per una migliore  riuscita dell'analisi di Possvm, si proceduto con la costruzione di un file che contenesse al programmad iinterpretare coerentemente gli abbreviativi che gli vengono forniti in input.
+In seccondo luogo, per una migliore  riuscita dell'analisi di Possvm, si proceduto con la costruzione di un file che consentisse al programma di interpretare correttamente gli abbreviativi che gli vengono forniti in input e i nomi delle sequenze associate, il tutto contenuto in un unico file `all_references.tsv`.
 ```bash
 grep ">" *.fasta | sed 's/.*://; s/>//' | sed 's/^[^|]*|//' | awk '{id=$1; $1=""; sub(/^[ \t]+/, ""); print id "\t" $0}' > all_references.tsv
 ```
+
 In fine quello che è stato fatto è di spezzettare in molteplici subfile (circa 26000) l'albero `Possvm_resolved_gene_tree.nwk` dal momento che il programma non riusciva a leggere un file di tali dimensioni. Quindi si è proceduto con la separazione del file in molteplici sottoparti
 ```bash
 split -l 1 -d -a 5 Possvm_resolved_gene_tree.nwk singoli_alberi/tree_
