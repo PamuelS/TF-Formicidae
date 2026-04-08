@@ -44,7 +44,7 @@ Questa standardizzazione consisteva nel posizionare l'abbreviativo utilizzato da
 while read -r gaga abb; do [ -d "$abb" ] && { echo "Processing $abb..."; sed -i -E "/^>${gaga}/! s/^>(.*)_${gaga}_(.*)$/>${gaga}_\1_\2/" "$abb/$abb.faa"; } || echo "Errore: $abb non trovata"; done < <(cut -f2,3 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv | tr -d '\r')
 ```
 
-Dopo di che si proceduto con la sostituzione dell'abbreviativo GAGA con l'abbreviativo utilizzato da noi in questo studio.
+Dopo di che si è proceduto con la sostituzione dell'abbreviativo GAGA con l'abbreviativo utilizzato da noi in questo studio.
 ```bash
 while read -r gaga abb; do cd "$abb"; sed -i -E "/^>/ s/>${gaga}_/>${abb}\|/" "$abb".faa; cd ..; done < <(cut -f2,3 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv | tail -n+2)
 ```
