@@ -18,7 +18,7 @@ split -l 1 -d -a 5 Possvm_resolved_gene_tree.nwk singoli_alberi/tree_
 for f in tree_*; do mv "$f" "$f".nwk; done
 ```
 
-Una volta temrinate queste due operazioni, si posseggono tutti i file necessari per avviare l'analisi di Possvm, che è stata eseguita utilizzando il seguente codice. Il problema è stato aggirato spezzettando in tante righe il file "Possvm_resolved_gene_tree.nwk" originario, eseguendo così l'analisi su ogni segmento del file.
+Una volta temrinate queste due operazioni, si posseggono tutti i file necessari per avviare l'analisi di Possvm, che è stata eseguita utilizzando il seguente codice. Il problema è stato aggirato spezzettando in tante righe il file `Possvm_resolved_gene_tree.nwk` originario, eseguendo così l'analisi su ogni segmento del file.
 ```bash
 ulimit -s unlimited; find singoli_alberi/ -name "*.nwk" | xargs -I {} -P 20 sh -c 'prefisso=$(basename {} .nwk); python3 possvm.py -i {} -spstree ../00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Species_Tree/SpeciesTree_rooted.txt -o possvm_results/ -p "${prefisso}_" -split "|" -inflation 1.5'
 ```
