@@ -23,6 +23,11 @@ Una volta temrinate queste due operazioni, si posseggono tutti i file necessari 
 ulimit -s unlimited; find singoli_alberi/ -name "*.nwk" | xargs -I {} -P 20 sh -c 'prefisso=$(basename {} .nwk); python3 possvm.py -i {} -spstree ../00_Orthofinder_analysis/OrthoFinder/Results_Mar30_1/Species_Tree/SpeciesTree_rooted.txt -o possvm_results/ -p "${prefisso}_" -split "|" -inflation 1.5'
 ```
 
+Al termine dell'esecuzione del programma, è stato lanciato il seguente comando per verificare se esistessero (ed eventualmente quali fossero) i file mancanti non prodotti dall'analisi
+```bash
+while read -r ver; do [ $(grep -c -w "$ver" prova_2) -ne 4 ] && echo "$ver"; done < ../singoli_alberi/prova
+```
+
 I risulatati ottenuti per questa analisi, sono successivamente stati congiunti e accorpati, dal momento che il file originario `Possvm_resolved_gene_tree.nwk` era di dimensioni spropositate a tal punto da riempiere immediatamente la memoria del pc.
 ```bash
 find possvm_results/ -name "*_orthologs.csv" | xargs awk 'FNR==1 && NR!=1{next;}{print}' > final_analysis_orthologs.csv
