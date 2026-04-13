@@ -1,0 +1,12 @@
+# Analisi filogenetica delle specie 
+A partire da una topologia già nota (ovvero quella estratta dal papaer di GAGA menzionato in precedenza) vengono eseguite una seriue di operazioni in modo tale da aggiungere le specie NCBI non presenti nel dataset originario di GAGA ed eliminare tutte le specie categorizzate come Outgroup nel loro studio.
+
+## Download degli alberi di GAGA
+Per prima cosa sono stat iscaricati due alberi ottenuti dallo studio di GAGA
+```bash
+#file ottenuto da loro mediante allineamento dei codoni provenienti da 1000 geni
+curl -L -o 1000genes ""https://sid.erda.dk/share_redirect/fU0yBp3NH5/05_Phylogeny/05b_Ortholog_trees/output_singlecopy_genesort1000_codon_nopartition_b1000_dnafixmodel_iqtree.treefile
+
+#file ottenuto da loro mediante l'utilizzo di Astral
+curl -L -o astral_database ""https://sid.erda.dk/share_redirect/fU0yBp3NH5/05_Phylogeny/05b_Ortholog_trees/singlecopy_codon_alltrees_bbcollapsed.astral.tree
+```
