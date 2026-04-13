@@ -13,3 +13,9 @@ Per verificare se gli ortogruppi presi randomicamente non si ripetessero con i `
 ```bash
 sed -E 's/_00//' species_tree_OG.txt | sort | uniq -c | less
 ```
+
+## Analisi
+Una volta trovati quelli che sono gli ortogruppi da utilizzare per l'analisi, è stato eseguito uno script snakemake `snakemake_alligned_trimmed.smk` che nel complesso ha eseguito primal'allineamneto delle sequenze (prima rule) e secondariamente lo stesso script ha eseguito anche il triming delle sequenze (seconda rule).
+```bash
+snakemake -s snakemake_alligned_trimmed.smk --use-conda --cores 5
+```
