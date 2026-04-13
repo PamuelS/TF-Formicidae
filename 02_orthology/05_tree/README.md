@@ -10,3 +10,12 @@ curl -L -o 1000genes ""https://sid.erda.dk/share_redirect/fU0yBp3NH5/05_Phylogen
 #file ottenuto da loro mediante l'utilizzo di Astral
 curl -L -o astral_database ""https://sid.erda.dk/share_redirect/fU0yBp3NH5/05_Phylogeny/05b_Ortholog_trees/singlecopy_codon_alltrees_bbcollapsed.astral.tree
 ```
+
+## Modifica dei file
+Una volta scaricati i file vengono tutti modificati in modo da sostituire il nome GAGA con l'abbreviativo scelto per questo lavoro. Inoltre vengono eliminati i bootstrap e i suporti ai nodi 
+```bash
+while read -r GAGA abb; do sed -i "s/${GAGA}/${abb}/g" 1000genes_modificato; done < <(cut -f5,6 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/dataset.tsv | tail -n+2)
+
+while read -r GAGA abb; do sed -i "s/${GAGA}/${abb}/g" astral_database_modificato; done < <(cut -f5,6 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/dataset.tsv | tail -n+2)
+
+```
