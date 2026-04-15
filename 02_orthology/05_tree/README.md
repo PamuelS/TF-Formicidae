@@ -17,9 +17,9 @@ Una volta scaricati i file vengono tutti modificati in modo da sostituire il nom
 #eseguito su file 1000 geni
 while read -r GAGA abb; do sed -i "s/${GAGA}/${abb}/g" 1000genes_modificato.nwk; done < <(cut -f5,6 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/dataset.tsv | tail -n+2)
 sed -i -E 's/:[0-9.]+//g; s/[0-9./]+//g' 1000genes_modificato.nwk
-
-#eseguito su file Astral
-while read -r GAGA abb; do sed -i "s/${GAGA}/${abb}/g" astral_database_modificato.nwk; done < <(cut -f5,6 /DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/dataset.tsv | tail -n+2)
-sed -i -E 's/[0-9]:[0-9].[0-9]+//g' astral_database_modificato.new
-
 ```
+
+A questo punto si è proceduto con l'inserimento delle specie NCBI assenti nel database GAGA. Il criterio di inserimento si è basato sull'eliminazione di tutte le politomie che si potevano creare durante la fase di inserimento delle specie. Le uniche politomie che sono state mantenute/create sono relative ai generi Lasius e Acromyrmex, dal momento che le esatte relazioni filogenetiche non erano ricreabili a causa di un cospiquo quantitativo di specie per genere.
+L'inserimento delle specie ha tenuto conto, il più coerentemente possibile, delle informazioni filogenetiche reperite in bibliografia principalemnte legate ad analisi eseguita da altri studi sui rapporti filogenetici dei livelli tassonomi ci tribù.
+
+Il file ottenuto al termine è `1000genes_modificato.nwk`
