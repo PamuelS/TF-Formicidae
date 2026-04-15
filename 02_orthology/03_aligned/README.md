@@ -13,6 +13,8 @@ successivamente sono stati salvati tutti gli OG utilizzate per le successive ana
 ```bash
 ls > ../../02_DISCO_OG/OG_tree.txt
 ```
+> il file lo ritrovi [qui](../02_DISCO_OG/OG_tree.txt)
+
 
 Per verificare se gli ortogruppi presi randomicamente non si ripetessero con i `single-copy` di OrthoFinder, è stato eseguito il successivo comando:
 ```bash
