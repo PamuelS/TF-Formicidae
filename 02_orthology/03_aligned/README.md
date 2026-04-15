@@ -9,7 +9,7 @@ less every_species_OGs.txt | shuf -n 71 > species_tree.txt
 
 > il file `every_species_OGs.txt` indica quanti sono gli ortogruppi che risultanti come single-copy al termine di `alternative_split_disco_outgroup.sh`
 
-successivamente sono stati salvati tutti gli OG utilizzate per le successive analisi in un unico file
+successivamente sono stati salvati tutti gli OG utilizzate per le successive analisi in un unico file. Quindi il file `OG_tree.txt` contiene esattamente 200 ortogruppi caratteriuzzati ciascuno da 175 header (ovvero specie)
 ```bash
 ls > ../../02_DISCO_OG/OG_tree.txt
 ```
