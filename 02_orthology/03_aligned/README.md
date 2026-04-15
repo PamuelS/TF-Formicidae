@@ -9,6 +9,11 @@ less every_species_OGs.txt | shuf -n 71 > species_tree.txt
 
 > il file `every_species_OGs.txt` indica quanti sono gli ortogruppi che risultanti come single-copy al termine di `alternative_split_disco_outgroup.sh`
 
+successivamente sono stati salvati tutti gli OG utilizzate per le successive analisi in un unico file
+```bash
+ls > ../../02_DISCO_OG/OG_tree.txt
+```
+
 Per verificare se gli ortogruppi presi randomicamente non si ripetessero con i `single-copy` di OrthoFinder, è stato eseguito il successivo comando:
 ```bash
 sed -E 's/_00//' species_tree_OG.txt | sort | uniq -c | less
