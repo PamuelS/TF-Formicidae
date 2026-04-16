@@ -24,7 +24,7 @@ L'inserimento delle specie ha tenuto conto, il più coerentemente possibile, del
 
 Il file ottenuto al termine è `1000genes_modificato.nwk`
 
-# Creazione dell'albero
+## Creazione dell'albero
 Simultaneamente alla modifica della topologia preesistente, è stato lanciato il programma iqtree per costruire la filogenesi dei 175 campioni mediante l'utilizzo dei 200 ortogruppi `OG_tree.txt` che sono stati precedentemente allineati e trimmati.
 ```bash
 iqtree -s ../04_trimmed/01_analysis_trimmed -m MFP+MERGE -B 1000 -T 4
