@@ -4,6 +4,9 @@ Il alvoro è ritrovabile nelle sottocartelle riportate qui sotto:
 1) [OrthoFinder](./00_Orthofinder_analysis)
 2) [DISCO](./01_DISCO)
 3) [SPLIT DISCO ](./02_DISCO_OG)
+4) [Allineamento](./03_aligned)
+5) [Trimming](./04_treimmed)
+6) [Inferenza albero e topologia](./05_tree)
 
 
 Per prima cosa è stato lanciato il programma Orthofinder su tutti i proteomi delle formiche (sia GAGA che NCBI)
