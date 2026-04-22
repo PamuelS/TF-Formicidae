@@ -18,6 +18,7 @@ for i in *.2.jaspar; do motif=$(basename "$i" .2.jaspar); if [ -f "$motif".1.jas
 # spostamento versione 2
 for i in *.3.jaspar; do motif=$(basename "$i" .3.jaspar); if [ -f "$motif".2.jaspar ]; then echo "sposto la versione vecchia del moivo $i"; mv "$motif".2.jaspar older_version/; fi; done
 ```
+Al termine di questa operazione i motif risultanti corrispondono a 297
 
 ## Utilizzo di PWM Scan
 I file ottenuti nel precedente passaggio, sono stati scaricati nel formato .JASPAR, corrispondente quindi ad una PFM (Position Frequency Matrices), che corrisponde proprio alla frequenza con la quale una determinata base viene ritrovata all'interno di un motivo in differenti campioni. Per poter utilizzare questo dato, è necessario convertitlo in una ulteriore forma di matrice probabilistica (che può essere PWM oppure PSSM).
