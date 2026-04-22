@@ -10,6 +10,15 @@ wget https://jaspar.elixir.no/temp/20260416114301_JASPAR2026_individual_matrices
 unzip 20260416114301_JASPAR2026_individual_matrices_2399676_jaspar.zip 
 ```
 
+Sono state scaricate tutte le versioni dei motivi disponibili per *D. melanogaster*, perciò persino vecchie versioni. Si è proceduto con lo spostamento delle versioni più arretrate dentro ad una ulteriore cartella.
+```bash
+# spostamento versione 1
+for i in *.2.jaspar; do motif=$(basename "$i" .2.jaspar); if [ -f "$motif".1.jaspar ]; then echo "sposto la versione vecchia del moivo $i"; mv "$motif".1.jaspar older_version/; fi; done
+
+# spostamento versione 2
+for i in *.3.jaspar; do motif=$(basename "$i" .3.jaspar); if [ -f "$motif".2.jaspar ]; then echo "sposto la versione vecchia del moivo $i"; mv "$motif".2.jaspar older_version/; fi; done
+```
+
 ## Utilizzo di PWM Scan
 I file ottenuti nel precedente passaggio, sono stati scaricati nel formato .JASPAR, corrispondente quindi ad una PFM (Position Frequency Matrices), che corrisponde proprio alla frequenza con la quale una determinata base viene ritrovata all'interno di un motivo in differenti campioni. Per poter utilizzare questo dato, è necessario convertitlo in una ulteriore forma di matrice probabilistica (che può essere PWM oppure PSSM).
 
