@@ -27,3 +27,6 @@ Per eseguire la conversione da un modello di matrice ad un altro, è stato adope
 ```bash
 scp /home/STUDENTI/samuel.pederzini/Downloads/pwmscan.1.1.9.tar.gz STUDENTI^samuel.pederzini@137.204.142.237:/DATASMALL/samuel.pederzini/TF-Formicidae/03_tf_research
 ```
+
+## Studio effettivo
+L'intero studio dei motivi è stato eseguito intermante tramite uno script snakemake ``
