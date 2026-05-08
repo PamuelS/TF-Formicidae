@@ -5,7 +5,7 @@ BOWTIE_SUFFIX = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.eb
 rule all:
 	input:
 		expand("04_bowtie/01_genome_map_tags/{samples}.sam", samples=SAMPLES),
-		expand("05_aggregate/02_totalcount/{samples}/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
+		expand("05_aggregate/02_totalcount/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
 
 # Creazione dei file che contengono solamente due colonne (abbreviativo_specie   nome_proteina)
 rule create_species_pep_pairs:
@@ -225,9 +225,9 @@ rule aggregate_tables:
 		orthogroups = "Orthogroups_DISCO.tsv",
 		map = "/DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv"
 	output:
-		score_tables = expand("05_aggregate/00_score/{samples}/score_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
-		count_tables = expand("05_aggregate/01_count/{samples}/count_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
-		totalcount_tables = expand("05_aggregate/02_totalcount/{samples}/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
+		score_tables = expand("05_aggregate/00_score/score_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
+		count_tables = expand("05_aggregate/01_count/count_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
+		totalcount_tables = expand("05_aggregate/02_totalcount/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
 	threads: 1
 	resources:
 		mem=8000,
