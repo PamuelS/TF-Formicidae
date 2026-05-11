@@ -29,4 +29,4 @@ scp /home/STUDENTI/samuel.pederzini/Downloads/pwmscan.1.1.9.tar.gz STUDENTI^samu
 ```
 
 ## Studio effettivo
-L'intero studio dei motivi è stato eseguito intermante tramite uno script snakemake ``
+L'intero studio dei motivi è stato eseguito intermante tramite uno script snakemake `snakemake_motif_analysis.smk` e per seguire tutte le istruzioni passo per passo relative a tutte le rule integrate nello script, si può guardare questa [guida](./istruzioni_snakemake_motifs.md)
