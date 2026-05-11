@@ -246,6 +246,8 @@ rule aggregate_tables:
 		with open(input.map) as f:
 			for line in f:
 				parts = line.strip().split('\t')
+				if len(parts) < 3:
+					continue
 				sample_id, species_short, species_full = parts[0], parts[1], parts[2]
 				sample_to_species_short[species_full] = species_short  # Acafer -> Afer
 				sample_to_species_full[species_full] = species_full    # Acafer -> Acafer
@@ -268,7 +270,8 @@ rule aggregate_tables:
 					index = i
 					break
 			else:
-				raise ValueError(f"Species {species_full} not found in header")
+				print(f"WARNING: Species {species_full} not found in Orthogroups header, skipping orthogroup mapping")
+				return result
 			for line in file:
 				columns = line.strip('\n').split('\t')
 				orthogroup = columns[0]
@@ -284,8 +287,9 @@ rule aggregate_tables:
 
 		for sample, file in zip(SAMPLES, input.species_tables):
 			print(sample)
-			species_short = sample_to_species_short[sample]  # Afer
-			species_full = sample_to_species_full[sample]    # Acafer
+			# Fallback: se la specie non è nel file di mapping, usa il nome stesso
+			species_short = sample_to_species_short.get(sample, sample)  # Afer, o sample se assente
+			species_full  = sample_to_species_full.get(sample, sample)   # Acafer, o sample se assente
 
 			db = build_orthogroup_dict(open(input.orthogroups), species_full)
 			if '' in db:
