@@ -4,7 +4,7 @@ BOWTIE_SUFFIX = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.eb
 
 rule all:
 	input:
-		expand("04_bowtie/01_genome_map_tags/{samples}.sam", samples=SAMPLES),
+		expand("04_bowtie/02_genome_motif_table/{samples}_summary.tsv", samples=SAMPLES),
 		expand("05_aggregate/02_totalcount/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
 
 # Creazione dei file che contengono solamente due colonne (abbreviativo_specie   nome_proteina)
