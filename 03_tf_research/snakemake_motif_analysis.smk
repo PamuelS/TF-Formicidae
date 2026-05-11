@@ -170,7 +170,7 @@ rule genome_map_tags:
 # Mappatura dei tags sui promotori/peptidi
 rule promoter_map_tags:
 	input:
-		taglist = expand("03_conversion/03_tags/{samples}/{samples}_{motifs}.tags", samples=SAMPLES, motifs=MOTIFS),
+		taglist = expand("03_conversion/03_tags/{{samples}}/{{samples}}_{motifs}.tags", samples=SAMPLES, motifs=MOTIFS),
 		indices = expand("04_bowtie/03_promoter_indices/{{samples}}.{suffix}", suffix=BOWTIE_SUFFIX)
 	output:
 		promoter_tags = "04_bowtie/04_promoter_map_tags/{samples}.sam"
@@ -184,7 +184,7 @@ rule promoter_map_tags:
 		mem=16000,
 		time=120,
 	shell:
-		"bowtie -p {threads} -n 0 -a {params.prefix} -f {params.tag_string} > {output.promoter_tags}"
+		"bowtie -p {threads} -n 0 -a --sam {params.prefix} -f {params.tag_string} > {output.promoter_tags}"
 
 # Tabelle dei motivi per il genoma completo
 rule genome_motif_tables:
