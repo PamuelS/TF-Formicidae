@@ -184,7 +184,7 @@ rule promoter_map_tags:
 		mem=16000,
 		time=120,
 	shell:
-		"bowtie -p {threads} -n 0 -a {params.prefix} -f {params.tag_string} > {output.promoter_tags}"
+		"bowtie -p {threads} -n 0 -a --sam {params.prefix} -f {params.tag_string} > {output.promoter_tags}"
 
 # Tabelle dei motivi per il genoma completo
 rule genome_motif_tables:
