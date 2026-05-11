@@ -160,7 +160,7 @@ rule genome_map_tags:
 	conda:
 		"jaspar"
 	params:
-		prefix = "04_bowtie/03_promoter_indices/{samples}",
+		prefix = "04_bowtie/00_genome_indices/{samples}",
 		tag_string = lambda wildcards, input: ",".join(input.taglist)
 	threads:
 		10
