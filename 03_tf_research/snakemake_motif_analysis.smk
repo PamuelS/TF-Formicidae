@@ -5,12 +5,12 @@ BOWTIE_SUFFIX = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.eb
 rule all:
 	input:
 		expand("04_bowtie/02_genome_motif_table/{samples}_summary.tsv", samples=SAMPLES),
-		expand("05_aggregate/02_totalcount/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
+		expand("05_aggregate/02_totalcount/{samples}/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
 
 # Creazione dei file che contengono solamente due colonne (abbreviativo_specie   nome_proteina)
 rule create_species_pep_pairs:
 	input:
-		gff = "every_gff/{samples}_representative.gff3"
+		gff = "every_gff/{samples}_longest.gff"
 	output:
 		pairs = "02_genome_analysis/00_species_pep_pairs/{samples}_pep_pairs.tsv"
 	threads: 1
@@ -38,7 +38,7 @@ rule create_species_pep_pairs:
 # Creazione dei file BED per ciascuna delle specie
 rule create_pep_beds:
 	input:
-		isoforms = "every_gff/{samples}_representative.gff3",
+		isoforms = "every_gff/{samples}_longest.gff",
 		species_peptide_pairs = "02_genome_analysis/00_species_pep_pairs/{samples}_pep_pairs.tsv"
 	output:
 		"02_genome_analysis/01_bed_files/{samples}.bed"
@@ -225,9 +225,9 @@ rule aggregate_tables:
 		orthogroups = "Orthogroups_DISCO.tsv",
 		map = "/DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv"
 	output:
-		score_tables = expand("05_aggregate/00_score/score_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
-		count_tables = expand("05_aggregate/01_count/count_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
-		totalcount_tables = expand("05_aggregate/02_totalcount/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
+		score_tables = expand("05_aggregate/00_score/{samples}/score_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
+		count_tables = expand("05_aggregate/01_count/{samples}/count_{motif}.tsv", samples=SAMPLES, motif=MOTIFS),
+		totalcount_tables = expand("05_aggregate/02_totalcount/{samples}/totalcount_{motif}.tsv", samples=SAMPLES, motif=MOTIFS)
 	threads: 1
 	resources:
 		mem=8000,
