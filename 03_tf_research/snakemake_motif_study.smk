@@ -1,5 +1,5 @@
 SAMPLES = glob_wildcards("every_genome/{samples}.fna")[0]
-MOTIFS = glob_wildcards("../00_download_motif/{motifs}.jaspar")[0]
+MOTIFS = glob_wildcards("00_download_motif/{motifs}.jaspar")[0]
 BOWTIE_SUFFIX = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
 
 rule all:
@@ -66,8 +66,10 @@ rule background_comp:
 	output:
 		"01_background_genomes/{samples}_bg.tsv"
 	shell:
-		"seq_extract_bcomp -i 0 -c {input} | "
-		"awk -F, '{{print \"A\\t\" $1 \"\\nC\\t\" $2 \"\\nG\\t\" $3 \"\\nT\\t\" $4}}' > {output}"
+		"""
+		seq_extract_bcomp -i 0 -c {input} | \
+		awk -F, '{{print \"A\\t\" $1 \"\\nC\\t\" $2 \"\\nG\\t\" $3 \"\\nT\\t\" $4}}' > {output}
+		"""
 
 # Conversione matrici PFM in PWM
 rule pwm_conv:
@@ -215,8 +217,8 @@ rule full_species_motif_tables:
 rule disco_species_motif_table:
 	input:
 		species_table = "04_bowtie/05_promoter_motif_table/{samples}_summary.tsv",
-		abbreviative = "/DATASMALL/samuel.pederzini/TF-Formicidae/00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv",
-		orthogroups = "../Orthogroups_DISCO.tsv"
+		abbreviative = "../00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv",
+		orthogroups = "Orthogroups_DISCO.tsv"
 	output:
 		disco_name = "04_bowtie/07_disco_promoter_motif_table/{samples}_disco_summary.tsv"
 	shell:
@@ -274,7 +276,7 @@ rule disco_species_motif_table:
 rule aggregate_tables:
 	input:
 		species_tables = expand("04_bowtie/07_disco_promoter_motif_table/{samples}_disco_summary.tsv", samples=SAMPLES),
-		orthogroups = "../Orthogroups_DISCO.tsv"
+		orthogroups = "Orthogroups_DISCO.tsv"
 	output:
 		score_tables = expand("05_aggregate/00_score/score_{motif}.tsv", motif=MOTIFS),
 		count_tables = expand("05_aggregate/01_count/count_{motif}.tsv", motif=MOTIFS),
@@ -318,7 +320,7 @@ rule aggregate_tables:
 		totalscores = defaultdict(list)
 
 		# Lo script scorre ogni nome di specie e il relativo file "_summary.tsv"
-		for sample, file in zip(SAMPLES, input.species_table):
+		for sample, file in zip(SAMPLES, input.species_tables):
 			print(sample)
 			# Per ciascuna specie crea il dizionario proteina-OG
 			db = build_orthogroup_dict(open(input.orthogroups), sample)
