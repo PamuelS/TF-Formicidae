@@ -10,14 +10,8 @@ awk 'BEGIN {FS = "|"; OFS = "\t"} FNR == 1 {og = FILENAME; gsub(".*/", "", og); 
 ## Snakemake's rules
 In totale per eseguire la pipeline di lavoro completa sono state eseguite 12 differenti rule di snakemake, riassunte nelle seguenti informazioni:
 
-***Rule create_species_pep_pairs***:
-Questa rule è stata utilizzata per creare dei file tsv che contenessero all’interno la prima colonna con solo ed unicamente il nome della specie (abbreviativo della specie) e la seconda colonna contenente tutte le proteine associate a quella specie contenute dentro il file di annotazione strutturale gff3.
-
-***Rule create_pep_beds***:
-In questa rule vengono creati tutti i file BED (ovvero contenenti 6 colonne) dentro i quali vengono riportati solamente gli “mRNA” che sono stati estratti dal file gff3 ed ai quali sono state associate le informazioni relative allo scaffold sul quale si collocano e la posizione nucleotidica del trascritto.
-
 ***Rule create_pep_fasta***:
-Una volta ottenuti i file precedenti si possono associare le sequenze nucleotidiche (prese direttamente dai genomi delle specie) a ciascun “mRNA” identificato con la rule precedente.
+Questa rule rappresenta la parte più cruciale per approcciare lo studio dei motivi all'interno delle sequenze promotrici. In questa sezione di codice viene affrontata l'estrazione delle sequenze promotrici mediante alcuni passaggi. tramite l'uso di strumenti bioinformatici (quali samtools e bedtools) vengono estratte le sequenze promotrici, a partire dalle informazioni contenute dentro i file `_longest.gff`, che sono state caratterizzate da sequenze di 5000 pb a monte e 2000 pb a valle delle sequenze TSS (Transcription Starting Site). In seguito all'identificazione di tali porzioni, si associano le sequenze nucleotidiche estratte in questo caso dai file `.fna`.
 
 ***Rule build_promoter_indices***:
 Questa sezione dello snakemake file consente di andare a creare un indice (suddiviso in sei differenti file) di tutti i promotori che sono stati identificati. Questo procedimento di indicizzazione è stato eseguito con il programma Bowtie v1 (non la v2). 
@@ -43,10 +37,18 @@ Viene costruita una tabella a partire dalle informazioni estratte dalla mappatur
 ***Rule species_motif_tables***:
 In questa rule vengono eseguite le medesime operazione fatte nella precedente rule, con la singola differenza che qui si valuta l'appaiamento del motivo sulle sequenze promotrici e non sul complressivo genoma.
 
+***Rule full_species_motif_tables***:
+Quello che viene eseguito in questa rule è la costruzione di una tabella che possegga le nomenclature corrette delle proteine che vengono ripulite del suffisso che le era stato appaiato in precedenza (nella rule create_pep_fasta). Sulla base della specie (se GAGA oppure NCBI) è stato anche intrapreso un tipo di modifica del nome della proteina differenziato:
+- per specie GAGA ---> rimozione dell'abbreviativo GAGA in qualunque posizione
+- per specie NCBI ---> trasformazione completa del nome basata su un file di riferimento (file contenente nella prima colonna il nome della proteina presente dentro `Orthogroups_DISCO.tsv` e nella seconda colonna il nome della proteina estratto erronemanete da `_longest.gff`)
+
+***Rule disco_species_motif_tables***:
+Questa rule esegue sostanzialmente le medesime operazione osservabili nella rule precedente, con la aggiunta della rimozione di ogni singola proteina che non fosse presente e caratterizzata all'interno del file `Orthogroups_DISCO.tsv`.
+
 ***Rule aggregate_tables***:
 Essendo che vengono utilizzati tutti i file .gff3 provenienti dalle annotazioni GAGA, ritroviamo all'interno una sintassi delle proteine non ancora standardizzata (ovvero con il nome dell'abbreviativo GAGA dentro al nome). Per questo motivo viene eliminato il nome dell'abbreivativo lasciando il semplice nome del peptide, per consentire l'appaiamento corretto con il nome del peptide ritovabile nel Ortogruppo di riferimento (nome già standardizzato precedentemente).
 Il risultato finale consiste nella generazione di una singola tabella per ogni motivo associato ad una singola specie, che consente di verificare quali sono gli ortogruppi associati a quello specifico motivo.
 
 <p align="center">
-  <img src="./snakemake_motif_DAG.png" alt="Descrizione">
+  <img src="./snakemake_motif_study.pdf" alt="Descrizione">
 </p>
