@@ -7,6 +7,13 @@ Essendo che nella nostra pipeline di lavoro abbiamo eseguito DISCO per eliminare
 awk 'BEGIN {FS = "|"; OFS = "\t"} FNR == 1 {og = FILENAME; gsub(".*/", "", og); gsub(".faa", "", og)} /^>/ {split(substr($0, 2), parts, "|"); sp = parts[1]; gene = parts[2]; data[og, sp] = gene; ogs[og] = 1; spp[sp] = 1} END {header = "Orthogroup"; for (sp in spp) {header = header OFS sp; col_order[++n] = sp} print header; for (og in ogs) {row = og; for (i = 1; i <= n; i++) {sp = col_order[i]; if ((og, sp) in data) {row = row OFS data[og, sp]} else {row = row OFS ""}} print row}}' *.faa > Orthogroups_DISCO.tsv
 ```
 
+## Lancio di Snakemake
+Lo [script di snakemake](./snakemake_motif_study.smk) è stato lanciato second oi lseguente comando
+
+```bash
+snakemake -s snakemake_motif_study.smk --use-conda --cores 35 --rerun-incomplete --touch
+```
+
 ## Snakemake's rules
 In totale per eseguire la pipeline di lavoro completa sono state eseguite 12 differenti rule di snakemake, riassunte nelle seguenti informazioni:
 
