@@ -50,5 +50,5 @@ Essendo che vengono utilizzati tutti i file .gff3 provenienti dalle annotazioni 
 Il risultato finale consiste nella generazione di una singola tabella per ogni motivo associato ad una singola specie, che consente di verificare quali sono gli ortogruppi associati a quello specifico motivo.
 
 <p align="center">
-  <img src="./snakemake_motif_study.pdf" alt="Descrizione">
+  <img src="./snakemake_motif_study.png" alt="Descrizione">
 </p>
