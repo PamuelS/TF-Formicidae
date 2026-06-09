@@ -52,9 +52,12 @@ Quello che viene eseguito in questa rule è la costruzione di una tabella che po
 ***Rule disco_species_motif_tables***:
 Questa rule esegue sostanzialmente le medesime operazione osservabili nella rule precedente, con la aggiunta della rimozione di ogni singola proteina che non fosse presente e caratterizzata all'interno del file `Orthogroups_DISCO.tsv`.
 
-***Rule aggregate_tables***:
+***Rule aggregate_tables_disco***:
 Essendo che vengono utilizzati tutti i file .gff3 provenienti dalle annotazioni GAGA, ritroviamo all'interno una sintassi delle proteine non ancora standardizzata (ovvero con il nome dell'abbreviativo GAGA dentro al nome). Per questo motivo viene eliminato il nome dell'abbreivativo lasciando il semplice nome del peptide, per consentire l'appaiamento corretto con il nome del peptide ritovabile nel Ortogruppo di riferimento (nome già standardizzato precedentemente).
 Il risultato finale consiste nella generazione di una singola tabella per ogni motivo associato ad una singola specie, che consente di verificare quali sono gli ortogruppi associati a quello specifico motivo.
+
+***Rule aggregate_tables_Orthofinder***:
+Medesime operazioni eseguite nella rule precedente, con la netta distinzione del tipo di input fornito. Infatti viene utilizzato il file `Orthogroups_OrthoFinder.tsv` che corrisponde al file restituito dall'analisi di Orthofinder (ovvero Orthogroups.tsv). Quindi in questa rule vengono processati tutti gli ortogruppi identificati da Orthofinder, senza che vengano processati ulteriormente dall'analisi di DISCO. Adottando questo metodo è possibile confrontare direttamente il risultato dello stesso motivo sui due differenti file .tsv per verificare eventuali discrepanze o perdita di informazioni detatte da una separazione, ad opera di DISCO, di eventi di duplicazione genica.
 
 <p align="center">
   <img src="./snakemake_motif_study.png" alt="Descrizione">
