@@ -16,6 +16,12 @@ Sono dunque state eseguite 8 differenti analisi pgls con lo scopo di correlare 6
 
 L'intera struttura dello script R lasi può trovare [qui](./pgls_phenotypes.R), mentre il codice snakemake utilizzato per gestire un elevato quantitativo di dati è reperibile in [questo](./snakefile_pgls_analysis.smk) punto.
 
+### Esecuzione tramite snakemake
+All'interno dello script R è stata implementata la possibilità di esecuzione mediante il programma Snakemake
+```bash
+snakemake -s pgls_phenotypes.R --cores 1
+```
+
 ### Accorgimenti
 - L'albero che è stato utilizzato è l'albero ottenuto con l'analisi di Maximum Likelihood eseguito fornendo la topologia dell'albero ottenuta dal lavoro di GAGA e con l'aggiunta delle 12 "specie NCBI" (ottenuto mediante la scelta di 500 geni DISCO).
 - Il dataset è stato parzialmente modificato in modo che potesse restituire un quantitativo di stati alternativi dei fenotipi riconducibile ad un massimo 3/4 e qual'ora fosse stato possibile lo stato veniva ridotto ad una forma di presenza o assenza.
