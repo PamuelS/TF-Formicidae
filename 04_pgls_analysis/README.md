@@ -15,7 +15,7 @@ Sono dunque state eseguite 8 differenti analisi pgls con lo scopo di correlare 6
   - pgls6b (monoginia/facoltative/poliginia)
 
 Il fenotipo presente nel dataset, ma escluso dallo studio dei motivi è la tipologia di parassitismo, che presenta un elevato quantitativo di stati alternativi difficili da sintetizzare in numero ridotto di forme.
-L'intera struttura dello script R lasi può trovare [qui](./pgls_phenotypes.R), mentre il codice snakemake utilizzato per gestire un elevato quantitativo di dati è reperibile in [questo](./snakefile_pgls_analysis.smk) punto.
+L'intera struttura dello script R lasi può trovare [qui](./00_instruction/pgls_phenotypes.R), mentre il codice snakemake utilizzato per gestire un elevato quantitativo di dati è reperibile in [questo](./00_instruction/snakefile_pgls_analysis.smk) punto.
 
 ### Esecuzione tramite snakemake
 All'interno dello script R è stata implementata la possibilità di esecuzione mediante il programma Snakemake
