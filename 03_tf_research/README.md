@@ -30,3 +30,8 @@ scp /home/STUDENTI/samuel.pederzini/Downloads/pwmscan.1.1.9.tar.gz STUDENTI^samu
 
 ## Studio effettivo
 L'intero studio dei motivi è stato eseguito intermante tramite uno script snakemake `snakemake_motif_analysis.smk` e per seguire tutte le istruzioni passo per passo relative a tutte le rule integrate nello script, si può guardare questa [guida](./istruzioni_snakemake_motifs.md)
+
+## Confronto tra punteggi
+L'applicazione di questa pipeline di lavoro su due differnti file ossia `Orthogroups_DISCO.tsv` e `Orthogroups_OrthoFinder.tsv` ha prodotto risulatati differenziati tra le due analisi. Questa analisi ha condotto a prodotti differenziati prevedibile, dato che basati pensare che un singolo OG associato ad una unica specie può presentare una singola proteina dentro il file di DISCO, mentre il medesimo OG della suddetta specie può presentare molteplici proteine dentro il file OrthoFinder. Questo sta a significare che il punteggio presente dentro l'analisi associata a `Orthogroups_DISCO.tsv` riporti punteggi maggiormente contenuti rispetto alla controparte.
+Per questo motivo nasce il dubbio di osservare cosa accade dopo il lancio del programma DISCO a quegli OG che presentano più di una proteina, e cercare di investigare se la pipeline rischia di eliminare parte dell'informazione (quindi di conseguenza del punteggio del motivo) legata ad un motivo semplicemente rimuovendo geni ortologhi dall'ortogruppo
+Lo script `motif_disco_vs_ortho.py` esegue questa analisi di confronto per verificare la presenza e l'eventuale quantitativo di informazione persa con l'utilizzo dei risultati DISCO.
