@@ -2,7 +2,7 @@
 """
 python motif_disco_vs_ortho.py \
     --run-all \   # remembre that this is necessary to run the whole script
-    --disco-dir 05_aggregate/05_totalscore \
+    --disco-dir 05_aggregate/02_totalscore \
     --ortho-dir 05_aggregate/05_totalscore_orthofinder \
     --outdir risultati_ortho_vs_disco
 """
@@ -620,8 +620,8 @@ def parse_args():
     # Arguments to run this script for every motif in a single run
     p.add_argument("--run-all", action="store_true",
                    help="Processa tutti i motivi trovati in --disco-dir e --ortho-dir")
-    p.add_argument("--disco-dir", default="05_aggregate/05_totalscore",
-                   help="Cartella DISCO  (default: 05_aggregate/05_totalscore)")
+    p.add_argument("--disco-dir", default="05_aggregate/02_totalscore",
+                   help="Cartella DISCO  (default: 05_aggregate/02_totalscore)")
     p.add_argument("--ortho-dir", default="05_aggregate/05_totalscore_orthofinder",
                    help="Cartella ORTHO  (default: 05_aggregate/05_totalscore_orthofinder)")
     p.add_argument("--save-per-motif-plots", action="store_true",
