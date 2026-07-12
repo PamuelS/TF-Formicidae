@@ -8,3 +8,7 @@ Per eseguire con successo questo confronto sono state indette tre distinte categ
 - Split ---> categoria che indica gli OG presenti dentro i file di ORTHOFINDER e che hanno subito una ulteriore suddivisione (in varie forme alternative es. _00, _01, _02, ecc) dopo il lancio di DISCO
 - Single-Complete ---> Categorai nella quale rientrano tutti gli OG che sono presenti nei file di entrambi i programmi e che non hannno subito ulteriori spacchettamenti da DISCO
 
+## Cifre relative aagli ortogruppi
+Sono oltre 38000 gli ortogruppi che sono stati creati al termine dell'analisi di ORTHOFINDER (per vedere le statistiche in un formato maggiormente complessivo andare a guardare `Statistics_Overall.tsv`). Per rendere il confronto il più attendibile possibile, sono stati scartati da tutti i file di ORTHOFINDER gli ortogruppi che possedevano un quantitativo di specie inferiore a 90, passando così ad un ammonatare di 9789 OG. 
+
+L'applicazione di DISCO ai risultati di ORTHOFINDER ha indubbiamente ridotto il numero di OG utilizzabili per l'analisi (dato che è stato utilizzato proprio il treshold di 90 specie per far si che DISCO prendesse un OG di ORTHOFINDER in considerazione), ma lo stesso numero è stato anche parzialmente ampliato anche grazie alla possibilità di DISCO di eseguire separazioni di OG. Infatti, di quei 9789 OG risultanti dopo il filtraggio, 9630 sono quelli che presentano una corrispondenza diretta con quelli DISCO e solamente 159 sono quelli che rimangono unicamente nei file ORTHOFINDER (I così detti Ortho-Only)
