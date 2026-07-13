@@ -25,3 +25,5 @@ L'altro aspetto analizzato per questo ocnfronto si è maggiormente concentrato s
 Per calcolare questa differenza viene prima eseguita una stima in percentuale del quantitativo di specie con un punteggio maggiore di 0/NA per un OG (chiaramente sia per DISCO che per ORTHO) e viene ripetuto per ogni singolo OG disponbile. Successivamente viene calcolata una mediana complessiva dei valori ottenuti per tutti gli OG (sia per ORTHOFINDER che per DISCO), identificativa per un singolo motivo.
 Infine viene calcolato il delta, corrispondente alla differenza della mediana tra DISCO e ORTHO per quel motivo.
 > La copertura delle specie è osservabile nel grafico [B]
+> 
+> Un valore positivo di delta significa che l'esecuzione di DISCO non ha intaccato il quantitativo complessivo delle specie 
