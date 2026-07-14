@@ -1,0 +1,287 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+pgls_phenotypes      296
+total                297
+
+Select jobs to execute...
+Execute 30 jobs...
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2302.1.tsv
+    output: 00_results/MA2302.1/pgls1_parasitism.csv, 00_results/MA2302.1/pgls2_larval_feeding.csv, 00_results/MA2302.1/pgls3_cocoon.csv, 00_results/MA2302.1/pgls4a_wings_ergatoid.csv, 00_results/MA2302.1/pgls4b_wings_brachypterous.csv, 00_results/MA2302.1/pgls5_castes.csv, 00_results/MA2302.1/pgls6a_queens_binary.csv, 00_results/MA2302.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2302.1/logs/pgls_phenotypes.log
+    jobid: 10
+    reason: Missing output files: 00_results/MA2302.1/pgls4b_wings_brachypterous.csv, 00_results/MA2302.1/pgls6a_queens_binary.csv, 00_results/MA2302.1/pgls2_larval_feeding.csv, 00_results/MA2302.1/pgls1_parasitism.csv, 00_results/MA2302.1/pgls3_cocoon.csv, 00_results/MA2302.1/pgls6b_queens_ordered.csv, 00_results/MA2302.1/pgls4a_wings_ergatoid.csv, 00_results/MA2302.1/pgls5_castes.csv
+    wildcards: motif=MA2302.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2255.1.tsv
+    output: 00_results/MA2255.1/pgls1_parasitism.csv, 00_results/MA2255.1/pgls2_larval_feeding.csv, 00_results/MA2255.1/pgls3_cocoon.csv, 00_results/MA2255.1/pgls4a_wings_ergatoid.csv, 00_results/MA2255.1/pgls4b_wings_brachypterous.csv, 00_results/MA2255.1/pgls5_castes.csv, 00_results/MA2255.1/pgls6a_queens_binary.csv, 00_results/MA2255.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2255.1/logs/pgls_phenotypes.log
+    jobid: 132
+    reason: Missing output files: 00_results/MA2255.1/pgls4b_wings_brachypterous.csv, 00_results/MA2255.1/pgls1_parasitism.csv, 00_results/MA2255.1/pgls2_larval_feeding.csv, 00_results/MA2255.1/pgls6a_queens_binary.csv, 00_results/MA2255.1/pgls3_cocoon.csv, 00_results/MA2255.1/pgls5_castes.csv, 00_results/MA2255.1/pgls4a_wings_ergatoid.csv, 00_results/MA2255.1/pgls6b_queens_ordered.csv
+    wildcards: motif=MA2255.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0239.2.tsv
+    output: 00_results/MA0239.2/pgls1_parasitism.csv, 00_results/MA0239.2/pgls2_larval_feeding.csv, 00_results/MA0239.2/pgls3_cocoon.csv, 00_results/MA0239.2/pgls4a_wings_ergatoid.csv, 00_results/MA0239.2/pgls4b_wings_brachypterous.csv, 00_results/MA0239.2/pgls5_castes.csv, 00_results/MA0239.2/pgls6a_queens_binary.csv, 00_results/MA0239.2/pgls6b_queens_ordered.csv
+    log: 00_results/MA0239.2/logs/pgls_phenotypes.log
+    jobid: 162
+    reason: Missing output files: 00_results/MA0239.2/pgls3_cocoon.csv, 00_results/MA0239.2/pgls5_castes.csv, 00_results/MA0239.2/pgls6a_queens_binary.csv, 00_results/MA0239.2/pgls1_parasitism.csv, 00_results/MA0239.2/pgls4a_wings_ergatoid.csv, 00_results/MA0239.2/pgls6b_queens_ordered.csv, 00_results/MA0239.2/pgls4b_wings_brachypterous.csv, 00_results/MA0239.2/pgls2_larval_feeding.csv
+    wildcards: motif=MA0239.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0231.1.tsv
+    output: 00_results/MA0231.1/pgls1_parasitism.csv, 00_results/MA0231.1/pgls2_larval_feeding.csv, 00_results/MA0231.1/pgls3_cocoon.csv, 00_results/MA0231.1/pgls4a_wings_ergatoid.csv, 00_results/MA0231.1/pgls4b_wings_brachypterous.csv, 00_results/MA0231.1/pgls5_castes.csv, 00_results/MA0231.1/pgls6a_queens_binary.csv, 00_results/MA0231.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0231.1/logs/pgls_phenotypes.log
+    jobid: 192
+    reason: Missing output files: 00_results/MA0231.1/pgls3_cocoon.csv, 00_results/MA0231.1/pgls5_castes.csv, 00_results/MA0231.1/pgls1_parasitism.csv, 00_results/MA0231.1/pgls6b_queens_ordered.csv, 00_results/MA0231.1/pgls6a_queens_binary.csv, 00_results/MA0231.1/pgls2_larval_feeding.csv, 00_results/MA0231.1/pgls4a_wings_ergatoid.csv, 00_results/MA0231.1/pgls4b_wings_brachypterous.csv
+    wildcards: motif=MA0231.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv
+    output: 00_results/MA2205.1/pgls1_parasitism.csv, 00_results/MA2205.1/pgls2_larval_feeding.csv, 00_results/MA2205.1/pgls3_cocoon.csv, 00_results/MA2205.1/pgls4a_wings_ergatoid.csv, 00_results/MA2205.1/pgls4b_wings_brachypterous.csv, 00_results/MA2205.1/pgls5_castes.csv, 00_results/MA2205.1/pgls6a_queens_binary.csv, 00_results/MA2205.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2205.1/logs/pgls_phenotypes.log
+    jobid: 43
+    reason: Missing output files: 00_results/MA2205.1/pgls1_parasitism.csv, 00_results/MA2205.1/pgls4b_wings_brachypterous.csv, 00_results/MA2205.1/pgls6a_queens_binary.csv, 00_results/MA2205.1/pgls2_larval_feeding.csv, 00_results/MA2205.1/pgls5_castes.csv, 00_results/MA2205.1/pgls3_cocoon.csv, 00_results/MA2205.1/pgls6b_queens_ordered.csv, 00_results/MA2205.1/pgls4a_wings_ergatoid.csv; Code has changed since last execution
+    wildcards: motif=MA2205.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2258.1.tsv
+    output: 00_results/MA2258.1/pgls1_parasitism.csv, 00_results/MA2258.1/pgls2_larval_feeding.csv, 00_results/MA2258.1/pgls3_cocoon.csv, 00_results/MA2258.1/pgls4a_wings_ergatoid.csv, 00_results/MA2258.1/pgls4b_wings_brachypterous.csv, 00_results/MA2258.1/pgls5_castes.csv, 00_results/MA2258.1/pgls6a_queens_binary.csv, 00_results/MA2258.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2258.1/logs/pgls_phenotypes.log
+    jobid: 103
+    reason: Missing output files: 00_results/MA2258.1/pgls4b_wings_brachypterous.csv, 00_results/MA2258.1/pgls4a_wings_ergatoid.csv, 00_results/MA2258.1/pgls2_larval_feeding.csv, 00_results/MA2258.1/pgls6a_queens_binary.csv, 00_results/MA2258.1/pgls6b_queens_ordered.csv, 00_results/MA2258.1/pgls1_parasitism.csv, 00_results/MA2258.1/pgls5_castes.csv, 00_results/MA2258.1/pgls3_cocoon.csv; Code has changed since last execution
+    wildcards: motif=MA2258.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1700.1.tsv
+    output: 00_results/MA1700.1/pgls1_parasitism.csv, 00_results/MA1700.1/pgls2_larval_feeding.csv, 00_results/MA1700.1/pgls3_cocoon.csv, 00_results/MA1700.1/pgls4a_wings_ergatoid.csv, 00_results/MA1700.1/pgls4b_wings_brachypterous.csv, 00_results/MA1700.1/pgls5_castes.csv, 00_results/MA1700.1/pgls6a_queens_binary.csv, 00_results/MA1700.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA1700.1/logs/pgls_phenotypes.log
+    jobid: 246
+    reason: Missing output files: 00_results/MA1700.1/pgls4a_wings_ergatoid.csv, 00_results/MA1700.1/pgls6a_queens_binary.csv, 00_results/MA1700.1/pgls4b_wings_brachypterous.csv, 00_results/MA1700.1/pgls5_castes.csv, 00_results/MA1700.1/pgls1_parasitism.csv, 00_results/MA1700.1/pgls6b_queens_ordered.csv, 00_results/MA1700.1/pgls2_larval_feeding.csv, 00_results/MA1700.1/pgls3_cocoon.csv
+    wildcards: motif=MA1700.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2243.1.tsv
+    output: 00_results/MA2243.1/pgls1_parasitism.csv, 00_results/MA2243.1/pgls2_larval_feeding.csv, 00_results/MA2243.1/pgls3_cocoon.csv, 00_results/MA2243.1/pgls4a_wings_ergatoid.csv, 00_results/MA2243.1/pgls4b_wings_brachypterous.csv, 00_results/MA2243.1/pgls5_castes.csv, 00_results/MA2243.1/pgls6a_queens_binary.csv, 00_results/MA2243.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2243.1/logs/pgls_phenotypes.log
+    jobid: 247
+    reason: Missing output files: 00_results/MA2243.1/pgls4b_wings_brachypterous.csv, 00_results/MA2243.1/pgls1_parasitism.csv, 00_results/MA2243.1/pgls4a_wings_ergatoid.csv, 00_results/MA2243.1/pgls5_castes.csv, 00_results/MA2243.1/pgls6a_queens_binary.csv, 00_results/MA2243.1/pgls3_cocoon.csv, 00_results/MA2243.1/pgls2_larval_feeding.csv, 00_results/MA2243.1/pgls6b_queens_ordered.csv; Code has changed since last execution
+    wildcards: motif=MA2243.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2244.1.tsv
+    output: 00_results/MA2244.1/pgls1_parasitism.csv, 00_results/MA2244.1/pgls2_larval_feeding.csv, 00_results/MA2244.1/pgls3_cocoon.csv, 00_results/MA2244.1/pgls4a_wings_ergatoid.csv, 00_results/MA2244.1/pgls4b_wings_brachypterous.csv, 00_results/MA2244.1/pgls5_castes.csv, 00_results/MA2244.1/pgls6a_queens_binary.csv, 00_results/MA2244.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2244.1/logs/pgls_phenotypes.log
+    jobid: 7
+    reason: Missing output files: 00_results/MA2244.1/pgls6a_queens_binary.csv, 00_results/MA2244.1/pgls5_castes.csv, 00_results/MA2244.1/pgls1_parasitism.csv, 00_results/MA2244.1/pgls2_larval_feeding.csv, 00_results/MA2244.1/pgls4b_wings_brachypterous.csv, 00_results/MA2244.1/pgls3_cocoon.csv, 00_results/MA2244.1/pgls4a_wings_ergatoid.csv, 00_results/MA2244.1/pgls6b_queens_ordered.csv; Code has changed since last execution
+    wildcards: motif=MA2244.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0166.1.tsv
+    output: 00_results/MA0166.1/pgls1_parasitism.csv, 00_results/MA0166.1/pgls2_larval_feeding.csv, 00_results/MA0166.1/pgls3_cocoon.csv, 00_results/MA0166.1/pgls4a_wings_ergatoid.csv, 00_results/MA0166.1/pgls4b_wings_brachypterous.csv, 00_results/MA0166.1/pgls5_castes.csv, 00_results/MA0166.1/pgls6a_queens_binary.csv, 00_results/MA0166.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0166.1/logs/pgls_phenotypes.log
+    jobid: 67
+    reason: Missing output files: 00_results/MA0166.1/pgls4b_wings_brachypterous.csv, 00_results/MA0166.1/pgls6a_queens_binary.csv, 00_results/MA0166.1/pgls2_larval_feeding.csv, 00_results/MA0166.1/pgls1_parasitism.csv, 00_results/MA0166.1/pgls6b_queens_ordered.csv, 00_results/MA0166.1/pgls5_castes.csv, 00_results/MA0166.1/pgls4a_wings_ergatoid.csv, 00_results/MA0166.1/pgls3_cocoon.csv; Code has changed since last execution
+    wildcards: motif=MA0166.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2201.1.tsv
+    output: 00_results/MA2201.1/pgls1_parasitism.csv, 00_results/MA2201.1/pgls2_larval_feeding.csv, 00_results/MA2201.1/pgls3_cocoon.csv, 00_results/MA2201.1/pgls4a_wings_ergatoid.csv, 00_results/MA2201.1/pgls4b_wings_brachypterous.csv, 00_results/MA2201.1/pgls5_castes.csv, 00_results/MA2201.1/pgls6a_queens_binary.csv, 00_results/MA2201.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2201.1/logs/pgls_phenotypes.log
+    jobid: 37
+    reason: Missing output files: 00_results/MA2201.1/pgls1_parasitism.csv, 00_results/MA2201.1/pgls2_larval_feeding.csv, 00_results/MA2201.1/pgls3_cocoon.csv, 00_results/MA2201.1/pgls4a_wings_ergatoid.csv, 00_results/MA2201.1/pgls4b_wings_brachypterous.csv, 00_results/MA2201.1/pgls5_castes.csv, 00_results/MA2201.1/pgls6b_queens_ordered.csv, 00_results/MA2201.1/pgls6a_queens_binary.csv; Code has changed since last execution
+    wildcards: motif=MA2201.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0205.3.tsv
+    output: 00_results/MA0205.3/pgls1_parasitism.csv, 00_results/MA0205.3/pgls2_larval_feeding.csv, 00_results/MA0205.3/pgls3_cocoon.csv, 00_results/MA0205.3/pgls4a_wings_ergatoid.csv, 00_results/MA0205.3/pgls4b_wings_brachypterous.csv, 00_results/MA0205.3/pgls5_castes.csv, 00_results/MA0205.3/pgls6a_queens_binary.csv, 00_results/MA0205.3/pgls6b_queens_ordered.csv
+    log: 00_results/MA0205.3/logs/pgls_phenotypes.log
+    jobid: 97
+    reason: Missing output files: 00_results/MA0205.3/pgls5_castes.csv, 00_results/MA0205.3/pgls2_larval_feeding.csv, 00_results/MA0205.3/pgls3_cocoon.csv, 00_results/MA0205.3/pgls4a_wings_ergatoid.csv, 00_results/MA0205.3/pgls4b_wings_brachypterous.csv, 00_results/MA0205.3/pgls6a_queens_binary.csv, 00_results/MA0205.3/pgls1_parasitism.csv, 00_results/MA0205.3/pgls6b_queens_ordered.csv; Code has changed since last execution
+    wildcards: motif=MA0205.3
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2190.1.tsv
+    output: 00_results/MA2190.1/pgls1_parasitism.csv, 00_results/MA2190.1/pgls2_larval_feeding.csv, 00_results/MA2190.1/pgls3_cocoon.csv, 00_results/MA2190.1/pgls4a_wings_ergatoid.csv, 00_results/MA2190.1/pgls4b_wings_brachypterous.csv, 00_results/MA2190.1/pgls5_castes.csv, 00_results/MA2190.1/pgls6a_queens_binary.csv, 00_results/MA2190.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2190.1/logs/pgls_phenotypes.log
+    jobid: 127
+    reason: Missing output files: 00_results/MA2190.1/pgls6a_queens_binary.csv, 00_results/MA2190.1/pgls6b_queens_ordered.csv, 00_results/MA2190.1/pgls5_castes.csv, 00_results/MA2190.1/pgls4b_wings_brachypterous.csv, 00_results/MA2190.1/pgls1_parasitism.csv, 00_results/MA2190.1/pgls4a_wings_ergatoid.csv, 00_results/MA2190.1/pgls2_larval_feeding.csv, 00_results/MA2190.1/pgls3_cocoon.csv; Code has changed since last execution
+    wildcards: motif=MA2190.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1461.2.tsv
+    output: 00_results/MA1461.2/pgls1_parasitism.csv, 00_results/MA1461.2/pgls2_larval_feeding.csv, 00_results/MA1461.2/pgls3_cocoon.csv, 00_results/MA1461.2/pgls4a_wings_ergatoid.csv, 00_results/MA1461.2/pgls4b_wings_brachypterous.csv, 00_results/MA1461.2/pgls5_castes.csv, 00_results/MA1461.2/pgls6a_queens_binary.csv, 00_results/MA1461.2/pgls6b_queens_ordered.csv
+    log: 00_results/MA1461.2/logs/pgls_phenotypes.log
+    jobid: 157
+    reason: Missing output files: 00_results/MA1461.2/pgls4b_wings_brachypterous.csv, 00_results/MA1461.2/pgls4a_wings_ergatoid.csv, 00_results/MA1461.2/pgls6a_queens_binary.csv, 00_results/MA1461.2/pgls5_castes.csv, 00_results/MA1461.2/pgls1_parasitism.csv, 00_results/MA1461.2/pgls6b_queens_ordered.csv, 00_results/MA1461.2/pgls2_larval_feeding.csv, 00_results/MA1461.2/pgls3_cocoon.csv; Code has changed since last execution
+    wildcards: motif=MA1461.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2299.1.tsv
+    output: 00_results/MA2299.1/pgls1_parasitism.csv, 00_results/MA2299.1/pgls2_larval_feeding.csv, 00_results/MA2299.1/pgls3_cocoon.csv, 00_results/MA2299.1/pgls4a_wings_ergatoid.csv, 00_results/MA2299.1/pgls4b_wings_brachypterous.csv, 00_results/MA2299.1/pgls5_castes.csv, 00_results/MA2299.1/pgls6a_queens_binary.csv, 00_results/MA2299.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2299.1/logs/pgls_phenotypes.log
+    jobid: 187
+    reason: Missing output files: 00_results/MA2299.1/pgls3_cocoon.csv, 00_results/MA2299.1/pgls2_larval_feeding.csv, 00_results/MA2299.1/pgls4b_wings_brachypterous.csv, 00_results/MA2299.1/pgls6b_queens_ordered.csv, 00_results/MA2299.1/pgls1_parasitism.csv, 00_results/MA2299.1/pgls4a_wings_ergatoid.csv, 00_results/MA2299.1/pgls5_castes.csv, 00_results/MA2299.1/pgls6a_queens_binary.csv; Code has changed since last execution
+    wildcards: motif=MA2299.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2223.1.tsv
+    output: 00_results/MA2223.1/pgls1_parasitism.csv, 00_results/MA2223.1/pgls2_larval_feeding.csv, 00_results/MA2223.1/pgls3_cocoon.csv, 00_results/MA2223.1/pgls4a_wings_ergatoid.csv, 00_results/MA2223.1/pgls4b_wings_brachypterous.csv, 00_results/MA2223.1/pgls5_castes.csv, 00_results/MA2223.1/pgls6a_queens_binary.csv, 00_results/MA2223.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2223.1/logs/pgls_phenotypes.log
+    jobid: 217
+    reason: Missing output files: 00_results/MA2223.1/pgls6a_queens_binary.csv, 00_results/MA2223.1/pgls2_larval_feeding.csv, 00_results/MA2223.1/pgls3_cocoon.csv, 00_results/MA2223.1/pgls5_castes.csv, 00_results/MA2223.1/pgls1_parasitism.csv, 00_results/MA2223.1/pgls6b_queens_ordered.csv, 00_results/MA2223.1/pgls4b_wings_brachypterous.csv, 00_results/MA2223.1/pgls4a_wings_ergatoid.csv; Code has changed since last execution
+    wildcards: motif=MA2223.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0219.1.tsv
+    output: 00_results/MA0219.1/pgls1_parasitism.csv, 00_results/MA0219.1/pgls2_larval_feeding.csv, 00_results/MA0219.1/pgls3_cocoon.csv, 00_results/MA0219.1/pgls4a_wings_ergatoid.csv, 00_results/MA0219.1/pgls4b_wings_brachypterous.csv, 00_results/MA0219.1/pgls5_castes.csv, 00_results/MA0219.1/pgls6a_queens_binary.csv, 00_results/MA0219.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0219.1/logs/pgls_phenotypes.log
+    jobid: 277
+    reason: Missing output files: 00_results/MA0219.1/pgls1_parasitism.csv, 00_results/MA0219.1/pgls6a_queens_binary.csv, 00_results/MA0219.1/pgls2_larval_feeding.csv, 00_results/MA0219.1/pgls4a_wings_ergatoid.csv, 00_results/MA0219.1/pgls3_cocoon.csv, 00_results/MA0219.1/pgls5_castes.csv, 00_results/MA0219.1/pgls6b_queens_ordered.csv, 00_results/MA0219.1/pgls4b_wings_brachypterous.csv; Code has changed since last execution
+    wildcards: motif=MA0219.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0199.1.tsv
+    output: 00_results/MA0199.1/pgls1_parasitism.csv, 00_results/MA0199.1/pgls2_larval_feeding.csv, 00_results/MA0199.1/pgls3_cocoon.csv, 00_results/MA0199.1/pgls4a_wings_ergatoid.csv, 00_results/MA0199.1/pgls4b_wings_brachypterous.csv, 00_results/MA0199.1/pgls5_castes.csv, 00_results/MA0199.1/pgls6a_queens_binary.csv, 00_results/MA0199.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0199.1/logs/pgls_phenotypes.log
+    jobid: 68
+    reason: Missing output files: 00_results/MA0199.1/pgls2_larval_feeding.csv, 00_results/MA0199.1/pgls1_parasitism.csv, 00_results/MA0199.1/pgls4b_wings_brachypterous.csv, 00_results/MA0199.1/pgls4a_wings_ergatoid.csv, 00_results/MA0199.1/pgls6b_queens_ordered.csv, 00_results/MA0199.1/pgls5_castes.csv, 00_results/MA0199.1/pgls6a_queens_binary.csv, 00_results/MA0199.1/pgls3_cocoon.csv; Code has changed since last execution
+    wildcards: motif=MA0199.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2252.1.tsv
+    output: 00_results/MA2252.1/pgls1_parasitism.csv, 00_results/MA2252.1/pgls2_larval_feeding.csv, 00_results/MA2252.1/pgls3_cocoon.csv, 00_results/MA2252.1/pgls4a_wings_ergatoid.csv, 00_results/MA2252.1/pgls4b_wings_brachypterous.csv, 00_results/MA2252.1/pgls5_castes.csv, 00_results/MA2252.1/pgls6a_queens_binary.csv, 00_results/MA2252.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2252.1/logs/pgls_phenotypes.log
+    jobid: 8
+    reason: Missing output files: 00_results/MA2252.1/pgls4b_wings_brachypterous.csv, 00_results/MA2252.1/pgls5_castes.csv, 00_results/MA2252.1/pgls6a_queens_binary.csv, 00_results/MA2252.1/pgls2_larval_feeding.csv, 00_results/MA2252.1/pgls1_parasitism.csv, 00_results/MA2252.1/pgls3_cocoon.csv, 00_results/MA2252.1/pgls4a_wings_ergatoid.csv, 00_results/MA2252.1/pgls6b_queens_ordered.csv; Code has changed since last execution
+    wildcards: motif=MA2252.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0172.1.tsv
+    output: 00_results/MA0172.1/pgls1_parasitism.csv, 00_results/MA0172.1/pgls2_larval_feeding.csv, 00_results/MA0172.1/pgls3_cocoon.csv, 00_results/MA0172.1/pgls4a_wings_ergatoid.csv, 00_results/MA0172.1/pgls4b_wings_brachypterous.csv, 00_results/MA0172.1/pgls5_castes.csv, 00_results/MA0172.1/pgls6a_queens_binary.csv, 00_results/MA0172.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0172.1/logs/pgls_phenotypes.log
+    jobid: 38
+    reason: Missing output files: 00_results/MA0172.1/pgls6b_queens_ordered.csv, 00_results/MA0172.1/pgls4a_wings_ergatoid.csv, 00_results/MA0172.1/pgls3_cocoon.csv, 00_results/MA0172.1/pgls5_castes.csv, 00_results/MA0172.1/pgls4b_wings_brachypterous.csv, 00_results/MA0172.1/pgls6a_queens_binary.csv, 00_results/MA0172.1/pgls1_parasitism.csv, 00_results/MA0172.1/pgls2_larval_feeding.csv; Code has changed since last execution
+    wildcards: motif=MA0172.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0189.2.tsv
+    output: 00_results/MA0189.2/pgls1_parasitism.csv, 00_results/MA0189.2/pgls2_larval_feeding.csv, 00_results/MA0189.2/pgls3_cocoon.csv, 00_results/MA0189.2/pgls4a_wings_ergatoid.csv, 00_results/MA0189.2/pgls4b_wings_brachypterous.csv, 00_results/MA0189.2/pgls5_castes.csv, 00_results/MA0189.2/pgls6a_queens_binary.csv, 00_results/MA0189.2/pgls6b_queens_ordered.csv
+    log: 00_results/MA0189.2/logs/pgls_phenotypes.log
+    jobid: 98
+    reason: Missing output files: 00_results/MA0189.2/pgls2_larval_feeding.csv, 00_results/MA0189.2/pgls4b_wings_brachypterous.csv, 00_results/MA0189.2/pgls4a_wings_ergatoid.csv, 00_results/MA0189.2/pgls6b_queens_ordered.csv, 00_results/MA0189.2/pgls3_cocoon.csv, 00_results/MA0189.2/pgls1_parasitism.csv, 00_results/MA0189.2/pgls5_castes.csv, 00_results/MA0189.2/pgls6a_queens_binary.csv; Code has changed since last execution
+    wildcards: motif=MA0189.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2192.1.tsv
+    output: 00_results/MA2192.1/pgls1_parasitism.csv, 00_results/MA2192.1/pgls2_larval_feeding.csv, 00_results/MA2192.1/pgls3_cocoon.csv, 00_results/MA2192.1/pgls4a_wings_ergatoid.csv, 00_results/MA2192.1/pgls4b_wings_brachypterous.csv, 00_results/MA2192.1/pgls5_castes.csv, 00_results/MA2192.1/pgls6a_queens_binary.csv, 00_results/MA2192.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2192.1/logs/pgls_phenotypes.log
+    jobid: 128
+    reason: Missing output files: 00_results/MA2192.1/pgls5_castes.csv, 00_results/MA2192.1/pgls6a_queens_binary.csv, 00_results/MA2192.1/pgls1_parasitism.csv, 00_results/MA2192.1/pgls6b_queens_ordered.csv, 00_results/MA2192.1/pgls4b_wings_brachypterous.csv, 00_results/MA2192.1/pgls2_larval_feeding.csv, 00_results/MA2192.1/pgls3_cocoon.csv, 00_results/MA2192.1/pgls4a_wings_ergatoid.csv; Code has changed since last execution
+    wildcards: motif=MA2192.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2203.1.tsv
+    output: 00_results/MA2203.1/pgls1_parasitism.csv, 00_results/MA2203.1/pgls2_larval_feeding.csv, 00_results/MA2203.1/pgls3_cocoon.csv, 00_results/MA2203.1/pgls4a_wings_ergatoid.csv, 00_results/MA2203.1/pgls4b_wings_brachypterous.csv, 00_results/MA2203.1/pgls5_castes.csv, 00_results/MA2203.1/pgls6a_queens_binary.csv, 00_results/MA2203.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2203.1/logs/pgls_phenotypes.log
+    jobid: 158
+    reason: Missing output files: 00_results/MA2203.1/pgls6b_queens_ordered.csv, 00_results/MA2203.1/pgls3_cocoon.csv, 00_results/MA2203.1/pgls4b_wings_brachypterous.csv, 00_results/MA2203.1/pgls1_parasitism.csv, 00_results/MA2203.1/pgls6a_queens_binary.csv, 00_results/MA2203.1/pgls5_castes.csv, 00_results/MA2203.1/pgls4a_wings_ergatoid.csv, 00_results/MA2203.1/pgls2_larval_feeding.csv; Code has changed since last execution
+    wildcards: motif=MA2203.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2320.1.tsv
+    output: 00_results/MA2320.1/pgls1_parasitism.csv, 00_results/MA2320.1/pgls2_larval_feeding.csv, 00_results/MA2320.1/pgls3_cocoon.csv, 00_results/MA2320.1/pgls4a_wings_ergatoid.csv, 00_results/MA2320.1/pgls4b_wings_brachypterous.csv, 00_results/MA2320.1/pgls5_castes.csv, 00_results/MA2320.1/pgls6a_queens_binary.csv, 00_results/MA2320.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2320.1/logs/pgls_phenotypes.log
+    jobid: 188
+    reason: Missing output files: 00_results/MA2320.1/pgls3_cocoon.csv, 00_results/MA2320.1/pgls5_castes.csv, 00_results/MA2320.1/pgls1_parasitism.csv, 00_results/MA2320.1/pgls4b_wings_brachypterous.csv, 00_results/MA2320.1/pgls6b_queens_ordered.csv, 00_results/MA2320.1/pgls2_larval_feeding.csv, 00_results/MA2320.1/pgls4a_wings_ergatoid.csv, 00_results/MA2320.1/pgls6a_queens_binary.csv; Code has changed since last execution
+    wildcards: motif=MA2320.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0224.1.tsv
+    output: 00_results/MA0224.1/pgls1_parasitism.csv, 00_results/MA0224.1/pgls2_larval_feeding.csv, 00_results/MA0224.1/pgls3_cocoon.csv, 00_results/MA0224.1/pgls4a_wings_ergatoid.csv, 00_results/MA0224.1/pgls4b_wings_brachypterous.csv, 00_results/MA0224.1/pgls5_castes.csv, 00_results/MA0224.1/pgls6a_queens_binary.csv, 00_results/MA0224.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0224.1/logs/pgls_phenotypes.log
+    jobid: 249
+    reason: Missing output files: 00_results/MA0224.1/pgls3_cocoon.csv, 00_results/MA0224.1/pgls4a_wings_ergatoid.csv, 00_results/MA0224.1/pgls5_castes.csv, 00_results/MA0224.1/pgls4b_wings_brachypterous.csv, 00_results/MA0224.1/pgls1_parasitism.csv, 00_results/MA0224.1/pgls6a_queens_binary.csv, 00_results/MA0224.1/pgls2_larval_feeding.csv, 00_results/MA0224.1/pgls6b_queens_ordered.csv; Code has changed since last execution
+    wildcards: motif=MA0224.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2220.1.tsv
+    output: 00_results/MA2220.1/pgls1_parasitism.csv, 00_results/MA2220.1/pgls2_larval_feeding.csv, 00_results/MA2220.1/pgls3_cocoon.csv, 00_results/MA2220.1/pgls4a_wings_ergatoid.csv, 00_results/MA2220.1/pgls4b_wings_brachypterous.csv, 00_results/MA2220.1/pgls5_castes.csv, 00_results/MA2220.1/pgls6a_queens_binary.csv, 00_results/MA2220.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2220.1/logs/pgls_phenotypes.log
+    jobid: 279
+    reason: Missing output files: 00_results/MA2220.1/pgls2_larval_feeding.csv, 00_results/MA2220.1/pgls4b_wings_brachypterous.csv, 00_results/MA2220.1/pgls6b_queens_ordered.csv, 00_results/MA2220.1/pgls1_parasitism.csv, 00_results/MA2220.1/pgls5_castes.csv, 00_results/MA2220.1/pgls3_cocoon.csv, 00_results/MA2220.1/pgls6a_queens_binary.csv, 00_results/MA2220.1/pgls4a_wings_ergatoid.csv; Code has changed since last execution
+    wildcards: motif=MA2220.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1702.2.tsv
+    output: 00_results/MA1702.2/pgls1_parasitism.csv, 00_results/MA1702.2/pgls2_larval_feeding.csv, 00_results/MA1702.2/pgls3_cocoon.csv, 00_results/MA1702.2/pgls4a_wings_ergatoid.csv, 00_results/MA1702.2/pgls4b_wings_brachypterous.csv, 00_results/MA1702.2/pgls5_castes.csv, 00_results/MA1702.2/pgls6a_queens_binary.csv, 00_results/MA1702.2/pgls6b_queens_ordered.csv
+    log: 00_results/MA1702.2/logs/pgls_phenotypes.log
+    jobid: 9
+    reason: Missing output files: 00_results/MA1702.2/pgls3_cocoon.csv, 00_results/MA1702.2/pgls5_castes.csv, 00_results/MA1702.2/pgls1_parasitism.csv, 00_results/MA1702.2/pgls2_larval_feeding.csv, 00_results/MA1702.2/pgls6b_queens_ordered.csv, 00_results/MA1702.2/pgls4a_wings_ergatoid.csv, 00_results/MA1702.2/pgls6a_queens_binary.csv, 00_results/MA1702.2/pgls4b_wings_brachypterous.csv
+    wildcards: motif=MA1702.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:39 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2279.1.tsv
+    output: 00_results/MA2279.1/pgls1_parasitism.csv, 00_results/MA2279.1/pgls2_larval_feeding.csv, 00_results/MA2279.1/pgls3_cocoon.csv, 00_results/MA2279.1/pgls4a_wings_ergatoid.csv, 00_results/MA2279.1/pgls4b_wings_brachypterous.csv, 00_results/MA2279.1/pgls5_castes.csv, 00_results/MA2279.1/pgls6a_queens_binary.csv, 00_results/MA2279.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2279.1/logs/pgls_phenotypes.log
+    jobid: 39
+    reason: Missing output files: 00_results/MA2279.1/pgls6b_queens_ordered.csv, 00_results/MA2279.1/pgls1_parasitism.csv, 00_results/MA2279.1/pgls4a_wings_ergatoid.csv, 00_results/MA2279.1/pgls5_castes.csv, 00_results/MA2279.1/pgls2_larval_feeding.csv, 00_results/MA2279.1/pgls3_cocoon.csv, 00_results/MA2279.1/pgls4b_wings_brachypterous.csv, 00_results/MA2279.1/pgls6a_queens_binary.csv
+    wildcards: motif=MA2279.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:40 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2248.1.tsv
+    output: 00_results/MA2248.1/pgls1_parasitism.csv, 00_results/MA2248.1/pgls2_larval_feeding.csv, 00_results/MA2248.1/pgls3_cocoon.csv, 00_results/MA2248.1/pgls4a_wings_ergatoid.csv, 00_results/MA2248.1/pgls4b_wings_brachypterous.csv, 00_results/MA2248.1/pgls5_castes.csv, 00_results/MA2248.1/pgls6a_queens_binary.csv, 00_results/MA2248.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA2248.1/logs/pgls_phenotypes.log
+    jobid: 69
+    reason: Missing output files: 00_results/MA2248.1/pgls2_larval_feeding.csv, 00_results/MA2248.1/pgls4b_wings_brachypterous.csv, 00_results/MA2248.1/pgls1_parasitism.csv, 00_results/MA2248.1/pgls4a_wings_ergatoid.csv, 00_results/MA2248.1/pgls5_castes.csv, 00_results/MA2248.1/pgls6a_queens_binary.csv, 00_results/MA2248.1/pgls3_cocoon.csv, 00_results/MA2248.1/pgls6b_queens_ordered.csv
+    wildcards: motif=MA2248.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 12:13:40 2026]
+localrule pgls_phenotypes:
+    input: abbreviative_name_rooted_Leptsp_tree.txt, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0446.1.tsv
+    output: 00_results/MA0446.1/pgls1_parasitism.csv, 00_results/MA0446.1/pgls2_larval_feeding.csv, 00_results/MA0446.1/pgls3_cocoon.csv, 00_results/MA0446.1/pgls4a_wings_ergatoid.csv, 00_results/MA0446.1/pgls4b_wings_brachypterous.csv, 00_results/MA0446.1/pgls5_castes.csv, 00_results/MA0446.1/pgls6a_queens_binary.csv, 00_results/MA0446.1/pgls6b_queens_ordered.csv
+    log: 00_results/MA0446.1/logs/pgls_phenotypes.log
+    jobid: 99
+    reason: Missing output files: 00_results/MA0446.1/pgls6b_queens_ordered.csv, 00_results/MA0446.1/pgls6a_queens_binary.csv, 00_results/MA0446.1/pgls1_parasitism.csv, 00_results/MA0446.1/pgls5_castes.csv, 00_results/MA0446.1/pgls4a_wings_ergatoid.csv, 00_results/MA0446.1/pgls3_cocoon.csv, 00_results/MA0446.1/pgls2_larval_feeding.csv, 00_results/MA0446.1/pgls4b_wings_brachypterous.csv
+    wildcards: motif=MA0446.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+Terminating processes on user request, this might take some time.

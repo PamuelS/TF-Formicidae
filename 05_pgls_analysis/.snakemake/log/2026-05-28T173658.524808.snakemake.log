@@ -1,0 +1,826 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 35
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+pgls       296
+total      297
+
+Select jobs to execute...
+Execute 35 jobs...
+[Thu May 28 17:36:58 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2279.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2279.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 70
+    reason: Missing output files: 00_results/MA2279.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2279.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0191.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0191.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 222
+    reason: Missing output files: 00_results/MA0191.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0191.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0456.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0456.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 252
+    reason: Missing output files: 00_results/MA0456.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0456.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2282.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2282.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 282
+    reason: Missing output files: 00_results/MA2282.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2282.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2252.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2252.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 43
+    reason: Missing output files: 00_results/MA2252.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2252.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0245.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0245.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 103
+    reason: Missing output files: 00_results/MA0245.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0245.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0022.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 276
+    reason: Missing output files: 00_results/MA0022.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0022.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2632.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 7
+    reason: Missing output files: 00_results/MA2632.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2632.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2278.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 67
+    reason: Missing output files: 00_results/MA2278.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2278.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0180.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 37
+    reason: Missing output files: 00_results/MA0180.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0180.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0187.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 97
+    reason: Missing output files: 00_results/MA0187.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0187.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2205.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 127
+    reason: Missing output files: 00_results/MA2205.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2205.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0175.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 157
+    reason: Missing output files: 00_results/MA0175.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0175.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2217.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 187
+    reason: Missing output files: 00_results/MA2217.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2217.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2316.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 217
+    reason: Missing output files: 00_results/MA2316.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2316.2, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2288.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 247
+    reason: Missing output files: 00_results/MA2288.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2288.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2319.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 277
+    reason: Missing output files: 00_results/MA2319.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2319.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0242.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0242.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 8
+    reason: Missing output files: 00_results/MA0242.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0242.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0450.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 68
+    reason: Missing output files: 00_results/MA0450.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0450.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2223.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2223.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 38
+    reason: Missing output files: 00_results/MA2223.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2223.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2255.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2255.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 98
+    reason: Missing output files: 00_results/MA2255.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2255.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2241.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2241.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 128
+    reason: Missing output files: 00_results/MA2241.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2241.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1702.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1702.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 158
+    reason: Missing output files: 00_results/MA1702.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA1702.2, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2208.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2208.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 188
+    reason: Missing output files: 00_results/MA2208.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2208.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0197.3.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0197.3/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 278
+    reason: Missing output files: 00_results/MA0197.3/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0197.3, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2211.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2211.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 9
+    reason: Missing output files: 00_results/MA2211.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2211.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1838.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1838.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 69
+    reason: Missing output files: 00_results/MA1838.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA1838.2, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2227.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2227.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 39
+    reason: Missing output files: 00_results/MA2227.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2227.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2254.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2254.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 99
+    reason: Missing output files: 00_results/MA2254.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2254.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0174.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0174.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 129
+    reason: Missing output files: 00_results/MA0174.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0174.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0218.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0218.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 159
+    reason: Missing output files: 00_results/MA0218.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA0218.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2320.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2320.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 189
+    reason: Missing output files: 00_results/MA2320.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2320.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2247.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2247.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 219
+    reason: Missing output files: 00_results/MA2247.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2247.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2256.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2256.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 249
+    reason: Missing output files: 00_results/MA2256.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2256.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+[Thu May 28 17:37:00 2026]
+localrule pgls:
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2214.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2214.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    jobid: 279
+    reason: Missing output files: 00_results/MA2214.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+    wildcards: motif=MA2214.1, analysis=['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal']
+    resources: tmpdir=/tmp
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpaj7o3chn.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:02 2026]
+Error in rule pgls:
+    message: None
+    jobid: 37
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0180.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpzv2kfpm2.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:02 2026]
+Error in rule pgls:
+    message: None
+    jobid: 69
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1838.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1838.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpg0__l5a0.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:02 2026]
+Error in rule pgls:
+    message: None
+    jobid: 98
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2255.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2255.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpj26dq3m0.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:02 2026]
+Error in rule pgls:
+    message: None
+    jobid: 128
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2241.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2241.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp278byx9n.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 99
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2254.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2254.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpg221io0j.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 127
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2205.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp4uaswfra.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 67
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2278.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpjdut8_mk.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 159
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0218.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0218.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp560q4qf8.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 8
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0242.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0242.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmplw88pnxq.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 276
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0022.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp1eq5j1p5.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 97
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0187.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpbv0oar8q.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 252
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0456.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0456.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpdemriv_s.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 157
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0175.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpd03w0hgn.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 278
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0197.3.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0197.3/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpkn0skgl2.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 217
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2316.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpgaf0stjh.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 9
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2211.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2211.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpyd2hn0fn.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 279
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2214.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2214.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpv1ydovv6.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 282
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2282.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2282.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpfp03or_3.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 39
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2227.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2227.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmprzp43s16.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 222
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0191.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0191.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpeozrfe00.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 158
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1702.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1702.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmppk8ou3kg.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 189
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2320.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2320.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp3foshgpd.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 103
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0245.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0245.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp73dnfdji.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 7
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2632.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp_9jvod_j.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 43
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2252.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2252.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp67gh2ya3.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 277
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2319.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp50vot6s7.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 187
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2217.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp8qk35asa.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 247
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2288.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpgo_pe85a.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 219
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2247.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2247.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpm8g1ayji.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 70
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2279.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2279.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp6c64n5bh.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 188
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2208.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2208.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmp79ztpzwp.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 129
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0174.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0174.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpwxoxeqpx.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 249
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2256.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2256.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpvrd3a4kc.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 68
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0450.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/snakefile_pgls_analysis.smk", line 18:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/scripts/tmpqr2c4z9l.PGLS_ants_all_analysis.R' returned non-zero exit status 1.
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 38
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2223.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2223.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 70
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2279.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2279.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 282
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2282.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2282.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 222
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0191.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0191.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 252
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0456.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0456.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 103
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0245.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0245.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 43
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2252.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2252.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 276
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0022.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 127
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2205.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 67
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2278.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 37
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0180.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 97
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0187.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 157
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0175.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 217
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2316.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 7
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2632.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 277
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2319.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 187
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2217.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 247
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2288.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 8
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0242.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0242.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 128
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2241.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2241.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 98
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2255.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2255.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 278
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0197.3.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0197.3/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 158
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1702.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1702.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 188
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2208.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2208.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 68
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0450.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 38
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2223.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2223.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 69
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1838.2.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA1838.2/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 9
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2211.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2211.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 99
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2254.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2254.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 159
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0218.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0218.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 279
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2214.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2214.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 39
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2227.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2227.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 189
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2320.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2320.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 219
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2247.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2247.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 129
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0174.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA0174.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+[Thu May 28 17:37:03 2026]
+Error in rule pgls:
+    message: None
+    jobid: 249
+    input: ../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2256.1.tsv, updated_dataset.xlsx, rooted_Leptsp_tree.txt
+    output: 00_results/MA2256.1/['pgls1_parasitism', 'pgls2_larval', 'pgls3_cocoon', 'pgls4a_wings_alata_ergatoide', 'pgls4b_wings_alata_brachiptera', 'pgls5_castes', 'pgls6a_queens_mono_poly', 'pgls6b_queens_ordinal'].csv
+Complete log(s): /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/.snakemake/log/2026-05-28T173658.524808.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

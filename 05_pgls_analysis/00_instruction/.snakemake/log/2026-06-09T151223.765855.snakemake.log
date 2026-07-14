@@ -1,0 +1,930 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 35
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+run_pgls      296
+total         297
+
+Select jobs to execute...
+Execute 35 jobs...
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0450.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0450.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0450.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0450.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0450.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0450.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0450.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0450.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0450.1_pgls.log
+    jobid: 69
+    reason: Missing output files: 01_pgls_results/MA0450.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0450.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0450.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0450.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0450.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0450.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0450.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0450.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA0450.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2213.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2213.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2213.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2213.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2213.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2213.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2213.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2213.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2213.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2213.1_pgls.log
+    jobid: 221
+    reason: Missing output files: 01_pgls_results/MA2213.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2213.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2213.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2213.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2213.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2213.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2213.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2213.1_pgls/pgls6b_queens_ordinal.tsv
+    wildcards: motif=MA2213.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2215.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2215.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2215.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2215.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2215.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2215.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2215.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2215.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2215.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2215.1_pgls.log
+    jobid: 251
+    reason: Missing output files: 01_pgls_results/MA2215.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2215.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2215.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2215.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2215.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2215.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2215.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2215.1_pgls/pgls3_cocoon.tsv
+    wildcards: motif=MA2215.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0188.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0188.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0188.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0188.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0188.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0188.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0188.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0188.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0188.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0188.1_pgls.log
+    jobid: 281
+    reason: Missing output files: 01_pgls_results/MA0188.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0188.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0188.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0188.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0188.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0188.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0188.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0188.1_pgls/pgls3_cocoon.tsv
+    wildcards: motif=MA0188.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0225.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0225.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0225.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0225.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0225.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0225.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0225.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0225.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0225.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0225.1_pgls.log
+    jobid: 42
+    reason: Missing output files: 01_pgls_results/MA0225.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0225.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0225.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0225.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0225.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0225.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0225.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0225.1_pgls/pgls6b_queens_ordinal.tsv
+    wildcards: motif=MA0225.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2233.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2233.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2233.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2233.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2233.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2233.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2233.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2233.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2233.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2233.1_pgls.log
+    jobid: 102
+    reason: Missing output files: 01_pgls_results/MA2233.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2233.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2233.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2233.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2233.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2233.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2233.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2233.1_pgls/pgls1_parasitism.tsv
+    wildcards: motif=MA2233.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2290.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2290.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2290.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2290.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2290.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2290.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2290.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2290.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2290.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2290.1_pgls.log
+    jobid: 275
+    reason: Missing output files: 01_pgls_results/MA2290.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2290.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2290.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2290.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2290.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2290.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2290.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2290.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA2290.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1460.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1460.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1460.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1460.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1460.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1460.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1460.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1460.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1460.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1460.2_pgls.log
+    jobid: 6
+    reason: Missing output files: 01_pgls_results/MA1460.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1460.2_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA1460.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1460.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1460.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1460.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1460.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1460.2_pgls/pgls5_castes.tsv
+    wildcards: motif=MA1460.2
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2191.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2191.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2191.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2191.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2191.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2191.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2191.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2191.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2191.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2191.1_pgls.log
+    jobid: 66
+    reason: Missing output files: 01_pgls_results/MA2191.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2191.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2191.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2191.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2191.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2191.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2191.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2191.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA2191.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2274.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2274.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2274.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2274.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2274.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2274.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2274.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2274.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2274.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2274.1_pgls.log
+    jobid: 36
+    reason: Missing output files: 01_pgls_results/MA2274.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2274.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2274.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2274.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2274.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2274.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2274.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2274.1_pgls/pgls2_larval_hemolymph.tsv
+    wildcards: motif=MA2274.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2313.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2313.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2313.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2313.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2313.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2313.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2313.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2313.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2313.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2313.1_pgls.log
+    jobid: 96
+    reason: Missing output files: 01_pgls_results/MA2313.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2313.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2313.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2313.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2313.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2313.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2313.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2313.1_pgls/pgls1_parasitism.tsv
+    wildcards: motif=MA2313.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0917.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0917.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0917.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0917.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0917.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0917.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0917.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0917.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0917.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0917.1_pgls.log
+    jobid: 126
+    reason: Missing output files: 01_pgls_results/MA0917.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0917.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0917.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0917.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0917.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0917.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0917.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0917.1_pgls/pgls3_cocoon.tsv
+    wildcards: motif=MA0917.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2299.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2299.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2299.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2299.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2299.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2299.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2299.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2299.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2299.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2299.1_pgls.log
+    jobid: 156
+    reason: Missing output files: 01_pgls_results/MA2299.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2299.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2299.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2299.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2299.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2299.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2299.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2299.1_pgls/pgls6b_queens_ordinal.tsv
+    wildcards: motif=MA2299.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2235.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2235.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2235.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2235.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2235.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2235.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2235.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2235.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2235.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2235.1_pgls.log
+    jobid: 186
+    reason: Missing output files: 01_pgls_results/MA2235.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2235.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2235.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2235.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2235.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2235.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2235.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2235.1_pgls/pgls5_castes.tsv
+    wildcards: motif=MA2235.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0251.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0251.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0251.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0251.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0251.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0251.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0251.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0251.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0251.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0251.1_pgls.log
+    jobid: 216
+    reason: Missing output files: 01_pgls_results/MA0251.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0251.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0251.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0251.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0251.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0251.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0251.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0251.1_pgls/pgls4b_wings_brachypterous.tsv
+    wildcards: motif=MA0251.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2286.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2286.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2286.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2286.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2286.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2286.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2286.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2286.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2286.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2286.1_pgls.log
+    jobid: 246
+    reason: Missing output files: 01_pgls_results/MA2286.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2286.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2286.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2286.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2286.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2286.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2286.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2286.1_pgls/pgls5_castes.tsv
+    wildcards: motif=MA2286.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0224.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0224.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0224.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0224.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0224.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0224.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0224.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0224.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0224.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0224.1_pgls.log
+    jobid: 276
+    reason: Missing output files: 01_pgls_results/MA0224.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0224.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0224.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0224.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0224.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0224.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0224.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0224.1_pgls/pgls4a_wings_ergatoid.tsv
+    wildcards: motif=MA0224.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2192.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2192.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2192.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2192.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2192.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2192.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2192.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2192.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2192.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2192.1_pgls.log
+    jobid: 7
+    reason: Missing output files: 01_pgls_results/MA2192.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2192.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2192.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2192.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2192.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2192.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2192.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2192.1_pgls/pgls4b_wings_brachypterous.tsv
+    wildcards: motif=MA2192.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2295.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2295.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2295.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2295.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2295.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2295.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2295.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2295.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2295.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2295.1_pgls.log
+    jobid: 67
+    reason: Missing output files: 01_pgls_results/MA2295.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2295.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2295.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2295.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2295.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2295.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2295.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2295.1_pgls/pgls4a_wings_ergatoid.tsv
+    wildcards: motif=MA2295.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2302.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2302.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2302.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2302.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2302.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2302.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2302.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2302.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2302.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2302.1_pgls.log
+    jobid: 37
+    reason: Missing output files: 01_pgls_results/MA2302.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2302.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2302.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2302.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2302.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2302.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2302.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2302.1_pgls/pgls4a_wings_ergatoid.tsv
+    wildcards: motif=MA2302.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0193.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0193.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0193.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0193.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0193.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0193.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0193.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0193.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0193.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0193.1_pgls.log
+    jobid: 97
+    reason: Missing output files: 01_pgls_results/MA0193.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0193.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0193.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0193.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0193.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0193.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0193.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0193.1_pgls/pgls5_castes.tsv
+    wildcards: motif=MA0193.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1462.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1462.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1462.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1462.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1462.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1462.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1462.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1462.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1462.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1462.2_pgls.log
+    jobid: 127
+    reason: Missing output files: 01_pgls_results/MA1462.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1462.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1462.2_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA1462.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1462.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1462.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1462.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1462.2_pgls/pgls5_castes.tsv
+    wildcards: motif=MA1462.2
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2216.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2216.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2216.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2216.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2216.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2216.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2216.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2216.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2216.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2216.1_pgls.log
+    jobid: 157
+    reason: Missing output files: 01_pgls_results/MA2216.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2216.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2216.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2216.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2216.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2216.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2216.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2216.1_pgls/pgls4a_wings_ergatoid.tsv
+    wildcards: motif=MA2216.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0085.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0085.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0085.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0085.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0085.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0085.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0085.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA0085.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0085.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0085.2_pgls.log
+    jobid: 187
+    reason: Missing output files: 01_pgls_results/MA0085.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0085.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0085.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA0085.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0085.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0085.2_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0085.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0085.2_pgls/pgls4b_wings_brachypterous.tsv
+    wildcards: motif=MA0085.2
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0022.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0022.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0022.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0022.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0022.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0022.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0022.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0022.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0022.1_pgls.log
+    jobid: 277
+    reason: Missing output files: 01_pgls_results/MA0022.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0022.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0022.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0022.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0022.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0022.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0022.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0022.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA0022.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2632.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2632.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2632.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2632.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2632.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2632.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2632.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2632.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2632.1_pgls.log
+    jobid: 8
+    reason: Missing output files: 01_pgls_results/MA2632.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2632.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2632.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2632.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2632.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2632.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2632.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2632.1_pgls/pgls1_parasitism.tsv
+    wildcards: motif=MA2632.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2278.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2278.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2278.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2278.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2278.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2278.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2278.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2278.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2278.1_pgls.log
+    jobid: 68
+    reason: Missing output files: 01_pgls_results/MA2278.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2278.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2278.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2278.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2278.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2278.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2278.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2278.1_pgls/pgls1_parasitism.tsv
+    wildcards: motif=MA2278.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0180.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0180.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0180.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0180.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0180.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0180.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0180.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0180.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0180.1_pgls.log
+    jobid: 38
+    reason: Missing output files: 01_pgls_results/MA0180.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0180.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0180.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0180.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0180.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0180.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0180.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0180.1_pgls/pgls2_larval_hemolymph.tsv
+    wildcards: motif=MA0180.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0187.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0187.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0187.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0187.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0187.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0187.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0187.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0187.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0187.1_pgls.log
+    jobid: 98
+    reason: Missing output files: 01_pgls_results/MA0187.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0187.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0187.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0187.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0187.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0187.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0187.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0187.1_pgls/pgls2_larval_hemolymph.tsv
+    wildcards: motif=MA0187.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2205.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2205.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2205.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2205.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2205.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2205.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2205.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2205.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2205.1_pgls.log
+    jobid: 128
+    reason: Missing output files: 01_pgls_results/MA2205.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2205.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2205.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2205.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2205.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2205.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2205.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2205.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA2205.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0175.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0175.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0175.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0175.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0175.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0175.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0175.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0175.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0175.1_pgls.log
+    jobid: 158
+    reason: Missing output files: 01_pgls_results/MA0175.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0175.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0175.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0175.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0175.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0175.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA0175.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0175.1_pgls/pgls4b_wings_brachypterous.tsv
+    wildcards: motif=MA0175.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2217.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2217.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2217.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2217.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2217.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2217.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2217.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2217.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2217.1_pgls.log
+    jobid: 188
+    reason: Missing output files: 01_pgls_results/MA2217.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2217.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2217.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2217.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2217.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2217.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2217.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2217.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA2217.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2316.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2316.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2316.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2316.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2316.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2316.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA2316.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2316.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2316.2_pgls.log
+    jobid: 218
+    reason: Missing output files: 01_pgls_results/MA2316.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2316.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2316.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2316.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2316.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2316.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2316.2_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2316.2_pgls/pgls5_castes.tsv
+    wildcards: motif=MA2316.2
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2288.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2288.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2288.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2288.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2288.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2288.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2288.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2288.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2288.1_pgls.log
+    jobid: 248
+    reason: Missing output files: 01_pgls_results/MA2288.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2288.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2288.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2288.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2288.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2288.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2288.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2288.1_pgls/pgls3_cocoon.tsv
+    wildcards: motif=MA2288.1
+    resources: tmpdir=/tmp
+[Tue Jun  9 15:12:24 2026]
+localrule run_pgls:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2319.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2319.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2319.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2319.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2319.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2319.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2319.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2319.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2319.1_pgls.log
+    jobid: 278
+    reason: Missing output files: 01_pgls_results/MA2319.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2319.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2319.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2319.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2319.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2319.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2319.1_pgls/pgls6b_queens_ordinal.tsv, 01_pgls_results/MA2319.1_pgls/pgls6a_queens_mono_vs_poly.tsv
+    wildcards: motif=MA2319.1
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp3aq1prft.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 281
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0188.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0188.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0188.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0188.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0188.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0188.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0188.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0188.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0188.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0188.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpyb02mu_9.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 246
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2286.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2286.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2286.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2286.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2286.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2286.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2286.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2286.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2286.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2286.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpwq4a9_eq.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 97
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0193.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0193.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0193.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0193.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0193.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0193.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0193.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0193.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0193.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0193.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmplpon5i_s.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 221
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2213.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2213.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2213.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2213.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2213.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2213.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2213.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2213.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2213.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2213.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpr5hz6yv7.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 67
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2295.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2295.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2295.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2295.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2295.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2295.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2295.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2295.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2295.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2295.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpy2wvguzn.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 186
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2235.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2235.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2235.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2235.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2235.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2235.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2235.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2235.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2235.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2235.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpofuamzne.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 37
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2302.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2302.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2302.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2302.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2302.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2302.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2302.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2302.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2302.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2302.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpbrv_o3zw.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 251
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2215.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2215.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2215.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2215.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2215.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2215.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2215.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2215.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2215.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2215.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpkzdhwr8g.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:25 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 187
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0085.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0085.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0085.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0085.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0085.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0085.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0085.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA0085.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0085.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0085.2_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpc1rfolcn.pgls_ants_all.R' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp2q5y89iz.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 127
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1462.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1462.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1462.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1462.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1462.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1462.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1462.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1462.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1462.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1462.2_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 102
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2233.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2233.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2233.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2233.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2233.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2233.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2233.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2233.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2233.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2233.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp2dmioz6r.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 248
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2288.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2288.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2288.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2288.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2288.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2288.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2288.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2288.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2288.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpqsvqlbb6.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 42
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0225.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0225.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0225.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0225.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0225.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0225.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0225.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0225.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0225.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0225.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmply0432g1.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 98
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0187.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0187.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0187.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0187.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0187.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0187.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0187.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0187.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0187.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp3fb32et6.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 38
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0180.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0180.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0180.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0180.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0180.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0180.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0180.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0180.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0180.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpqsy072sq.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 36
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2274.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2274.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2274.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2274.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2274.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2274.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2274.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2274.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2274.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2274.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp2yrdm2vs.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 276
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0224.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0224.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0224.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0224.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0224.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0224.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0224.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0224.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0224.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0224.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmplnog9ft6.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 158
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0175.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0175.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0175.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0175.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0175.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0175.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0175.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0175.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0175.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpedbpnurk.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 218
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2316.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2316.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2316.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2316.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2316.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2316.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA2316.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2316.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2316.2_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpe_im5r7e.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 278
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2319.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2319.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2319.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2319.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2319.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2319.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2319.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2319.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2319.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp5qo2h786.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 7
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2192.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2192.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2192.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2192.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2192.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2192.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2192.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2192.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2192.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2192.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp5h_c6z0a.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 277
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0022.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0022.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0022.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0022.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0022.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0022.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0022.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0022.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0022.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp9yduw32r.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 96
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2313.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2313.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2313.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2313.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2313.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2313.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2313.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2313.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2313.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2313.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpqjgd9iua.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 216
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0251.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0251.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0251.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0251.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0251.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0251.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0251.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0251.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0251.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0251.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp5zwx9dxe.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 6
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1460.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1460.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1460.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1460.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1460.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1460.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1460.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1460.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1460.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1460.2_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpkk6ju3e0.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 8
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2632.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2632.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2632.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2632.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2632.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2632.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2632.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2632.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2632.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpwkv3q5ka.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 275
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2290.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2290.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2290.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2290.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2290.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2290.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2290.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2290.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2290.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2290.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp5vc1aq5d.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 69
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0450.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0450.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0450.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0450.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0450.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0450.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0450.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0450.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0450.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpassfqdt6.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 66
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2191.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2191.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2191.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2191.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2191.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2191.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2191.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2191.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2191.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2191.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpuz5c7jqy.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 126
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0917.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0917.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0917.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0917.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0917.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0917.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0917.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0917.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0917.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0917.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpcrwct36w.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 188
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2217.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2217.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2217.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2217.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2217.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2217.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2217.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2217.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2217.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmped4e5c9l.pgls_ants_all.R' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmp65k5ns14.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 156
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2299.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2299.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2299.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2299.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2299.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2299.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2299.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2299.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2299.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2299.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 128
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2205.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2205.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2205.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2205.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2205.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2205.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2205.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2205.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2205.1_pgls.log (check log file(s) for error details)
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmppd0rz0j2.pgls_ants_all.R' returned non-zero exit status 1.
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/snakefile_pgls_analysis.smk", line 40:
+Command 'set -euo pipefail;  Rscript --vanilla /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/scripts/tmpx8f_b6km.pgls_ants_all.R' returned non-zero exit status 1.
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 68
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2278.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2278.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2278.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2278.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2278.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2278.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2278.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2278.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2278.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 157
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2216.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2216.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2216.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2216.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2216.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2216.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2216.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2216.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2216.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2216.1_pgls.log (check log file(s) for error details)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 69
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0450.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0450.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0450.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0450.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0450.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0450.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0450.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0450.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0450.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0450.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 221
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2213.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2213.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2213.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2213.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2213.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2213.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2213.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2213.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2213.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2213.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 281
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0188.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0188.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0188.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0188.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0188.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0188.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0188.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0188.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0188.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0188.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 251
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2215.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2215.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2215.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2215.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2215.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2215.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2215.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2215.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2215.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2215.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 102
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2233.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2233.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2233.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2233.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2233.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2233.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2233.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2233.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2233.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2233.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 42
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0225.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0225.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0225.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0225.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0225.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0225.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0225.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0225.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0225.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0225.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 275
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2290.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2290.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2290.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2290.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2290.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2290.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2290.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2290.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2290.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2290.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 246
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2286.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2286.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2286.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2286.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2286.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2286.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2286.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2286.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2286.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2286.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 186
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2235.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2235.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2235.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2235.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2235.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2235.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2235.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2235.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2235.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2235.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 36
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2274.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2274.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2274.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2274.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2274.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2274.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2274.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2274.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2274.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2274.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 276
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0224.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0224.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0224.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0224.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0224.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0224.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0224.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0224.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0224.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0224.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 96
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2313.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2313.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2313.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2313.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2313.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2313.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2313.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2313.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2313.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2313.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 216
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0251.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0251.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0251.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0251.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0251.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0251.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0251.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0251.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0251.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0251.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 6
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1460.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1460.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1460.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1460.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1460.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1460.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1460.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1460.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1460.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1460.2_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 66
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2191.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2191.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2191.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2191.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2191.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2191.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2191.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2191.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2191.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2191.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 126
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0917.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0917.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0917.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0917.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0917.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0917.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0917.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0917.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0917.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0917.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 156
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2299.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2299.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2299.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2299.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2299.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2299.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2299.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2299.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2299.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2299.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 127
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1462.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA1462.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA1462.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA1462.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA1462.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA1462.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA1462.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA1462.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA1462.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA1462.2_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 187
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0085.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0085.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0085.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0085.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0085.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0085.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0085.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA0085.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0085.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0085.2_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 97
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0193.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0193.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0193.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0193.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0193.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0193.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0193.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0193.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0193.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0193.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 37
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2302.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2302.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2302.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2302.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2302.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2302.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2302.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2302.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2302.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2302.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 67
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2295.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2295.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2295.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2295.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2295.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2295.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2295.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2295.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2295.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2295.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 7
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2192.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2192.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2192.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2192.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2192.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2192.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2192.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2192.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2192.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2192.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 277
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0022.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0022.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0022.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0022.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0022.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0022.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0022.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0022.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0022.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0022.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 157
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2216.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2216.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2216.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2216.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2216.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2216.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2216.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2216.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2216.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2216.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 248
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2288.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2288.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2288.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2288.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2288.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2288.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2288.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2288.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2288.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2288.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 8
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2632.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2632.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2632.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2632.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2632.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2632.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2632.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2632.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2632.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2632.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 98
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0187.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0187.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0187.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0187.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0187.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0187.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0187.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0187.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0187.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0187.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 38
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0180.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0180.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0180.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0180.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0180.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0180.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0180.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0180.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0180.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0180.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 158
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0175.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA0175.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA0175.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA0175.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA0175.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA0175.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA0175.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA0175.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA0175.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA0175.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 218
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2316.2.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2316.2_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2316.2_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2316.2_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2316.2_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2316.2_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2316.2_pgls/pgls5_castes.tsv, 01_pgls_results/MA2316.2_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2316.2_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2316.2_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 278
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2319.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2319.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2319.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2319.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2319.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2319.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2319.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2319.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2319.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2319.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 188
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2217.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2217.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2217.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2217.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2217.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2217.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2217.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2217.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2217.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2217.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 128
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2205.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2205.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2205.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2205.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2205.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2205.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2205.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2205.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2205.1_pgls.log (check log file(s) for error details)
+[Tue Jun  9 15:12:26 2026]
+Error in rule run_pgls:
+    message: None
+    jobid: 68
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2278.1.tsv, updated_dataset.xlsx, 00_ult_tree/ultrametric_tree.rds
+    output: 01_pgls_results/MA2278.1_pgls/pgls1_parasitism.tsv, 01_pgls_results/MA2278.1_pgls/pgls2_larval_hemolymph.tsv, 01_pgls_results/MA2278.1_pgls/pgls3_cocoon.tsv, 01_pgls_results/MA2278.1_pgls/pgls4a_wings_ergatoid.tsv, 01_pgls_results/MA2278.1_pgls/pgls4b_wings_brachypterous.tsv, 01_pgls_results/MA2278.1_pgls/pgls5_castes.tsv, 01_pgls_results/MA2278.1_pgls/pgls6a_queens_mono_vs_poly.tsv, 01_pgls_results/MA2278.1_pgls/pgls6b_queens_ordinal.tsv
+    log: 01_pgls_results/logs/MA2278.1_pgls.log (check log file(s) for error details)
+Complete log(s): /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/02_pgls_analysis/.snakemake/log/2026-06-09T151223.765855.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

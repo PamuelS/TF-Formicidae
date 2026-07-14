@@ -1,0 +1,257 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+all                      1
+run_pgls_by_motif      296
+total                  297
+
+Select jobs to execute...
+Execute 30 jobs...
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2310.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2310.1_pgls_results.csv
+    jobid: 70
+    reason: Missing output files: 00_pgls_results/MA2310.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2310.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2255.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2255.1_pgls_results.csv
+    jobid: 132
+    reason: Missing output files: 00_pgls_results/MA2255.1_pgls_results.csv
+    wildcards: motif=MA2255.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0239.2.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0239.2_pgls_results.csv
+    jobid: 162
+    reason: Missing output files: 00_pgls_results/MA0239.2_pgls_results.csv
+    wildcards: motif=MA0239.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0231.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0231.1_pgls_results.csv
+    jobid: 192
+    reason: Missing output files: 00_pgls_results/MA0231.1_pgls_results.csv
+    wildcards: motif=MA0231.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2205.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2205.1_pgls_results.csv
+    jobid: 43
+    reason: Missing output files: 00_pgls_results/MA2205.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2205.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2258.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2258.1_pgls_results.csv
+    jobid: 103
+    reason: Missing output files: 00_pgls_results/MA2258.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2258.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1700.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA1700.1_pgls_results.csv
+    jobid: 246
+    reason: Missing output files: 00_pgls_results/MA1700.1_pgls_results.csv
+    wildcards: motif=MA1700.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2243.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2243.1_pgls_results.csv
+    jobid: 247
+    reason: Missing output files: 00_pgls_results/MA2243.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2243.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2244.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2244.1_pgls_results.csv
+    jobid: 7
+    reason: Missing output files: 00_pgls_results/MA2244.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2244.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0166.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0166.1_pgls_results.csv
+    jobid: 67
+    reason: Missing output files: 00_pgls_results/MA0166.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0166.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2201.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2201.1_pgls_results.csv
+    jobid: 37
+    reason: Missing output files: 00_pgls_results/MA2201.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2201.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0205.3.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0205.3_pgls_results.csv
+    jobid: 97
+    reason: Missing output files: 00_pgls_results/MA0205.3_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0205.3
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2190.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2190.1_pgls_results.csv
+    jobid: 127
+    reason: Missing output files: 00_pgls_results/MA2190.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2190.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1461.2.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA1461.2_pgls_results.csv
+    jobid: 157
+    reason: Missing output files: 00_pgls_results/MA1461.2_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA1461.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2299.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2299.1_pgls_results.csv
+    jobid: 187
+    reason: Missing output files: 00_pgls_results/MA2299.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2299.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2223.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2223.1_pgls_results.csv
+    jobid: 217
+    reason: Missing output files: 00_pgls_results/MA2223.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2223.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0219.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0219.1_pgls_results.csv
+    jobid: 277
+    reason: Missing output files: 00_pgls_results/MA0219.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0219.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2252.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2252.1_pgls_results.csv
+    jobid: 8
+    reason: Missing output files: 00_pgls_results/MA2252.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2252.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0199.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0199.1_pgls_results.csv
+    jobid: 68
+    reason: Missing output files: 00_pgls_results/MA0199.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0199.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0172.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0172.1_pgls_results.csv
+    jobid: 38
+    reason: Missing output files: 00_pgls_results/MA0172.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0172.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0189.2.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0189.2_pgls_results.csv
+    jobid: 98
+    reason: Missing output files: 00_pgls_results/MA0189.2_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0189.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2192.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2192.1_pgls_results.csv
+    jobid: 128
+    reason: Missing output files: 00_pgls_results/MA2192.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2192.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2203.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2203.1_pgls_results.csv
+    jobid: 158
+    reason: Missing output files: 00_pgls_results/MA2203.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2203.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2320.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2320.1_pgls_results.csv
+    jobid: 188
+    reason: Missing output files: 00_pgls_results/MA2320.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2320.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0224.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0224.1_pgls_results.csv
+    jobid: 249
+    reason: Missing output files: 00_pgls_results/MA0224.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA0224.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2220.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2220.1_pgls_results.csv
+    jobid: 279
+    reason: Missing output files: 00_pgls_results/MA2220.1_pgls_results.csv; Code has changed since last execution
+    wildcards: motif=MA2220.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA1702.2.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA1702.2_pgls_results.csv
+    jobid: 9
+    reason: Missing output files: 00_pgls_results/MA1702.2_pgls_results.csv
+    wildcards: motif=MA1702.2
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2279.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2279.1_pgls_results.csv
+    jobid: 39
+    reason: Missing output files: 00_pgls_results/MA2279.1_pgls_results.csv
+    wildcards: motif=MA2279.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2248.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA2248.1_pgls_results.csv
+    jobid: 69
+    reason: Missing output files: 00_pgls_results/MA2248.1_pgls_results.csv
+    wildcards: motif=MA2248.1
+    resources: tmpdir=/tmp
+[Mon Jun 15 11:02:20 2026]
+localrule run_pgls_by_motif:
+    input: ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA0446.1.tsv, abbreviative_name_rooted_Leptsp_tree.txt, ../../00_dataset/updated_dataset.tsv
+    output: 00_pgls_results/MA0446.1_pgls_results.csv
+    jobid: 99
+    reason: Missing output files: 00_pgls_results/MA0446.1_pgls_results.csv
+    wildcards: motif=MA0446.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+Terminating processes on user request, this might take some time.

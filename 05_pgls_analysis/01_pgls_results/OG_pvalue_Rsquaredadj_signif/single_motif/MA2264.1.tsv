@@ -1,0 +1,2 @@
+"OG" "Regression_Coefficient" "P_value" "Lambda" "Bound_used" "R_squared" "R_squared_adj" "n" "Status" "Contrast" "motivo"
+"OG0008290_00" 0.0926474494502814 0.00196797513560698 1e-05 "1e-05 to 1" 0.633085464954446 0.630952240913483 174 "success" "pgls5_castespolymorphic" "MA2264.1"

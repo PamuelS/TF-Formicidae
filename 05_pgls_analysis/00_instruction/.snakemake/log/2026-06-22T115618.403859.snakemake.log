@@ -1,0 +1,4 @@
+SyntaxError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/00_instruction/pgls_phenothypes.R", line 21:
+invalid syntax:
+cores_path <- as.numeric(args[4])
+

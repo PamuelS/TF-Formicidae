@@ -1,0 +1,40 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+pgls_phenotypes      296
+total                297
+
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Jun 26 14:53:05 2026]
+localrule pgls_phenotypes:
+    input: tree_rooted.nwk, updated_dataset.tsv, ../../03_tf_research/05_aggregate/05_totalscore_orthofinder/totalscore_MA0212.1.tsv
+    output: ../02_pgls_Ortho_results/MA0212.1/pgls5_Ortho_castes.csv
+    log: ../01_pgls_results/MA0212.1/logs/pgls_phenotypes.log
+    jobid: 88
+    reason: Missing output files: ../02_pgls_Ortho_results/MA0212.1/pgls5_Ortho_castes.csv
+    wildcards: motif=MA0212.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Jun 26 15:20:13 2026]
+Finished jobid: 88 (Rule: pgls_phenotypes)
+1 of 297 steps (0.3%) done
+Execute 1 jobs...
+[Fri Jun 26 15:20:13 2026]
+localrule pgls_phenotypes:
+    input: tree_rooted.nwk, updated_dataset.tsv, ../../03_tf_research/05_aggregate/05_totalscore_orthofinder/totalscore_MA2226.1.tsv
+    output: ../02_pgls_Ortho_results/MA2226.1/pgls5_Ortho_castes.csv
+    log: ../01_pgls_results/MA2226.1/logs/pgls_phenotypes.log
+    jobid: 178
+    reason: Missing output files: ../02_pgls_Ortho_results/MA2226.1/pgls5_Ortho_castes.csv
+    wildcards: motif=MA2226.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+Terminating processes on user request, this might take some time.

@@ -1,0 +1,2 @@
+"OG","Regression_Coefficient","P_value","Lambda","Bound_used","R_squared","R_squared_adj","n","Status","Contrast"
+"OG0006599_00",0.254783256411391,0.0903594998718069,0.81164678218882,"1e-05 to 1",0.355143410988903,0.351394244773722,174,"success","pgls5_castespolymorphic"

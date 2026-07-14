@@ -1,0 +1,53 @@
+Assuming unrestricted shared filesystem usage.
+host: SGBGA-D142237S
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+pgls_phenotypes      296
+total                297
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Jun 17 11:38:15 2026]
+localrule pgls_phenotypes:
+    input: resolved.contree, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2301.1.tsv
+    output: ../01_pgls_results/MA2301.1/pgls5_castes.csv
+    log: ../01_pgls_results/MA2301.1/logs/pgls_phenotypes.log
+    jobid: 149
+    reason: Missing output files: ../01_pgls_results/MA2301.1/pgls5_castes.csv
+    wildcards: motif=MA2301.1
+    resources: tmpdir=/tmp
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/00_instruction/snakefile_pgls_analysis.smk", line 20:
+Command 'set -euo pipefail;  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 Rscript pgls_phenothypes.R' returned non-zero exit status 1.
+[Wed Jun 17 11:38:17 2026]
+Error in rule pgls_phenotypes:
+    message: None
+    jobid: 149
+    input: resolved.contree, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2301.1.tsv
+    output: ../01_pgls_results/MA2301.1/pgls5_castes.csv
+    log: ../01_pgls_results/MA2301.1/logs/pgls_phenotypes.log (check log file(s) for error details)
+    shell:
+        OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 Rscript pgls_phenothypes.R
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Jun 17 11:38:17 2026]
+Error in rule pgls_phenotypes:
+    message: None
+    jobid: 149
+    input: resolved.contree, updated_dataset.tsv, ../../03_tf_research/05_aggregate/02_totalscore/totalscore_MA2301.1.tsv
+    output: ../01_pgls_results/MA2301.1/pgls5_castes.csv
+    log: ../01_pgls_results/MA2301.1/logs/pgls_phenotypes.log (check log file(s) for error details)
+    shell:
+        OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 Rscript pgls_phenothypes.R
+        (command exited with non-zero exit code)
+Complete log(s): /DATASMALL/samuel.pederzini/TF-Formicidae/04_pgls_analysis/00_instruction/.snakemake/log/2026-06-17T113815.135907.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
