@@ -227,7 +227,7 @@ rule disco_species_motif_table:
 		MAP_PATH="ncbi_header_modified/{wildcards.samples}_header_summary_mapping.tsv"
 
 		if [ -f "$MAP_PATH" ]; then
-			sed -E "s/::.[^\t]+//; s/^rns-//" {input.species_table} | \
+			sed -E "s/::.[^\t]+//; s/^rna-//" {input.species_table} | \
 			awk 'BEGIN {{ OFS="\t" }} {{ sub(/\\r$/, "") }} NR==FNR {{ map[$2]=$1; next }} $1 in map {{ $1=map[$1] }} 1' "$MAP_PATH" - | \
 			awk -F'\t' -v species="{wildcards.samples}" '
 				BEGIN {{ OFS="\t" }}
