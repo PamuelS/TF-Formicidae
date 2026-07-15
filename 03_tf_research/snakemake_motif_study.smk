@@ -225,54 +225,53 @@ rule disco_species_motif_table:
 	shell:
 		"""
 		MAP_PATH="../ncbi_header_modified/{wildcards.samples}_header_summary_mapping.tsv"
+		TMP=$$(mktemp)
 
-		if [ -f "$MAP_PATH" ]; then
+		if [ -f "$$MAP_PATH" ]; then
 			sed -E "s/::.[^\t]+//" {input.species_table} | \
-			awk 'BEGIN {{ OFS="\t" }} {{ sub(/\\r$/, "") }} NR==FNR {{ map[$2]=$1; next }} $1 in map {{ $1=map[$1] }} 1' "$MAP_PATH" - | \
+			awk 'BEGIN {{ OFS="\t" }} {{ sub(/\\r$/, "") }} NR==FNR {{ map[$$2]=$$1; next }} $$1 in map {{ $$1=map[$$1] }} 1' \
+				"$$MAP_PATH" - > "$$TMP"
+
 			awk -F'\t' -v species="{wildcards.samples}" '
-				BEGIN {{ OFS="\t" }}
-				{{ gsub(/\\r$/, "") }}
-				NR==FNR {{
-					if (FNR == 1) {{
-						for (i=1; i<=NF; i++) {{
-							if ($i == species) {{ col = i; break; }}
-						}}
-						next;
-					}}
-					if (col > 0 && $col != "" && $col != "*") {{
-						n = split($col, a, /,[ ]*/);
+				NR==FNR && FNR==1 {{
+					for (i=1; i<=NF; i++) if ($$i == species) {{ col = i; break }}
+					next
+				}}
+				NR==FNR && FNR>1 {{
+					if (col > 0 && $$col != "" && $$col != "*") {{
+						n = split($$col, a, /,[ ]*/);
 						for (j=1; j<=n; j++) if (a[j] != "") valid[a[j]] = 1;
 					}}
-					next;
+					next
 				}}
 				FNR == 1 {{ print; next }}
-				$1 in valid
-			' {input.orthogroups} - > {output.disco_name}
+				$$1 in valid
+			' {input.orthogroups} "$$TMP" > {output.disco_name}
 
 		else
-			abb=$(awk -v fn="{wildcards.samples}" '$3 == fn {{print $2}}' {input.abbreviative})
-			sed -E "s/${{abb}}_?//; s/^_//; s/__/_/g; s/::.[^\t]+//" {input.species_table} | \
+			abb=$$(awk -v fn="{wildcards.samples}" '$$3 == fn {{print $$2}}' {input.abbreviative})
+			sed -E "s/$${{abb}}_?//; s/^_//; s/__/_/g; s/::.[^\t]+//" {input.species_table} > "$$TMP"
+
 			awk -F'\t' -v species="{wildcards.samples}" '
-				BEGIN {{ OFS="\t" }}
-				{{ gsub(/\\r$/, "") }}
-				NR==FNR {{
-					if (FNR == 1) {{
-						for (i=1; i<=NF; i++) {{
-							if ($i == species) {{ col = i; break; }}
-						}}
-						next;
-					}}
-					if (col > 0 && $col != "" && $col != "*") {{
-						n = split($col, a, /,[ ]*/);
+				NR==FNR && FNR==1 {{
+					for (i=1; i<=NF; i++) if ($$i == species) {{ col = i; break }}
+					next
+				}}
+				NR==FNR && FNR>1 {{
+					if (col > 0 && $$col != "" && $$col != "*") {{
+						n = split($$col, a, /,[ ]*/);
 						for (j=1; j<=n; j++) if (a[j] != "") valid[a[j]] = 1;
 					}}
-					next;
+					next
 				}}
 				FNR == 1 {{ print; next }}
-				$1 in valid
-			' {input.orthogroups} - > {output.disco_name}
+				$$1 in valid
+			' {input.orthogroups} "$$TMP" > {output.disco_name}
 		fi
+
+		rm -f "$$TMP"
 		"""
+
 # Aggregazione finale delle tabelle
 rule aggregate_tables_disco:
 	input:
