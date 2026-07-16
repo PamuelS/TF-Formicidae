@@ -198,7 +198,7 @@ rule full_species_motif_tables:
 		full_name = "04_bowtie/06_full_promoter_motif_table/{samples}_full_summary.tsv"
 	shell:
 		"""
-		MAP_PATH="../ncbi_header_modified/{wildcards.samples}_header_summary_mapping.tsv"
+		MAP_PATH="ncbi_header_modified/{wildcards.samples}_header_summary_mapping.tsv"
 
 		if [ -f "$MAP_PATH" ]; then 
 			sed -E "s/::.[^\t]+//; s/^rna-//" {input.species_table} | \
