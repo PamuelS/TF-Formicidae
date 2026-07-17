@@ -29,3 +29,31 @@ Infine viene calcolato il delta, corrispondente alla differenza della mediana tr
 > La copertura delle specie è osservabile nel grafico [B]
 > 
 > Un valore positivo di delta significa che l'esecuzione di DISCO non ha intaccato il quantitativo complessivo delle specie 
+
+
+## Rappresentazione della distribuzione degli OG
+
+Filtro min-species-ortho (> 90 specie): rimossi 28991/38780 OG ORTHO (9789 rimasti)
+
+DISCO: 9783 righe × 175 specie
+
+ORTHO: 9789 OG × 175 specie (raw=38780, filtrati=28991)
+
+
+Single-complete: 9554 OG
+
+Solo ORTHO: 159 OG
+
+Split (≥2 forme): 76 OG
+
+
+ ── Report OG ──────────────────────────────────────
+
+- OG ORTHO (post-filtro specie)          :    9789
+- OG ORTHO con match in DISCO (confronto):    9630
+- OG ORTHO senza match (ortho_only, skip):     159
+- OG DISCO (righe totali, incl. forme)   :    9783
+- OG DISCO distinti per base             :    9699
+- Forme aggiuntive da split (_01, _02...):      84
+
+───────────────────────────────────────────────────
