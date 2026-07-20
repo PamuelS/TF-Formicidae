@@ -26,4 +26,4 @@ Rscript script_pgls_total_sig_dist.R
 ```
 
 
-> Tutto questo lavoro è stato svolto solo ed unicamente per la pgls legata all'analisi delle caste. Tutto il materiale riportato qui sopra potrà essere adoperato anche per le altre analisi pgls che dovranno essere eseguite per gli altri polimorfismi.
+> Tutto questo lavoro è stato svolto solo ed unicamente per la pgls legata all'analisi delle caste. Tutto il materiale riportato qui sopra potrà essere adoperato anche per le altre analisi pgls che dovranno essere eseguite per gli altri fenotipi.
