@@ -59,6 +59,8 @@ Il risultato finale consiste nella generazione di una singola tabella per ogni m
 ***Rule aggregate_tables_Orthofinder***:
 Medesime operazioni eseguite nella rule precedente, con la netta distinzione del tipo di input fornito. Infatti viene utilizzato il file `Orthogroups_OrthoFinder.tsv` che corrisponde al file restituito dall'analisi di Orthofinder (ovvero Orthogroups.tsv). Quindi in questa rule vengono processati tutti gli ortogruppi identificati da Orthofinder, senza che vengano processati ulteriormente dall'analisi di DISCO. Adottando questo metodo è possibile confrontare direttamente il risultato dello stesso motivo sui due differenti file .tsv per verificare eventuali discrepanze o perdita di informazioni detatte da una separazione, ad opera di DISCO, di eventi di duplicazione genica.
 
+> Tenere presente che in entrambe le rule di aggregate tables sono presenti nelle celle valori che corrispondono sia a 0 che a NA. Quando uno 0 compare significa che il gene è presente dentro l'ortogruppo, ma il motivo non ha eseguito un match con esso. Al contrario, la presenza di un NA nella cella indica una totale assenza del gene dentro l'ortogruppo e di conseguenza una impossibilità di matchare con il motivo.
+
 <p align="center">
   <img src="./snakemake_motif_study.png" alt="Descrizione">
 </p>
