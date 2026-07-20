@@ -25,7 +25,7 @@ All'interno del grafico il boxplot corriponde al range del rapporto tra i due pu
 
 L'altro aspetto analizzato per questo ocnfronto si è maggiormente concentrato sulla variazione della copertura delle specie che un motivo ha per un determinato OG. Nello specifico si è cercato di investigare se il passaggio da ORTHOFINDER a DISCO comportasse in alcuni ortogruppi la totale perdita di punteggio relativa ad una specie, questo perchè nel file ORTHOFINDER sono ammesse copie del medesimo gene associate ad una singola specie ma che vengono spacchettate e scomposte con il lancio di DISCO, causando una potenziale riduzione/perdita del punteggio complessivo di quel motivo per l'OG preso in considerazione.
 Per calcolare questa differenza viene prima eseguita una stima in percentuale del quantitativo di specie con un punteggio maggiore di 0/NA per un OG (chiaramente sia per DISCO che per ORTHO) e viene ripetuto per ogni singolo OG disponbile. Successivamente viene calcolata una mediana complessiva dei valori ottenuti per tutti gli OG (sia per ORTHOFINDER che per DISCO), identificativa per un singolo motivo.
-Infine viene calcolato il delta, corrispondente alla differenza della mediana tra DISCO e ORTHO per quel motivo.
+Infine calcola la differenza tra la media dei punteggi del motivo (score) all'interno del singolo OG.
 > La copertura delle specie è osservabile nel grafico [B]
 > 
 > Un valore positivo di delta significa che l'esecuzione di DISCO non ha intaccato il quantitativo complessivo delle specie 
