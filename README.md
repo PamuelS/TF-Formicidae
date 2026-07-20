@@ -18,4 +18,5 @@ Il dataset di questo lavoro è caratterizzato da 175 esemplari, tutti appartenen
 2) Esecuzione del'[analisi BUSCO](./01_BUSCO)
 3) Inferenza di [ortologia](./02_orthology)
 4) Studio dei [motivi](./03_tf_research)
-5) [Analisi pgls](./04_pgls_analysis)
+5) Confronto tra l'analisi su [otho e disco](./04_ortho_disco_comparison)
+6) Analisi [pgls](./04_pgls_analysis)
