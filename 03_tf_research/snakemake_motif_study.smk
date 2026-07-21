@@ -149,15 +149,12 @@ rule genome_motif_tables:
 		out = []
 		for motif, file in zip(MOTIFS, input.genome_tags):
 			data = pd.read_csv(
-				file, sep=r'\s+', header=None, # read in a space separated file without a header
-				usecols=[0, 2], #only take the score and scaffold
-				names=['score', 'scaffold']) # name them
-				#data has a single file's data that will be added to output
+				file, sep=r'\s+', header=None,
+				usecols=[0, 2],
+				names=['score', 'scaffold'])
 			out.append(
-				#group the data by scaffold name, select score, aggregate the mean and count of score, reset index to make the scaffold a column, then save the motif name for later
 				data.groupby('scaffold')['score'].agg(['mean', 'count']).reset_index().assign(motif=motif)
 			)
-		# combine all the data tables into one and save as a tab separated file
 		pd.concat(out).to_csv(output.genome_species_table, sep='\t', index=False)
 
 # Tabelle dei motivi per i promotori/peptidi
@@ -178,15 +175,12 @@ rule species_motif_tables:
 		out = []
 		for motif, file in zip(MOTIFS, input.promoter_tags):
 			data = pd.read_csv(
-				file, sep=r'\s+', header=None, # read in a space separated file without a header
-				usecols=[0, 2], #only take the score and peptide
-				names=['score', 'peptide']) # name them
-				#data has a single file's data that will be added to output
+				file, sep=r'\s+', header=None,
+				usecols=[0, 2],
+				names=['score', 'peptide'])
 			out.append(
-				#group the data by peptide name, select score, aggregate the mean and count of score, reset index to make the peptide a column, then save the filename for later
 				data.groupby('peptide')['score'].agg(['mean', 'count']).reset_index().assign(motif=motif)
 			)
-		# combine all the data tables into one and save as a tab separated file
 		pd.concat(out).to_csv(output.species_table, sep='\t', index=False)
 
 # Creazione di una species_motif_table che contenga ogni singola proteina estratta dal gff (isoforma più lunga)
@@ -242,7 +236,7 @@ rule full_species_motif_tables:
 		else
 			# Specie GAGA — comportamento originale
 			abb=$(awk -v fn="{wildcards.samples}" '$3 == fn {{print $2}}' {input.abbreviative})
-			sed -E "s/$${{abb}}_?//; s/^_//; s/__/_/g; s/::.[^\t]+//" \
+			sed -E "s/${{abb}}_?//; s/^_//; s/__/_/g; s/::[^\t]+//" \
 				{input.species_table} > {output.full_name}
 		fi
 		"""
@@ -330,6 +324,7 @@ rule disco_species_motif_table:
 			' {input.orthogroups} - > {output.disco_name}
 		fi
 		"""
+
 # Aggregazione finale delle tabelle
 rule aggregate_tables_disco:
 	input:
@@ -344,17 +339,11 @@ rule aggregate_tables_disco:
 		mem=8000,
 		time=120,
 	run:
-		# Insieme di pacchetti scaricati per eseguire le successive operazioni
 		from pathlib import Path
 		import sys
-		import pandas as pd 
+		import pandas as pd
 		from collections import defaultdict
 
-		# Creazione del dizionario di traduzione
-		# Ricerca il nome del peptide all'interno del file Orthogroups_DISCO.tsv
-		# La funzione legge l'header dell'ortogruppo e trova l'indice della colonna corrispondente a quel nome
-		# Per ogni riga del file estrae il nome dell'OG e la lunga stringa di nomi di proteine separata da virgole 
-		# Fa in modo che ogni nome di peptidfe punti direttamente al suo OG di riferimento
 		def build_orthogroup_dict(file, species):
 			result = defaultdict(lambda: 'NA')
 			header = file.readline()
@@ -377,42 +366,24 @@ rule aggregate_tables_disco:
 		counts = defaultdict(list)
 		totalscores = defaultdict(list)
 
-		# Lo script scorre ogni nome di specie e il relativo file "_summary.tsv"
 		for sample, file in zip(SAMPLES, input.species_tables):
 			print(sample)
-			# Per ciascuna specie crea il dizionario proteina-OG
 			db = build_orthogroup_dict(open(input.orthogroups), sample)
-			# rimozione keys vuote (ortogruppo no proteina nella specie)
 			del db['']
-			# rimozione keys con values NA (ad esempio header)
 			db = {k: v for k, v in db.items() if not pd.isna(v) and v != "NA"}
-			# Lettura DISCO_summary
 			data = pd.read_csv(file, sep=r'\s+')
-
-			
-			# Mappa ogni singolo peptide (colonna di data) con il OG di riferimento (presente in db)
 			data['OG'] = data.peptide.map(db)
-			# Calcolo complessivo dei punteggi (media * conteggio) per ciascun OG
 			data['total_score'] = data['mean'] * data['count']
 			for motif in MOTIFS:
-
-				# Qui lo script inizia a girare per ogni singolo motivo
-				# Isola le righe di dati che corrispondono solo al motivo target 
-				# Comprime tutti i dati ottenuti (mean && count) dentro il singolo nome di OG
-				# Calcola il complessivo risultato di per ogni OG (total_count)
 				sub_data = data[data.motif == motif]
-				# filtra la tabella
 				sub_data = sub_data[["OG", "mean", "count", "total_score"]]
-				# imposta OG come rowname (index)
 				sub_data = sub_data.set_index("OG")
-				# rimuovi la riga che adesso ha come nome il nome della colonna ed è quindi vuota
 				sub_data.index.name = None
-
 				sub_data = pd.concat((
-					sub_data, 
+					sub_data,
 					pd.DataFrame(
 						index=sorted(set(db.values()).difference(sub_data.index)),
-						columns=sub_data.columns, 
+						columns=sub_data.columns,
 						data=0
 					)
 				)).sort_index()
@@ -420,7 +391,6 @@ rule aggregate_tables_disco:
 				counts[motif].append(sub_data['count'].rename(sample))
 				totalscores[motif].append(sub_data['total_score'].rename(sample))
 
-		# Una volta prodotti i dati necessari, vengono creati tutti i tre file necessari per la lettura dei risultati
 		for motif, score, count, totalscore in zip(MOTIFS, output.score_tables, output.count_tables, output.totalscore_tables):
 			pd.concat(scores[motif], axis=1, ignore_index=False).reset_index().to_csv(score, sep='\t', index=False, na_rep='NA')
 			pd.concat(counts[motif], axis=1, ignore_index=False).reset_index().to_csv(count, sep='\t', index=False, na_rep='NA')
@@ -444,10 +414,8 @@ rule aggregate_table_Orthofinder:
 		import pandas as pd
 		from collections import defaultdict
 
-		# Regex che matcha il prefisso OrthoFinder: una maiuscola + 5 minuscole + pipe
-		# Es. "Acanth|LOC123" → "LOC123"
 		ORTHOFINDER_PREFIX = re.compile(r'^[A-Z][a-z]{5}\|')
-		NCBI_RNA_PREFIX    = re.compile(r'^rna-')
+		NCBI_LPLAT_PREFIX  = re.compile(r'^una-LPLAT_')
 
 		def build_orthogroup_dict(file, species):
 			result = defaultdict(lambda: 'NA')
@@ -460,7 +428,6 @@ rule aggregate_table_Orthofinder:
 					break
 			else:
 				raise ValueError(f"Species {species} not found in header")
-
 			for line in file:
 				columns = line.strip('\n').split('\t')
 				orthogroup = columns[0]
@@ -469,10 +436,11 @@ rule aggregate_table_Orthofinder:
 					peptide = peptide_raw.strip()
 					if not peptide:
 						continue
-				peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
-				peptide_clean = NCBI_RNA_PREFIX.sub('', peptide_clean)
-				result[peptide_clean] = orthogroup
-
+					# Rimuove prefisso GAGA (es. Acafer|LOC123 → LOC123)
+					peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
+					# Rimuove prefisso NCBI una-LPLAT_ specifico di Laspla
+					peptide_clean = NCBI_LPLAT_PREFIX.sub('LPLAT_', peptide_clean)
+					result[peptide_clean] = orthogroup
 			return result
 
 		scores      = defaultdict(list)
@@ -482,29 +450,21 @@ rule aggregate_table_Orthofinder:
 		for sample, file in zip(SAMPLES, input.species_tables):
 			print(sample)
 			db = build_orthogroup_dict(open(input.orthogroups), sample)
-			# Rimozione keys vuote e con valore NA
 			db = {k: v for k, v in db.items() if k and not pd.isna(v) and v != 'NA'}
 
 			data = pd.read_csv(file, sep=r'\s+')
-
-			# Mappa ogni peptide (già senza prefisso nei full_summary) al suo OG
 			data['OG'] = data.peptide.map(db)
 			data['total_score'] = data['mean'] * data['count']
 
 			for motif in MOTIFS:
 				sub_data = data[data.motif == motif].copy()
 				sub_data = sub_data[["OG", "mean", "count", "total_score"]]
-
-				# Aggrega peptidi multipli che puntano allo stesso OG
-				# (può succedere quando più peptidi del full_summary mappano al medesimo ortogruppo)
 				sub_data = sub_data.groupby("OG", dropna=False).agg(
 					mean=("mean", "mean"),
 					count=("count", "sum"),
 					total_score=("total_score", "sum")
 				)
 				sub_data.index.name = None
-
-				# Aggiunge righe a 0 per gli OG presenti in db ma assenti nei dati
 				missing_ogs = sorted(set(db.values()).difference(sub_data.index))
 				if missing_ogs:
 					sub_data = pd.concat((
@@ -515,7 +475,6 @@ rule aggregate_table_Orthofinder:
 							data=0
 						)
 					)).sort_index()
-
 				scores[motif].append(sub_data['mean'].rename(sample))
 				counts[motif].append(sub_data['count'].rename(sample))
 				totalscores[motif].append(sub_data['total_score'].rename(sample))
