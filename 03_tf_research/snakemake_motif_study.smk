@@ -193,33 +193,57 @@ rule species_motif_tables:
 rule full_species_motif_tables:
 	input:
 		species_table = "04_bowtie/05_promoter_motif_table/{samples}_summary.tsv",
-		abbreviative = "../00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv",
+		abbreviative  = "../00_dataset/00_GAGA_download/GAGA_vs_personal_ID.tsv"
 	output:
 		full_name = "04_bowtie/06_full_promoter_motif_table/{samples}_full_summary.tsv"
 	shell:
 		"""
 		MAP_PATH="ncbi_header_modified/{wildcards.samples}_header_summary_mapping.tsv"
+		LOC_MAP="ncbi_header_modified/{wildcards.samples}_XM_to_LOC.tsv"
 
-		if [ -f "$MAP_PATH" ]; then
-			if [ "{wildcards.samples}" = "Polmex" ]; then
-				sed -E "s/::.[^\t]+//; s/^rna-//" {input.species_table} | \
-				awk 'BEGIN {{ OFS="\t" }}
-					{{ sub(/\\r$/, "") }}
-					NR==FNR {{ map[$2]=$1; next }}
-					$1 in map {{ $1=map[$1] }}
-					1' "$MAP_PATH" - > {output.full_name}
-			else
-				sed -E "s/::.[^\t]+//" {input.species_table} | \
-				awk 'BEGIN {{ OFS="\t" }}
-					{{ sub(/\\r$/, "") }}
-					NR==FNR {{ map[$2]=$1; next }}
-					$1 in map {{ $1=map[$1] }}
-					1' "$MAP_PATH" - > {output.full_name}
-			fi
+		if [ -f "$LOC_MAP" ]; then
+			# Specie NCBI con formato XM_ → LOC (es. Cathis)
+			# Step 1: rimuovi rna- e ::... solo su $1
+			awk 'BEGIN {{FS="\t"; OFS="\t"}}
+				NR==1 {{print; next}}
+				{{
+					sub(/^rna-/, "", $1)
+					sub(/::.*/, "", $1)
+					print
+				}}
+			' {input.species_table} > /tmp/{wildcards.samples}_clean.tsv
+
+			# Step 2: rimappa XM_ → LOC
+			awk 'BEGIN {{FS="\t"; OFS="\t"}}
+				NR==FNR {{ map[$1]=$2; next }}
+				FNR==1  {{ print; next }}
+				{{ key=$1; if (key in map) $1=map[key]; print $1,$2,$3,$4 }}
+			' "$LOC_MAP" /tmp/{wildcards.samples}_clean.tsv > {output.full_name}
+
+			rm -f /tmp/{wildcards.samples}_clean.tsv
+
+		elif [ -f "$MAP_PATH" ]; then
+			# Specie NCBI con formato rna-LPLAT_ (es. Laspla, Polmex)
+			awk 'BEGIN {{FS="\t"; OFS="\t"}}
+				NR==1 {{print; next}}
+				{{
+					sub(/^rna-/, "", $1)
+					sub(/::.*/, "", $1)
+					print
+				}}
+			' {input.species_table} | \
+			awk 'BEGIN {{OFS="\t"}}
+				{{sub(/\\r$/, "")}}
+				NR==FNR {{ map[$2]=$1; next }}
+				FNR==1  {{ print; next }}
+				$1 in map {{ $1=map[$1] }}
+				1' "$MAP_PATH" - > {output.full_name}
 
 		else
+			# Specie GAGA — comportamento originale
 			abb=$(awk -v fn="{wildcards.samples}" '$3 == fn {{print $2}}' {input.abbreviative})
-			sed -E "s/${{abb}}_?//; s/^_//; s/__/_/g; s/::.[^\t]+//" {input.species_table} > {output.full_name}
+			sed -E "s/$${{abb}}_?//; s/^_//; s/__/_/g; s/::.[^\t]+//" \
+				{input.species_table} > {output.full_name}
 		fi
 		"""
 
@@ -423,6 +447,7 @@ rule aggregate_table_Orthofinder:
 		# Regex che matcha il prefisso OrthoFinder: una maiuscola + 5 minuscole + pipe
 		# Es. "Acanth|LOC123" → "LOC123"
 		ORTHOFINDER_PREFIX = re.compile(r'^[A-Z][a-z]{5}\|')
+		NCBI_RNA_PREFIX    = re.compile(r'^rna-')
 
 		def build_orthogroup_dict(file, species):
 			result = defaultdict(lambda: 'NA')
@@ -435,6 +460,7 @@ rule aggregate_table_Orthofinder:
 					break
 			else:
 				raise ValueError(f"Species {species} not found in header")
+
 			for line in file:
 				columns = line.strip('\n').split('\t')
 				orthogroup = columns[0]
@@ -443,10 +469,10 @@ rule aggregate_table_Orthofinder:
 					peptide = peptide_raw.strip()
 					if not peptide:
 						continue
-					# Rimuove il prefisso "[A-Z][a-z]{5}|" se presente
-					# in modo che il nome matchi quello nei file _full_summary.tsv
-					peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
-					result[peptide_clean] = orthogroup
+				peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
+				peptide_clean = NCBI_RNA_PREFIX.sub('', peptide_clean)
+				result[peptide_clean] = orthogroup
+
 			return result
 
 		scores      = defaultdict(list)
