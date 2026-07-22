@@ -415,7 +415,7 @@ rule aggregate_table_Orthofinder:
 		from collections import defaultdict
 
 		ORTHOFINDER_PREFIX = re.compile(r'^[A-Z][a-z]{5}\|')
-		NCBI_LPLAT_PREFIX  = re.compile(r'^una-LPLAT_')
+		NCBI_LPLAT_PREFIX  = re.compile(r'^rna-LPLAT_')
 
 		def build_orthogroup_dict(file, species):
 			result = defaultdict(lambda: 'NA')
