@@ -397,89 +397,75 @@ rule aggregate_tables_disco:
 			pd.concat(totalscores[motif], axis=1, ignore_index=False).reset_index().to_csv(totalscore, sep='\t', index=False, na_rep='NA')
 
 rule aggregate_table_Orthofinder:
-	input:
-		species_tables = expand("04_bowtie/06_full_promoter_motif_table/{samples}_full_summary.tsv", samples=SAMPLES),
-		orthogroups = "Orthogroups_OrthoFinder.tsv"
-	output:
-		score_tables    = expand("05_aggregate/03_score_orthofinder/score_{motif}.tsv", motif=MOTIFS),
-		count_tables    = expand("05_aggregate/04_count_orthofinder/count_{motif}.tsv", motif=MOTIFS),
-		totalscore_tables = expand("05_aggregate/05_totalscore_orthofinder/totalscore_{motif}.tsv", motif=MOTIFS)
-	threads: 1
-	resources:
-		mem=8000,
-		time=120,
-	run:
-		import re
-		import sys
-		import pandas as pd
-		from collections import defaultdict
+    # ... input/output/threads/resources invariati ...
+    run:
+        import re, sys, pandas as pd
+        from collections import defaultdict
 
-		ORTHOFINDER_PREFIX = re.compile(r'^[A-Z][a-z]{5}\|')
-		NCBI_LPLAT_PREFIX  = re.compile(r'^rna-LPLAT_')
+        ORTHOFINDER_PREFIX = re.compile(r'^[A-Z][a-z]{5}\|')
+        NCBI_LPLAT_PREFIX  = re.compile(r'^rna-LPLAT_')
 
-		def build_orthogroup_dict(file, species):
-			result = defaultdict(lambda: 'NA')
-			header = file.readline()
-			spp = header.strip().split('\t')
-			index = -1
-			for i, sp in enumerate(spp):
-				if sp.startswith(species):
-					index = i
-					break
-			else:
-				raise ValueError(f"Species {species} not found in header")
-			for line in file:
-				columns = line.strip('\n').split('\t')
-				orthogroup = columns[0]
-				peptides_raw = columns[index] if index < len(columns) else ''
-				for peptide_raw in peptides_raw.split(','):
-					peptide = peptide_raw.strip()
-					if not peptide:
-						continue
-					# Rimuove prefisso GAGA (es. Acafer|LOC123 → LOC123)
-					peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
-					# Rimuove prefisso NCBI una-LPLAT_ specifico di Laspla
-					peptide_clean = NCBI_LPLAT_PREFIX.sub('LPLAT_', peptide_clean)
-					result[peptide_clean] = orthogroup
-			return result
+        def build_orthogroup_dict(file, species):
+            result = defaultdict(lambda: 'NA')
+            header = file.readline()
+            spp = header.strip().split('\t')
+            index = -1
+            for i, sp in enumerate(spp):
+                if sp.startswith(species):
+                    index = i
+                    break
+            else:
+                raise ValueError(f"Species {species} not found in header")
+            for line in file:
+                columns = line.strip('\n').split('\t')
+                orthogroup = columns[0]
+                peptides_raw = columns[index] if index < len(columns) else ''
+                tokens = re.split(r',\s*|\s+(?=[A-Z][a-z]{5}\|)', peptides_raw)
+                for peptide_raw in tokens:
+                    peptide = peptide_raw.strip()
+                    if not peptide:
+                        continue
+                    peptide_clean = ORTHOFINDER_PREFIX.sub('', peptide)
+                    peptide_clean = NCBI_LPLAT_PREFIX.sub('LPLAT_', peptide_clean)
+                    result[peptide_clean] = orthogroup
+            return result
 
-		scores      = defaultdict(list)
-		counts      = defaultdict(list)
-		totalscores = defaultdict(list)
+        scores      = defaultdict(list)
+        counts      = defaultdict(list)
+        totalscores = defaultdict(list)
 
-		for sample, file in zip(SAMPLES, input.species_tables):
-			print(sample)
-			db = build_orthogroup_dict(open(input.orthogroups), sample)
-			db = {k: v for k, v in db.items() if k and not pd.isna(v) and v != 'NA'}
+        for sample, file in zip(SAMPLES, input.species_tables):
+            print(sample)
+            db = build_orthogroup_dict(open(input.orthogroups), sample)
+            db = {k: v for k, v in db.items() if k and not pd.isna(v) and v != 'NA'}
 
-			data = pd.read_csv(file, sep=r'\s+')
-			data['OG'] = data.peptide.map(db)
-			data['total_score'] = data['mean'] * data['count']
+            data = pd.read_csv(file, sep=r'\s+')
+            # FIX 2: normalizza "LOC-LOC..." → "LOC..."
+            data['peptide'] = data['peptide'].str.replace(r'^LOC-', '', regex=True)
+            data['OG'] = data.peptide.map(db)
+            data['total_score'] = data['mean'] * data['count']
 
-			for motif in MOTIFS:
-				sub_data = data[data.motif == motif].copy()
-				sub_data = sub_data[["OG", "mean", "count", "total_score"]]
-				sub_data = sub_data.groupby("OG", dropna=False).agg(
-					mean=("mean", "mean"),
-					count=("count", "sum"),
-					total_score=("total_score", "sum")
-				)
-				sub_data.index.name = None
-				missing_ogs = sorted(set(db.values()).difference(sub_data.index))
-				if missing_ogs:
-					sub_data = pd.concat((
-						sub_data,
-						pd.DataFrame(
-							index=missing_ogs,
-							columns=sub_data.columns,
-							data=0
-						)
-					)).sort_index()
-				scores[motif].append(sub_data['mean'].rename(sample))
-				counts[motif].append(sub_data['count'].rename(sample))
-				totalscores[motif].append(sub_data['total_score'].rename(sample))
+            for motif in MOTIFS:
+                sub_data = data[data.motif == motif].copy()
+                sub_data = sub_data[["OG", "mean", "count", "total_score"]]
+                sub_data = sub_data.groupby("OG", dropna=False).agg(
+                    mean=("mean", "mean"),
+                    count=("count", "sum"),
+                    total_score=("total_score", "sum")
+                )
+                sub_data.index.name = None
+                missing_ogs = sorted(set(db.values()).difference(sub_data.index))
+                if missing_ogs:
+                    sub_data = pd.concat((
+                        sub_data,
+                        pd.DataFrame(index=missing_ogs, columns=sub_data.columns, data=0)
+                    )).sort_index()
+                scores[motif].append(sub_data['mean'].rename(sample))
+                counts[motif].append(sub_data['count'].rename(sample))
+                totalscores[motif].append(sub_data['total_score'].rename(sample))
 
-		for motif, score, count, totalscore in zip(MOTIFS, output.score_tables, output.count_tables, output.totalscore_tables):
-			pd.concat(scores[motif], axis=1, ignore_index=False).reset_index().to_csv(score, sep='\t', index=False, na_rep='NA')
-			pd.concat(counts[motif], axis=1, ignore_index=False).reset_index().to_csv(count, sep='\t', index=False, na_rep='NA')
-			pd.concat(totalscores[motif], axis=1, ignore_index=False).reset_index().to_csv(totalscore, sep='\t', index=False, na_rep='NA')
+        for motif, score, count, totalscore in zip(
+                MOTIFS, output.score_tables, output.count_tables, output.totalscore_tables):
+            pd.concat(scores[motif],      axis=1).reset_index().to_csv(score,      sep='\t', index=False, na_rep='NA')
+            pd.concat(counts[motif],      axis=1).reset_index().to_csv(count,      sep='\t', index=False, na_rep='NA')
+            pd.concat(totalscores[motif], axis=1).reset_index().to_csv(totalscore, sep='\t', index=False, na_rep='NA')
