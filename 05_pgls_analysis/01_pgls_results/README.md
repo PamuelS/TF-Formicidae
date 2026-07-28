@@ -1,5 +1,18 @@
+# Correzione e normalizzazione del p-value
+Dopo che l'analisi della pgls è stata eseguita, si è proseguito con la normalizzazione del p-value per ognuno dei 296 file prodotti.
+La normalizzazione (controllare se si può dire così) è stata eseguita con il successivo comando:
+```bash
+for i in MA*; do      Rscript -e "
+        df <- read.csv('$i/pgls5_castes.csv')
+        # Sostituisce fisicamente i valori all'interno di P_value
+        df\$P_value <- p.adjust(df\$P_value, method='BH')
+        write.csv(df, '$i/pgls5_castes_adj.csv', row.names=FALSE)
+    "; done
+
+```
+
 # OGs significativi della PGLS
-Al termine del lancio della pgls, il numero di motivi analizzati ammontava ad un valore estremamente grande con una altrettanto elevata varietà di risultati ottenuti. Per cercare di scremare l'elevato numero di OGs risultanti, si è proceduto con il lancio di sue differenti script mediante il seguente comando:
+Al termine del lancio della pgls, il numero di motivi analizzati ammontava ad un valore estremamente grande con una altrettanto elevata varietà di risultati ottenuti. Per cercare di scremare l'elevato numero di OGs risultanti, dopo chiaramente aver normalizzato il parametro del p-value per ogni risultato di motivo, si è proceduto con il lancio di due differenti script mediante il seguente comando:
 
 ```bash
 Rscript OG_sig_pvalue_only.R
