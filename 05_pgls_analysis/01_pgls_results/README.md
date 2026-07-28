@@ -1,6 +1,7 @@
 # Correzione e normalizzazione del p-value
 Dopo che l'analisi della pgls è stata eseguita, si è proseguito con la normalizzazione del p-value per ognuno dei 296 file prodotti.
-La normalizzazione (controllare se si può dire così) è stata eseguita con il successivo comando:
+La normalizzazione (controllare se si può dire così) è stata eseguita con il successivo comando facente uso del metodo BH.
+In questo modo nella colonna del p-value sono stati soprascritti i risultati dell'aggiustamento FDR ai precedenti.
 ```bash
 for i in MA*; do      Rscript -e "
         df <- read.csv('$i/pgls5_castes.csv')
@@ -20,7 +21,7 @@ Rscript OG_sig_pvalue_only.R
 Rscript OG_significativi_pgls5.R
 ```
 
-Quello che è stato fatto dopo la nromalizzazione è stato selezionare tutti gli ortogruppi che presentassero un valore di p-value minore si 0.05 ed un valore di R^2 adj che veniva incrementato maggiormente ogni singola volta (0.25, 0.40, 0.55, 0.70)
+Quello che è stato fatto dopo la nromalizzazione è stato selezionare tutti gli ortogruppi che presentassero un valore di p-value minore di 0.05 ed un valore di R^2 adj che veniva incrementato maggiormente di 0.15 ad ogni successiva esecuzione del programma (0.25, 0.40, 0.55, 0.70). Questo è necessario per restringere ulteriormente il campo dei possibili risultati, arrivando ad ottenere un numero lievemente ridotto di OG ma con una significatività estremamente elevata.
 
 ## OGs p-value significativi
 Il primo script lanciato serve per selezionare solo ed unicamente tutti gli OGs che rispettassero il criterio di possedere un p-value che sia minore di 0.05. I risultati ottenuti dopo il lancio dello script mostano come il numero di ortogruppi totali a rispettare tale criterio sia passato a 240886 (da un valore iniziale di 2878598) avendo sempre una copertura totale di motivi pari a 296, overo tutti.
