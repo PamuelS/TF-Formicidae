@@ -9,9 +9,9 @@ for i in ../05_pgls_analysis/01_pgls_results/MA*; do awk -F',' 'NR>1 && $9 ~ /su
 Quindi sostanzialmente il gene-universe, che verrà ottenuto al termine di tutte le successive analisi, sarà costituito solo ed unicamente dagli OGs che hanno superato la precedente scrematura eseguita per l'analisi pgls.
 Per questo procedimento è necessario individuare per ogni ortogruppo selezionato, la proteina più lunga ed associare ad essa la sequenza amminoacidica corrispondente. Questo procedimento viene svolto per ogni orogruppo preso in considerazione con il comando precedente e mediante lo script bash `longest_proteine.sh`.
 ```bash
-bash longest_proteine.sh
+bash longest_proteine_OG.sh
 ```
-Il file risultante `longest_proteine.tsv` conterrà una sola sequenza, associata alla specie di riferimento, per tutti gli ortogruppi elencati precedentemente.
+Il file risultante `longest_proteine_OGs.txt` conterrà una sola sequenza, associata alla specie di riferimento, per tutti gli ortogruppi elencati precedentemente.
 Questo file viene poi sottoposto alle analisi di Diamond, per verificare a quale proteina quella sequenza possa essere associata, e ad InterProScan che identificherà tutti i possibili GOTerms riconosciuti in quella sequenza
 
 Una volta ottenuto il file di annotazione funzionale generato direttamente da InterProScan, si può procedere all'eleiminazione di tutte quelle informazioni in eccesso fornite dal programma, per mostrare all'interno del file `go_back.tsv` solamente i GO che sono stati associati ad ogni singolo ortogruppo selezionato in precedenza.
