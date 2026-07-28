@@ -31,3 +31,9 @@ END {
 
 ```
 
+## Selezione degli OG significativi
+
+```bash
+awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.25/pgls5_significant_OGs.tsv > topGO_target.txt
+
+```
