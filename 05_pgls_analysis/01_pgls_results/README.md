@@ -20,6 +20,8 @@ Rscript OG_sig_pvalue_only.R
 Rscript OG_significativi_pgls5.R
 ```
 
+Quello che è stato fatto dopo la nromalizzazione è stato selezionare tutti gli ortogruppi che presentassero un valore di p-value minore si 0.05 ed un valore di R^2 adj che veniva incrementato maggiormente ogni singola volta (0.25, 0.40, 0.55, 0.70)
+
 ## OGs p-value significativi
 Il primo script lanciato serve per selezionare solo ed unicamente tutti gli OGs che rispettassero il criterio di possedere un p-value che sia minore di 0.05. I risultati ottenuti dopo il lancio dello script mostano come il numero di ortogruppi totali a rispettare tale criterio sia passato a 240886 (da un valore iniziale di 2878598) avendo sempre una copertura totale di motivi pari a 296, overo tutti.
 
