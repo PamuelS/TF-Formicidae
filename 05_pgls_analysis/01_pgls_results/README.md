@@ -51,3 +51,10 @@ I criteri di selezione si basano su tre parametri fondamentali:
 I primi due parametri sono sempre rimast invariati, in modo che consentissero la selezione di OG che avessero sempre un parametro p-value o FDR minore di 0.05 (soglia di significaticità), mentre il terzo parametro è stato fatto variare, partendo con tutti i valori maggiori di 0.25 di R^2 adj, per poi passare a 0.40, 0.50 ed infine 0.70.
 
 Quindi sostanzialmente sono state portate avanti due analisi parallele (p-value siginificativo da un lato e FDR significativo dall'altro) dove il parametro condiviso era il progressivo valore di R^2 adj che viene incrememtnato progressivamente. In questo modo si può valuatare lo stato delle due analisi confrontandole fra di loro
+
+Il comando per richiamre lo script utilizzato per questa operazione è il seguente:
+```bash
+for r2 in 0.25 0.40 0.50 0.70; do
+    Rscript filter_pgls.R $r2
+done
+```
