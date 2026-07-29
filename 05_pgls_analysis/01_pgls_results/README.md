@@ -3,13 +3,18 @@ Dopo che l'analisi della pgls è stata eseguita, si è proseguito con la normali
 La normalizzazione (controllare se si può dire così) è stata eseguita con il successivo comando facente uso del metodo BH.
 In questo modo nella colonna del p-value sono stati soprascritti i risultati dell'aggiustamento FDR ai precedenti.
 ```bash
-for i in MA*; do      Rscript -e "
+for i in MA*; do 
+    Rscript -e "
         df <- read.csv('$i/pgls5_castes.csv')
-        # Sostituisce fisicamente i valori all'interno di P_value
-        df\$P_value <- p.adjust(df\$P_value, method='BH')
+        df\$FDR <- p.adjust(df\$P_value, method='BH')
+        
+        # Reorder so FDR is column 4 (after the first 3 columns)
+        rest <- setdiff(names(df)[-c(1:3)], 'FDR')
+        df <- df[, c(names(df)[1:3], 'FDR', rest)]
+        
         write.csv(df, '$i/pgls5_castes_adj.csv', row.names=FALSE)
-    "; done
-
+    "
+done
 ```
 
 # OGs significativi della PGLS
