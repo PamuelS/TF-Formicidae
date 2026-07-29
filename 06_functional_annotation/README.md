@@ -37,3 +37,11 @@ Una volta ottenuto l'elenco di tutti gli ortogruppi che sono risultati significa
 ```bash
 Rscript extract_topgo_target.R
 ```
+## Arricchimento funzionale
+Al termine della selezione degli ortogruppi e della loro suddivisione dei due gruppi funzionali legati allo stato del fenotipo che meglio rappresenta il valore del coefficente angolare associato ad essi, si è optato per la crezione di un unico file che consentisse di visualizzare tutte le informazioni in un singolo file eseguendo questo comando:
+```basf
+for dir in 0*_enriched_*/0*_analysis; do
+    echo "Running TopGO on: $dir"
+    Rscript generalized_topGO.R "$dir"
+done
+```
