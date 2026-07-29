@@ -32,7 +32,7 @@ END {
 ```
 
 ## Selezione degli OG significativi
-
+L'arricchimento funzionale è stato eseguito per ogni ortogruppo risultante del progressivo incremento del valore di R^" adjusted per il risultato della pgls eseguita per il polimorfismo delle caste.
 ```bash
 awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.25/pgls5_significant_OGs.tsv > topGO_target.txt
 
