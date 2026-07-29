@@ -16,6 +16,31 @@ for i in MA*; do
     "
 done
 ```
+Per facilitare la visione e le successive operazioni tutti i file risultanti della pgls legate al fenotipo delle caste sono state unite in un unico grande file mediante l'uso del successivo comando:
+```bash
+awk -F',' '
+BEGIN { OFS="\t"; header_written=0 }
+{
+    # Extract motif folder name from path (e.g. "MA0001.1/pgls5_castes_adj.csv" -> "MA0001.1")
+    motif = FILENAME
+    sub(/\/[^\/]+$/, "", motif)
+    sub(/^.*\//, "", motif)
+
+    # Remove all double quotes and convert commas to tabs
+    gsub(/"/, "")
+    gsub(/,/, OFS)
+
+    # Print header only once from the first file, followed by data rows
+    if (FNR == 1) {
+        if (!header_written) {
+            print $0, "motif"
+            header_written = 1
+        }
+    } else {
+        print $0, motif
+    }
+}' MA*/pgls5_castes_adj.csv > merged_pgls5_castes.tsv
+```
 
 # OGs significativi della PGLS
 Al termine del lancio della pgls, il numero di motivi analizzati ammontava ad un valore estremamente grande con una altrettanto elevata varietà di risultati ottenuti. Per cercare di scremare l'elevato numero di OGs risultanti, dopo chiaramente aver normalizzato il parametro del p-value per ogni risultato di motivo, si è proceduto con il lancio di due differenti script mediante il seguente comando:
