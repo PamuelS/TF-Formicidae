@@ -52,7 +52,7 @@ I primi due parametri sono sempre rimast invariati, in modo che consentissero la
 
 Quindi sostanzialmente sono state portate avanti due analisi parallele (p-value siginificativo da un lato e FDR significativo dall'altro) dove il parametro condiviso era il progressivo valore di R^2 adj che viene incrememtnato progressivamente. In questo modo si può valuatare lo stato delle due analisi confrontandole fra di loro
 
-Il comando per richiamre lo script utilizzato per questa operazione è il seguente:
+Il comando per richiamre lo script utilizzato `filter_pgls.R` per questa operazione è il seguente:
 ```bash
 for r2 in 0.25 0.40 0.50 0.70; do
     Rscript filter_pgls.R $r2
