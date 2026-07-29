@@ -34,6 +34,16 @@ END {
 ## Selezione degli OG significativi
 L'arricchimento funzionale è stato eseguito per ogni ortogruppo risultante del progressivo incremento del valore di R^" adjusted per il risultato della pgls eseguita per il polimorfismo delle caste.
 ```bash
+> per il primo bound
 awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.25/pgls5_significant_OGs.tsv > topGO_target.txt
+
+> per il secondo bound
+awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.40/pgls5_significant_OGs.tsv > topGO_target.txt
+
+> per il terzo bound
+awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.55/pgls5_significant_OGs.tsv > topGO_target.txt
+
+> per il quarto bound
+awk 'NR > 1 { gsub(/"/, ""); print $1}' ../../../05_pgls_analysis/01_pgls_results/OG_signif_0.70/pgls5_significant_OGs.tsv > topGO_target.txt
 
 ```
