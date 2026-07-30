@@ -38,11 +38,55 @@ Una volta ottenuto l'elenco di tutti gli ortogruppi che sono risultati significa
 Rscript extract_topgo_target.R
 ```
 ## Arricchimento funzionale
-Al termine della selezione degli ortogruppi e della loro suddivisione dei due gruppi funzionali legati allo stato del fenotipo che meglio rappresenta il valore del coefficente angolare associato ad essi, si è optato per la crezione di un unico file che consentisse di visualizzare tutte le informazioni in un singolo file eseguendo questo comando:
+Al termine della selezione degli ortogruppi e della loro suddivisione dei due gruppi funzionali legati allo stato del fenotipo che meglio rappresenta il valore del coefficente angolare associato ad essi, si è proseguito con l'analisi dell'arrichimento funzionale dei GO terms:
 
 ```bash
 for dir in 0*_enriched_*/0*_analysis; do
     echo "Running TopGO on: $dir"
     Rscript generalized_topGO.R "$dir"
 done
+```
+
+Dal momento che i risultati potevano essere inseriti in differenti tipologie di casistich ebasate sulla tipologia di parametro scelto (p-value/FDR oppure bound specifico di R^2 adjusted) si è optato per la crezione di un unico file che consentisse di visualizzare tutte le informazioni in un singolo file eseguendo questo comando:
+```bash
+outfile="master_topGO_enrichment_results.tsv"
+
+# 1. Grab header from the first available result file
+first_file=$(find 0*_enriched_* -type f -name "topGOe_*" | head -n 1)
+
+if [ -z "$first_file" ]; then
+    echo "Error: No topGO output files found in subfolders!"
+else
+    # Write master header with metadata columns
+    printf "R_squared\tAnalysis_Type\tTarget_Group\tSource_File\t" > "$outfile"
+    head -n 1 "$first_file" >> "$outfile"
+
+    # 2. Loop through all result files and merge content
+    find 0*_enriched_* -type f -name "topGOe_*" | while read -r filepath; do
+        filename=$(basename "$filepath")
+        
+        # Parse R^2 value from folder path (e.g., 0.25 from 01_enriched_0.25)
+        r2=$(echo "$filepath" | sed -n 's/.*enriched_\([0-9.]*\).*/\1/p')
+        
+        # Parse analysis type
+        case "$filepath" in
+            *pvalue*) analysis="P-value" ;;
+            *fdr*)    analysis="FDR" ;;
+            *)        analysis="Unknown" ;;
+        esac
+
+        # Parse target group
+        case "$filename" in
+            *Polymorphic*) target="Polymorphic" ;;
+            *Monomorphic*) target="Monomorphic" ;;
+            *)             target="All" ;;
+        esac
+
+        # Prepend metadata columns and append rows (skipping individual file headers)
+        tail -n +2 "$filepath" | awk -v r2="$r2" -v ana="$analysis" -v tar="$target" -v fn="$filename" \
+            'BEGIN{FS="\t"; OFS="\t"} NF{print r2, ana, tar, fn, $0}' >> "$outfile"
+    done
+
+    echo "Done! Merged results saved to $outfile"
+fi
 ```
