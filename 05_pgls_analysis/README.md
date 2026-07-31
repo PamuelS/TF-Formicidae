@@ -18,9 +18,11 @@ Il fenotipo presente nel dataset, ma escluso dallo studio dei motivi è la tipol
 L'intera struttura dello script R lasi può trovare all'interno del file `pgls_phenotypes.R`, mentre il codice snakemake utilizzato per gestire un elevato quantitativo di dati è reperibile in [questo](./00_instruction/snakefile_pgls_analysis.smk) punto.
 
 ### Esecuzione tramite snakemake
-All'interno dello script R è stata implementata la possibilità di esecuzione mediante il programma Snakemake
+All'interno dello script R è stata implementata la possibilità di esecuzione mediante il programma Snakemake ed in questo modo sono state lanciate tutte e due le analisi pgls sui rispettivi risultati ORTHO e DISCO.
 ```bash
 snakemake -s pgls_phenotypes.R --cores 1
+
+snakemake -s pgls_Ortho_phenothypes.R --cores 1
 ```
 
 ### Accorgimenti
