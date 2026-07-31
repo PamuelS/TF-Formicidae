@@ -222,6 +222,22 @@ process_motif_file <- function(file, tree, species_pheno, phenotype_col,
   rownames(data_raw) <- data_raw$index
   data_raw$index     <- NULL
 
+  # ── NEW FILTER: Eliminate OGs present in < 90 species ────────
+  min_species_overall <- 90
+  
+  # Count how many columns (species) have non-NA values for each OG (row)
+  species_counts <- rowSums(!is.na(data_raw))
+  
+  # Keep only the rows that meet the 90 species threshold (matches DISCO -m 90)
+  data_raw <- data_raw[species_counts >= min_species_overall, , drop = FALSE]
+  
+  # Safety check in case the filter drops everything
+  if (nrow(data_raw) == 0) {
+    message("No OGs passed the minimum species threshold (>= 90) for file: ", file)
+    return(data.frame())
+  }
+  # ─────────────────────────────────────────────────────────────
+
   # correct application of the handle_outlier function created above
   data_raw[] <- lapply(data_raw, function(col)
     if (is.numeric(col)) handle_outliers(col) else col)
