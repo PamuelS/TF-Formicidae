@@ -20,3 +20,5 @@ Il dataset di questo lavoro è caratterizzato da 175 esemplari, tutti appartenen
 4) Studio dei [motivi](./03_tf_research)
 5) Confronto tra l'analisi su [otho e disco](./04_ortho_disco_comparison)
 6) Analisi [pgls](./04_pgls_analysis)
+7) [Annotazione funzionale](./06_functional_annotation)
+8) [Ricostruzione stato ancestrale](./07_ancestral_state_reconstruction)
