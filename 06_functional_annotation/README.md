@@ -97,3 +97,7 @@ Il tutto viene eseguito partendo dal file di `go_back.tsv` che contiene tutti i 
 ```bash
 Rscript extract_GO_genes.R
 ```
+
+
+> Tutte queste istruzioni e comandi sono stati adoperati alla parte di dati risultanti dalla pipeline di DISCO. 
+> Ricordarsi per ciò di applicarli nei minimi dettagli anche ai risultati della pipeline di ORTHO modificandone i path ed eventuali nomi
