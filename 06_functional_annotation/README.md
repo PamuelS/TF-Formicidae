@@ -90,3 +90,10 @@ else
     echo "Done! Merged results saved to $outfile"
 fi
 ```
+
+## Associazione dell'OG al GO
+Adesso si può eseguire l'associazione inversa per mappare quali sono gli ortogruppi associabili ai GO terms ottenuti dopo l'arricchimento. 
+Il tutto viene eseguito partendo dal file di `go_back.tsv` che contiene tutti i possibili GO terms associabili a tutti gli ortogruppi selezionati per l'analisi.
+```bash
+Rscript extract_GO_genes.R
+```
