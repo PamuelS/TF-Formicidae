@@ -1,4 +1,5 @@
-Qui vengono affrontati i medesimi passaggi eseguiti per i risultati DISCO che possono essere ritrovati in questa [cartella](../../06_functional_annotation)
+Qui vengono affrontati i medesimi passaggi eseguiti per i risultati DISCO che possono essere ritrovati in questa [cartella](../../06_functional_annotation), con la banale modifica di nomi per matchare le analisi eseguite per i risultati OrthoFinder.
+Sono riportati i passaggi per la creazione del gene universe di Ortho
 
 # Annotazione funzionale dei risultati Orthofinder
 La costruzione del background per l'annotazione funzionale dei risultati Ortho, è stata eseguita a partire dagli ortogruppi che mancavano nella creazione del background per i risultati DISCO. Di questa serie di OGs mancanti, è stata estratta la sequenza più lunga direttamente dagli ortogruppi che erano stati originati dall'analisi di OrthoFinder.
