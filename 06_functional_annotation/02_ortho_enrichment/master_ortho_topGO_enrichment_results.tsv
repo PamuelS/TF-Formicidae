@@ -1,0 +1,29 @@
+R_squared	Analysis_Type	Target_Group	Source_File	GO.ID	Term	Annotated	Significant	Expected	Classic_Fisher
+0.25	FDR	Polymorphic	topGOe_topGOtargetPolymorphicOGs_CC.txt	GO:0005840	ribosome	132	1	0.05	0.046
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_MF.txt	GO:0008332	low voltage-gated calcium channel activity	1	1	0	2e-04
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_MF.txt	GO:0005248	voltage-gated sodium channel activity	3	1	0	0.00061
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0001518	voltage-gated sodium channel complex	3	1	0	0.00053
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0043005	neuron projection	124	1	0.02	0.02177
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0120025	plasma membrane bounded cell projection	272	1	0.05	0.04774
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0042995	cell projection	275	1	0.05	0.04827
+0.25	FDR	Polymorphic	topGOe_topGOtargetPolymorphicOGs_MF.txt	GO:0005520	insulin-like growth factor binding	3	1	0	0.0012
+0.25	FDR	Polymorphic	topGOe_topGOtargetPolymorphicOGs_MF.txt	GO:0003735	structural constituent of ribosome	119	1	0.05	0.0477
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0035609	C-terminal protein deglutamylation	1	1	0	0.00037
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0035610	protein side chain deglutamylation	1	1	0	0.00037
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0086010	membrane depolarization during action potential	3	1	0	0.0011
+0.25	FDR	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0070509	calcium ion import	10	1	0	0.00367
+0.25	FDR	Polymorphic	topGOe_topGOtargetPolymorphicOGs_BP.txt	GO:0001558	regulation of cell growth	5	1	0	0.0018
+0.25	P-value	Polymorphic	topGOe_topGOtargetPolymorphicOGs_CC.txt	GO:0005840	ribosome	132	1	0.05	0.046
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_MF.txt	GO:0008332	low voltage-gated calcium channel activity	1	1	0	2e-04
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_MF.txt	GO:0005248	voltage-gated sodium channel activity	3	1	0	0.00061
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0001518	voltage-gated sodium channel complex	3	1	0	0.00053
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0043005	neuron projection	124	1	0.02	0.02177
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0120025	plasma membrane bounded cell projection	272	1	0.05	0.04774
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_CC.txt	GO:0042995	cell projection	275	1	0.05	0.04827
+0.25	P-value	Polymorphic	topGOe_topGOtargetPolymorphicOGs_MF.txt	GO:0005520	insulin-like growth factor binding	3	1	0	0.0012
+0.25	P-value	Polymorphic	topGOe_topGOtargetPolymorphicOGs_MF.txt	GO:0003735	structural constituent of ribosome	119	1	0.05	0.0477
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0035609	C-terminal protein deglutamylation	1	1	0	0.00037
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0035610	protein side chain deglutamylation	1	1	0	0.00037
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0086010	membrane depolarization during action potential	3	1	0	0.0011
+0.25	P-value	Monomorphic	topGOe_topGOtargetMonomorphicOGs_BP.txt	GO:0070509	calcium ion import	10	1	0	0.00367
+0.25	P-value	Polymorphic	topGOe_topGOtargetPolymorphicOGs_BP.txt	GO:0001558	regulation of cell growth	5	1	0	0.0018
