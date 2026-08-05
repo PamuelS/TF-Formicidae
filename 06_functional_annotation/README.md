@@ -13,6 +13,15 @@ bash longest_proteine_OG.sh
 ```
 Il file risultante `longest_proteine_OGs.txt` conterrà una sola sequenza, associata alla specie di riferimento, per tutti gli ortogruppi elencati precedentemente.
 Questo file viene poi sottoposto alle analisi di Diamond, per verificare a quale proteina quella sequenza possa essere associata, e ad InterProScan che identificherà tutti i possibili GOTerms riconosciuti in quella sequenza
+Per avviare l'analisi eseguita da InterProScan è stato lanciato il seguente comando:
+```bash
+#per il background DISCO
+interproscan.sh -i longest_protein_OGs.txt -goterms -pa -b missing -cpu 50 -applcommando
+
+#per il background Ortho
+interproscan.sh -i missing_longest_protein_ortho_OGs.txt -goterms -pa -b missing -cpu 50 -applcommando
+```
+
 
 Una volta ottenuto il file di annotazione funzionale generato direttamente da InterProScan, si può procedere all'eleiminazione di tutte quelle informazioni in eccesso fornite dal programma, per mostrare all'interno del file `go_back.tsv` solamente i GO che sono stati associati ad ogni singolo ortogruppo selezionato in precedenza.
 ```bash
@@ -33,6 +42,7 @@ END {
 
 ## Categorizzazione degli OGs significativi
 Una volta ottenuto l'elenco di tutti gli ortogruppi che sono risultati significativi dai passaggi precedenti, si è proceduto con la categorizzazione di essi sulla base dl coefficente angolare riportato dall'analisi della pgls
+
 
 ```bash
 Rscript extract_topgo_target.R
