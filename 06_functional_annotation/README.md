@@ -101,3 +101,44 @@ Rscript extract_GO_genes.R
 
 > Tutte queste istruzioni e comandi sono stati adoperati alla parte di dati risultanti dalla pipeline di DISCO. 
 > Ricordarsi per ciò di applicarli nei minimi dettagli anche ai risultati della pipeline di ORTHO modificandone i path ed eventuali nomi
+
+
+# Annotazione funzionale dei risultati Orthofinder
+La costruzione del background per l'annotazione funzionale dei risultati Ortho, è stata eseguita a partire dagli ortogruppi che mancavano nella creazione del background per i risultati DISCO. Di questa serie di OGs mancanti, è stata estratta la sequenza più lunga direttamente dagli ortogruppi che erano stati originati dall'analisi di OrthoFinder.
+
+Quindi inizialmente è stata creata una lista di Ogs che possero presenti dentro l'analisi della pgls di Ortho, ma che mancassero dentro il file `go_back.tsv` relativo all'annotazione funzionale dei risultati DISCO.
+```bash
+while read -r og; do     [[ -z "$og" ]] && continue
+    fa_file=$(find "$ORTHO_DIR" -name "${og}.fa*" | head -n 1)     if [[ -n "$fa_file" && -f "$fa_file" ]]; then         awk -v og="$og" '
+            /^>/ {
+                if (seq && length(seq) > maxlen) {
+                    maxlen = length(seq)
+                    maxhdr = hdr
+                    maxseq = seq
+                }
+                hdr = $0
+                sub(/^>/, "", hdr)
+                # Take only the first word of the header if there are spaces
+                split(hdr, a, " ")
+                hdr = a[1]
+                seq = ""
+                next
+            }
+            { 
+                # Remove gaps if any exist
+                gsub(/-/, "", $0)
+                seq = seq $0 
+            }
+            END {
+                if (length(seq) > maxlen) {
+                    maxhdr = hdr
+                    maxseq = seq
+                }
+                if (maxhdr != "") {
+                    printf ">%s@%s\n%s\n", og, maxhdr, maxseq
+                }
+            }
+        ' "$fa_file" >> "$OUTPUT_FILE";     else         echo "Warning: Sequence file for $og not found in $ORTHO_DIR" >&2;     fi; done < missing_ortho_OGs_for_annotation.txt
+```
+
+> `missing_ortho_OGs_for_annotation.txt` è semplicemente l'elenco di ortogrppi mancanti ai quali bisogna associare la sequenza più luga ritrovata in tale ortogruppo
