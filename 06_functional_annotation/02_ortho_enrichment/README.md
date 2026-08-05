@@ -175,3 +175,10 @@ else
     echo "Done! Merged results saved to $outfile"
 fi
 ```
+
+## Associazione dell'GO all'OG
+Con lo script `extract_GO_genes.R` si è eseguita la riassociazione dell'GO arricchito con l'ortogruppo di appartenenza estratto dal file `go_back_ortho.tsv`
+
+```bash
+Rscript extract_GO_genes.R
+```
