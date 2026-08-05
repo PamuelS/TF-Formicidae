@@ -44,3 +44,11 @@ BEGIN { OFS="\t"; header_written=0 }
     }
 }' MA*/pgls5_Ortho_castes_adj.csv > merged_pgls5_Ortho_castes.tsv
 ```
+
+## Filtraggio degli OGs significativi
+
+```bash
+for r2 in 0.25 0.40 0.50 0.70; do
+    Rscript filter_pgls_ortho.R $r2
+done
+```
