@@ -53,7 +53,7 @@ Al termine della selezione degli ortogruppi e della loro suddivisione dei due gr
 ```bash
 for dir in 0*_enriched_*/0*_analysis; do
     echo "Running TopGO on: $dir"
-    Rscript generalized_topGO.R "$dir"
+    Rscript GO_enrichment_R2_bounds.R "$dir"
 done
 ```
 
