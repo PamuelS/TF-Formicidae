@@ -1,5 +1,5 @@
 # Pruned tree
-Sono state droppate 5 specie dall'albero precedentemente originato. Questo per evitare bias legati alla ripetizione di specie.
+Sono state droppate 5 specie dall'albero precedentemente originato. Questo per evitare bias legati alla ripetizione di specie ed inoltre per rimuovere la specie che non possedeva alcun identificativo dello stato del fenotipo delle caste.
 Il seguente codice è stato utilizzato per rimuovere le specie in eccesso.
 
 ```bash
